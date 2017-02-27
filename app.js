@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 }));
 
+var port = process.env.PORT || 8080;
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -84,6 +85,6 @@ app.get('/contact-complete', function(req, res) {
   res.render('contact-complete');
 })
 
-app.listen(3000, function() {
+app.listen(port, function() {
   console.log('Example app listening');
 });
