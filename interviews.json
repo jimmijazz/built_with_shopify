@@ -1,0 +1,123 @@
+{
+  "midori-bikinis" : {
+    "store_name" : "Midori Bikinis",
+    "store_link" : "https://www.midoribikinis.com/",
+    "date" : "27/01/2017",
+    "author" : "Brittany",
+    "responses" : "midori_bikinis.ejs",
+    "data_cat"   : "clothing",
+    "categories" : "clothing",
+    "thumbnail"  : "images/midori/midori_thumbnail.png",
+    "description": "High quality, affordable bikinis with up to 300k </br>in monthly sales."
+  },
+  "the-wish-co"  : {
+    "store_name" : "The Wish Co",
+    "store_link" : "http://thewishco.com/",
+    "date"       : "27/01/2017",
+    "author"     : "Josh",
+    "responses"  : "wishco.ejs",
+    "data_cat"   : "jewellery",
+    "categories" : "jewellery",
+    "thumbnail"  : "images/wishco/wishco_thumbnail.png",
+    "description": "Handcrafted jewellery with an equally unique customer</br> experience."
+  },
+  "titan-survival" : {
+    "store_name"   : "Titan Survival",
+    "store_link"   : "https://www.titansurvival.com/",
+    "date"         : "27/01/2017",
+    "author"       : "Brittany",
+    "responses"    : "titan_survival.ejs",
+    "data_cat"   : "gadgets",
+    "categories" : "lifestyle gadgets",
+    "thumbnail"  : "images/titan/titan_thumbnail_orange.png",
+    "description": "Iraw veterans selling some of the toughest paracord</br> on the market."
+  },
+  "naak-bar" : {
+    "store_name" : "Naak Bar",
+    "store_link" : "https://naakbar.com/",
+    "date"       : "27/01/2017",
+    "author"     : "Josh",
+    "responses"  : "naak_bar.ejs",
+    "data_cat"   : "food",
+    "categories" : "food",
+    "thumbnail"  : "images/naak/naak_thumbnail.png",
+    "description": "Montreal team creating delicious, environmentally</br> friendly energy bars from crickets."
+  },
+  "kitchen-pro"  : {
+    "store_name" : "Kitchen Pro",
+    "store_link" : "http://www.gokitchenpro.com/",
+    "date"       : "27/01/2017",
+    "author"     : "Josh",
+    "responses"  : "kitchen_pro.ejs",
+    "data_cat"   : "home",
+    "categories" : "home",
+    "thumbnail"  : "images/kitchenpro/kitchenpro_thumbnail.png",
+    "description": "Creating an automated business selling high quality</br> kitchenware with FBA."
+  },
+  "luks-linen" : {
+    "store_name" : "Luks Linen",
+    "store_link" : "https://lukslinen.com/",
+    "date" : "27/01/2017",
+    "author" : "Brittany",
+    "responses" : "luks_linen.ejs",
+    "data_cat"   : "home",
+    "categories" : "art home",
+    "thumbnail"  : "images/lukslinen/luks_thumbnail.png",
+    "description": "High quality linen inspired by a vacation in Turkey."
+  },
+  "jutah-studios" : {
+    "store_name" : "Jutah Studios",
+    "store_link" : "https://www.jutahstudios.com/",
+    "date" : "27/01/2017",
+    "author" : "Josh",
+    "responses" : "jutah_studios.ejs",
+    "data_cat"   : "clothing",
+    "categories" : "clothing",
+    "thumbnail"  : "images/jutah/jutah_thumbnail.png",
+    "description": "U.K retailer selling clothing brands you can't</br>find anywhere else."
+  },
+  "jewelv" : {
+    "store_name" : "JEWELv",
+    "store_link" : "https://jewelv.com/",
+    "date"       : "27/01/2017",
+    "author"     : "Josh",
+    "responses"  : "jewelv.ejs",
+    "data_cat"   : "jewellery",
+    "categories" : "jewellery",
+    "thumbnail"  : "images/jewelv/jewelv_thumbnail.png",
+    "description": "JEWELv uses custom Shopify software to let customers</br> design their own jewellery."
+  },
+  "socco-designs" : {
+    "store_name" : "Socco Designs",
+    "store_link" : "https://www.soccodesigns.com/",
+    "date" : "27/01/2017",
+    "author" : "Brittany",
+    "responses" : "socco_designs.ejs",
+    "data_cat"   : "art",
+    "categories" : "home art",
+    "thumbnail"  : "images/socco/socco_designs_thumbnail.png",
+    "description": "Authentic Moroccan rugs & home decor."
+  },
+  "silica-gelly" : {
+    "store_name" : "Silica Gelly",
+    "store_link" : "https://www.silicagelly.com/",
+    "date" : "27/01/2017",
+    "author" : "Josh",
+    "responses" : "silica_gelly.ejs",
+    "data_cat"   : "commercial",
+    "categories" : "commercial home",
+    "thumbnail"  : "images/silicagelly/silicagelly.png",
+    "description": "Silica gelly packaging for small consumer packages."
+  },
+  "white-chapter" : {
+    "store_name" : "White Chapter",
+    "store_link" : "https://www.whitechapter.com/",
+    "date" : "27/01/2017",
+    "author" : "Brittany",
+    "responses" : "white_chapter.ejs",
+    "data_cat"   : "clothing",
+    "categories" : "clothing art",
+    "thumbnail"  : "images/whitechapter/whitechapter_thumbnail.png",
+    "description": "Clothing printed with your favourite novel."
+  }
+}

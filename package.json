@@ -1,0 +1,28 @@
+{
+  "name": "built-with-shopify",
+  "version": "1.0.0",
+  "description": "Successful businesses built on Shopify",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimmijazz/built_with_shopify.git"
+  },
+  "keywords": [
+    "shopify"
+  ],
+  "author": "Joshua D. Bitossi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimmijazz/built_with_shopify/issues"
+  },
+  "homepage": "https://github.com/jimmijazz/built_with_shopify#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "nodemailer": "^3.1.4",
+    "sendgrid": "^4.7.1"
+  }
+}
