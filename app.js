@@ -86,5 +86,5 @@ app.get('/contact-complete', function(req, res) {
 })
 
 app.listen(port, function() {
-  console.log('Example app listening');
+  console.log('Example app listening on port: ', port);
 });
