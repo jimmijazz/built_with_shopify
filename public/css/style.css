@@ -525,6 +525,9 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   #portfoliolist .portfolio {
     width: 50% !important;
   }
+  .tip-box-left, .tip-box-right {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 768px) {
   #portfoliolist .portfolio {
@@ -809,14 +812,14 @@ input[type="text"] {
   margin-left: -15%;
   font-size: 0.75em;
   margin-right: 10px;
-  margin-bottom: 5px!important;
+  margin-bottom: 10px!important;
 }
 
 .tip-box-right {
   font-size: 0.75em;
   margin-right: -15%;
   margin-left: 10px;
-  margin-bottom: 5px!important;
+  margin-bottom: 10px!important;
 }
 
 .advertisement {
