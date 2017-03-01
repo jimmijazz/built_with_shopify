@@ -809,12 +809,14 @@ input[type="text"] {
   margin-left: -15%;
   font-size: 0.75em;
   margin-right: 10px;
+  margin-bottom: 5px!important;
 }
 
 .tip-box-right {
   font-size: 0.75em;
   margin-right: -15%;
   margin-left: 10px;
+  margin-bottom: 5px!important;
 }
 
 .advertisement {
@@ -860,10 +862,6 @@ input[type="text"] {
   margin-top: 15px;
 }
 
-.blog-image {
-  display: block;
-  margin: 0 auto;
-};
 
 
 /*# sourceMappingURL=style.css.map */
