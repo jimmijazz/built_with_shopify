@@ -33,11 +33,11 @@
     "description": "Iraw veterans selling some of the toughest paracord</br> on the market."
   },
   "naak-bar" : {
-    "store_name" : "Naak Bar",
+    "store_name" : "Naak",
     "store_link" : "https://naakbar.com/",
     "date"       : "27/01/2017",
     "author"     : "Josh",
-    "responses"  : "naak_bar.ejs",
+    "responses"  : "naak.ejs",
     "data_cat"   : "food",
     "categories" : "food",
     "thumbnail"  : "images/naak/naak_thumbnail.png",
