@@ -48,6 +48,10 @@ app.get('/contact', function(req, res) {
   res.render('contact');
 });
 
+app.get('/subscribe', function(req, res) {
+  res.render('subscribe');
+});
+
 app.post('/contact', function(req, res) {
   // using SendGrid's v3 Node.js Library
   // https://github.com/sendgrid/sendgrid-nodejs
@@ -83,7 +87,9 @@ app.post('/contact', function(req, res) {
 
 app.get('/contact-complete', function(req, res) {
   res.render('contact-complete');
-})
+});
+
+
 
 app.listen(port, function() {
   console.log('Example app listening on port: ', port);
