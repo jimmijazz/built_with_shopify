@@ -1,4 +1,15 @@
 {
+  "audionation" : {
+    "store_name" : "Audionation",
+    "store_link" : "https://audionation.ca/",
+    "date" : "8/3/2017",
+    "author" : "Brittany",
+    "responses" : "audionation.ejs",
+    "data_cat"   : "gadgets",
+    "categories" : "gadgets home",
+    "thumbnail"  : "images/audionation/audionation_thumbnail.png",
+    "description": "Importing high-quality, design oriented, HIFI </br> stereo products."
+  },
   "midori-bikinis" : {
     "store_name" : "Midori Bikinis",
     "store_link" : "https://www.midoribikinis.com/",
