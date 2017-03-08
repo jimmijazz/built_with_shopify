@@ -1,4 +1,15 @@
 {
+  "hagan" : {
+    "store_name" : "Hagan",
+    "store_link" : "https://www.haganskimountaineering.com",
+    "date" : "8/3/2017",
+    "author" : "Josh",
+    "responses" : "haganski.ejs",
+    "data_cat"   : "sport",
+    "categories" : "sport",
+    "thumbnail"  : "images/haganski/Hagan_logo.png",
+    "description": "Bringing an iconic 93 year old Austrian ski</br> mountaineering brand to the U.S."
+  },
   "audionation" : {
     "store_name" : "AUDIONATION",
     "store_link" : "https://audionation.ca/",
