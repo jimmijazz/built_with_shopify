@@ -873,7 +873,7 @@ input[type="text"] {
     padding-bottom: 56.25%;
     padding-top: 25px;
     height: 0;
-    
+
 }
 .videowrapper iframe {
     position: absolute;
@@ -884,5 +884,6 @@ input[type="text"] {
 
 }
 
+/* Dropdown Menu from Neat theme */
 
 /*# sourceMappingURL=style.css.map */

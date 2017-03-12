@@ -1,6 +1,7 @@
 var express = require('express');
 var path = require('path');
 var interviews = require('./interviews');
+var blog = require('./blog');
 var bodyParser = require('body-parser');
 
 var app = express();
@@ -29,6 +30,18 @@ app.get('/case-studies/:store', function(req,res, next) {
     date :store.date,
     author: store.author,
     link: store.store_link
+  } )
+});
+
+app.get('/blog/:post', function(req,res, next) {
+  var post = blog[req.params.post];
+  res.render('blog/' + post.title.replace(new RegExp(" ", "g"), "_").toLowerCase(), {
+    title : post.title,
+    content : post.post,
+    date : post.date,
+    author: post.author,
+    description: post.description,
+    category: post.category
   } )
 });
 
