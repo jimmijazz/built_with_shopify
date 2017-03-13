@@ -1,4 +1,15 @@
 {
+  "meraki-design-studio" : {
+    "store_name" : "Meraki Design Studio",
+    "store_link" : "https://www.merakidesignstudio.com.au/",
+    "date" : "13/3/2017",
+    "author" : "Brittany",
+    "responses" : "meraki_design_studio.ejs",
+    "data_cat"   : "art",
+    "categories" : "home art",
+    "thumbnail"  : "images/meraki/logo.png",
+    "description": "Contemporary art and foil prints."
+  },
   "hagan" : {
     "store_name" : "Hagan",
     "store_link" : "https://www.haganskimountaineering.com",
