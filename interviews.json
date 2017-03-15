@@ -1,4 +1,15 @@
 {
+  "modern-producers" : {
+    "store_name" : "Modern Producers",
+    "store_link" : "https://www.modernproducers.com/",
+    "date" : "15/3/2017",
+    "author" : "Josh",
+    "responses" : "modern_producers.ejs",
+    "data_cat"   : "digital",
+    "categories" : "art digital",
+    "thumbnail"  : "images/modern_producers/modern_producers_shopify_thumbnail.png",
+    "description": "Grossing $40,00 monthly revenue selling </br> products and software for music producers."
+  },
   "meraki-design-studio" : {
     "store_name" : "Meraki Design Studio",
     "store_link" : "https://www.merakidesignstudio.com.au/",
@@ -83,7 +94,7 @@
     "author"     : "Josh",
     "responses"  : "kitchen_pro.ejs",
     "data_cat"   : "home",
-    "categories" : "home",
+    "categories" : "home dropshipping",
     "thumbnail"  : "images/kitchenpro/kitchenpro_thumbnail.png",
     "description": "Creating an automated business selling high quality</br> kitchenware with FBA."
   },
@@ -149,7 +160,7 @@
     "author" : "Brittany",
     "responses" : "white_chapter.ejs",
     "data_cat"   : "clothing",
-    "categories" : "clothing art",
+    "categories" : "clothing art dropshipping",
     "thumbnail"  : "images/whitechapter/whitechapter_thumbnail.png",
     "description": "Clothing printed with your favourite novel."
   }
