@@ -90,7 +90,7 @@ app.post('/contact', function(req, res) {
     console.log(response.headers);
     if (error) {
       console.log(error);
-      res.status(500).send('SOmething broke')
+      res.status(500).send('Oops. Something broke.')
     } else {
       res.redirect('/contact-complete');
     }
