@@ -67,6 +67,7 @@
 					<li><a href="/">Home</a></li>
 					<li><a href="/shopify-resources">Resources</a></li>
 					<li><a href="/blog">Blog</a></li>
+					<li><a href="/submit">Submit</a></li>
 					<li><a href="/contact">Contact</a></li>
 				</ul>
 			</div>
@@ -85,7 +86,8 @@
 						<li><a href="/">Home</a></li>
 						<li><a href="/shopify-resources">Resources</a></li>
 						<li><a href="/blog">Blog</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="/submit">Submit</a></li>
+						<li><a href="/contact">Contact</a></li>
 						<li><input type="submit" class="btn subscribe menu" value="Subscribe" id="open-mc-popup" href="#" onclick="showMailingPopUp()";></input></li>
 					</ul>
 				</nav>
@@ -102,45 +104,133 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-									<h2>Contact Us</h2>
-									<h3>Have any questions? Want to get in touch with us about doing an interview or reach out to one of our founders? Send us an email.</h3>
-								</div>
+									<h2>Submit your Store</h2>
+									<p>Interested in being featured on Built with Shopify? Simply fill out the form below and I'll get back to you via email with some follow up email questions.</p>
+									</div>
 							</div>
 							<div class="row">
-								<div class="col-md-4 col-md-push-8 animate-box">
-									<ul class="contact-info">
-										<li><i class="icon-globe2"></i><a href="#">www.builtwithshopify.com</a></li>
-									</ul>
-								</div>
-								<div class="col-md-8 col-md-pull-4 animate-box">
+
+								<div class="col-md-7  animate-box">
 									<div class="row">
-										<div class="col-md-6">
-											<form action="/contact" enctype="multipart/form-dat" method="post">
-												<fieldset>
-													<div class="form-group">
-														<input type="text" name="name" class="form-control" placeholder="Name" required>
+											<form action="/submit" enctype="multipart/form-dat" method="post">
+													<fieldset>
+													<!-- Name of the business -->
+													<div class="col-md-8">
+														<div class="form-group">
+															<label for="business-name">What is the name of your business?</label>
+															<input type="text" name="business-name" class="form-control" placeholder="John's Apple Store" required>
+														</div>
 													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="form-group">
-														<input type="text" name="email" class="form-control" placeholder="Email" required>
+													<!-- URL Link -->
+													<div class="col-md-12">
+														<div class="form-group">
+															<label for="website-url">What is your website URL?</label>
+															<input type="text" name="website-url" class="form-control" placeholder="www.johns-awesome-apples.com" required>
+														</div>
 													</div>
-												</div>
-												<div class="col-md-12">
-													<div class="form-group">
-														<textarea name="message" class="form-control" id="" cols="30" rows="7" placeholder="Message" required></textarea>
+													<br />
+													<!-- Name -->
+													<div class="col-md-12">
+														<div class="form-group">
+															<label for="founder-name">What is your name?</label>
+															<input type="text" name="founder-name" class="form-control" placeholder="John Applesmith" required>
+														</div>
 													</div>
-												</div>
-												<div class="col-md-12">
-													<div class="form-group">
-														<input type="submit" value="Send Message" class="btn subscribe">
+													<!-- Email Address -->
+													<div class="col-md-12">
+														<div class="form-group">
+															<label for="email-address">What is your email address?</label>
+														</br><span>Only used for sending questions</span>
+															<input type="text" name="email-address" class="form-control" placeholder="josh@johnsapples.com" required>
+														</div>
 													</div>
-												</div>
+													<!-- How would you describe it in a few words -->
+													<div class="col-md-12">
+														<div class="form-group">
+															<label for="description">How would you describe your store in a few words?</label>
+															<input type="text" name="description" class="form-control" placeholder="We sell crispy, crunchy apples." required>
+														</div>
+													</div>
+													<!-- What category / industry are you in? -->
+													<div class="col-md-12">
+														<div class="form-group">
+															<label for="industry">What industry do you operate in?</label>
+															<input type="text" name="industry" class="form-control" placeholder="Food" required>
+														</div>
+													</div>
+													<!-- Dropshipping -->
+													<div class="col-md-12">
+														<div class="form-group">
+															<label for="dropship">Do you dropship or have a subscription business?</label>
+															<input type="text" name="dropship" class="form-control" placeholder="Yes" required>
+														</div>
+													</div>
+													<!-- When did you start you store -->
+													<div class="col-md-12">
+														<div class="form-group">
+															<label for="start_date">When did you start your online store?</label>
+															<input type="text" name="start_date" class="form-control" placeholder="March, 2013" required>
+														</div>
+													</div>
+													<!-- Do you have a retail store as well? -->
+													<div class="col-md-12">
+														<div class="form-group">
+															<label for="retail">Do you also operate a retail store?</label>
+															<input type="text" name="retail" class="form-control" placeholder="Yes" required>
+														</div>
+													</div>
+													<!-- How many employees including yourself? -->
+													<div class="col-md-12">
+														<div class="form-group">
+															<label for="employees">How many employees do you have not including yourself?</label>
+															<input type="number" min="1" name="employees" class="form-control" placeholder="1" required>
+														</div>
+													</div>
+													<!-- What country are you based in? -->
+													<div class="col-md-12">
+														<div class="form-group">
+															<label for="country">What country are you based in?</label>
+															<input type="text" name="country" class="form-control" placeholder="Australia" required>
+														</div>
+													</div>
+													<!-- Average monthly revenue / order volume? -->
+													<div class="col-md-12">
+														<div class="form-group">
+															<label for="revenue">What is your average monthly revenue or order volume?</label>
+															<br /><span>This won't be shared without your consent but it will help us verify your store.</span>
+															<input type="text" name="revenue" class="form-control" placeholder="$40,000" required>
+														</div>
+													</div>
+													<!-- Anything else interesting? -->
+													<div class="col-md-12">
+														<div class="form-group">
+															<label for="revenue">Anything else you'd like to add?</label>
+															<textarea name="message" class="form-control" id="" cols="30" rows="7" placeholder="Message" required></textarea>
+														</div>
+													</div>
+													<!-- Submit Button -->
+													<div class="col-md-12">
+														<div class="form-group">
+															<input type="submit" value="Submit" class="btn subscribe">
+														</div>
+													</div>
 											</fieldset>
 										</form>
+
 									</div>
 								</div>
+									<div class="col-md-5  animate-box">
+										<h3>Why share?</h3>
+										<p>Built with Shopify is a growing community of Shopify store owners, developers and entrepreneurs.
+										By sharing your store you are showcasing it to your next potential partner, employee or developer.
+										<br />You will be helping to grow the ecommerce community and in return for sharing your story we provide a free source of traffic, PR and S.E.O links.</p>
+										<h3>Who are we looking for?</h3>
+										<p>If you have a store that is a full-time business or earning a significant side-income I'd love to hear from you.
+										Preference is given to stores who can disclose monthly order figures, sales revenue or other quantitative indicators of growth.
+										<br />Money talks, but if you have a unique or interesting store you would also be a great fit. People sell everything from <a href="/case-studies/naak-bar">insect energy bars</a>
+										to <a href="case-studies/midori-bikinis">bikinis</a> and we want to reflect that in our interviews. </p>
 
+									</div>
 							</div>
 						</div>
 					</div>

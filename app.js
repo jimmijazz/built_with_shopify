@@ -102,6 +102,43 @@ app.get('/contact-complete', function(req, res) {
   res.render('contact-complete');
 });
 
+app.get('/submit', function(req, res) {
+  res.render('submit');
+});
+
+app.post('/submit', function(req, res) {
+  var helper = require('sendgrid').mail;
+
+  var from_email = new helper.Email(req.body.email);
+  var to_email = new helper.Email("josh@builtwithshopify.com");
+  var subject = "Built With Shopify Store Submission";
+  var content = new helper.Content("text/plain", req.body.message);
+  var mail = new helper.Mail(from_email, subject, to_email, content);
+
+  var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
+  var request = sg.emptyRequest({
+    method: 'POST',
+    path: '/v3/mail/send',
+    body: mail.toJSON()
+  });
+
+  sg.API(request, function(error, response) {
+    console.log(response.statusCode);
+    console.log(response.body);
+    console.log(response.headers);
+    if (error) {
+      console.log(error);
+      res.status(500).send('Oops. Something broke.')
+    } else {
+      res.redirect('/submit-complete');
+    }
+
+  })
+});
+
+app.get('/submit-complete', function(req, res) {
+  res.render('submit-complete');
+})
 
 
 app.listen(port, function() {

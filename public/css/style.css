@@ -253,7 +253,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 768px) {
   #fh5co-main-nav ul li a {
-    font-size: 30px;
+    font-size: 25px;
     padding: 10px 0;
   }
 }
@@ -295,7 +295,9 @@ h1, h2, h3, h4, h5, h6 {
 .subscribe {
   background: #7ab55c;
   color: white;
-  margin-top: -10px;
+  padding-left: 10px !important;
+  padding-right: 10px;
+
 }
 
 .subscribe.menu {
@@ -305,6 +307,18 @@ h1, h2, h3, h4, h5, h6 {
 .subscribe:hover {
   background: #393e46;
   color: #7ab55c;
+}
+
+@media screen and (max-width: 992px) {
+  #main-nav ul li:last-child a {
+    font-size:  10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #portfoliolist .portfolio {
+    width: 50% !important;
+  }
 }
 
 .btn {
@@ -776,7 +790,7 @@ input[type="text"] {
     text-align: left !important;
   }
   #main-nav ul li a {
-    font-size: .75em;
+    font-size: .7em;
   }
   .fh5co-logo {
     font-size: 30px!important;
