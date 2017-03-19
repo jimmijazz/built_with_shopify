@@ -112,7 +112,12 @@ app.post('/submit', function(req, res) {
   var from_email = new helper.Email(req.body.email);
   var to_email = new helper.Email("josh@builtwithshopify.com");
   var subject = "Built With Shopify Store Submission";
-  var content = new helper.Content( req.body);
+
+  var user_response = ""
+  for (var response in req.body) {
+    user_response += String(response) + ":" + String(req.body[response]);
+  };
+  var content = new helper.Content("text/plain", user_response);
   var mail = new helper.Mail(from_email, subject, to_email, content);
 
   var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
