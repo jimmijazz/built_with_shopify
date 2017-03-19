@@ -1,4 +1,15 @@
 {
+  "tiny-hands" : {
+    "store_name" : "Tiny Hands",
+    "store_link" : "https://tinyhandsonline.com/",
+    "date" : "19/3/2017",
+    "author" : "Josh",
+    "responses" : "tiny_hands.ejs",
+    "data_cat"   : "food",
+    "categories" : "art food jewellery",
+    "thumbnail"  : "images/tiny_hands/tiny_hands_thumbnail.png",
+    "description": "$15K per month selling handmade, scented </br> food jewellery."
+  },
   "modern-producers" : {
     "store_name" : "Modern Producers",
     "store_link" : "https://www.modernproducers.com/",
