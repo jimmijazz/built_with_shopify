@@ -115,7 +115,7 @@ app.post('/submit', function(req, res) {
 
   var user_response = ""
   for (var response in req.body) {
-    user_response += String(response) + ":" + String(req.body[response]) + "\/";
+    user_response += String(response) + ":" + String(req.body[response]) + "\r\n";
   };
   var content = new helper.Content("text/plain", user_response);
   var mail = new helper.Mail(from_email, subject, to_email, content);
