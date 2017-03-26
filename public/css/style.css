@@ -575,6 +575,10 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
     margin-right: auto;
     margin-left: auto;
   }
+
+  .portfolio-wrapper {
+    border: 2px solid rgba(122, 181, 92, 0.0);
+  }
 }
 @media screen and (max-width: 480px) {
   #portfoliolist .portfolio {
@@ -588,12 +592,13 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
     margin-left: auto;
     width: 100% !important;
     height: 100% !important;
+    margin-left: 20px;
+
   }
 
   .portfolio-wrapper {
     width: 100% !important;
     height: 100% !important;
-    margin-left: 20px;
   }
 
   .portfolio-wrapper img {
