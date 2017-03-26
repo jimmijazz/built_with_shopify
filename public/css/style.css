@@ -559,7 +559,7 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
 
 @media screen and (max-width: 992px) {
   #portfoliolist .portfolio {
-    width: 50% !important;
+    width: 30% !important;
   }
   .tip-box-left, .tip-box-right {
     text-align: center;
@@ -569,7 +569,7 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
 
 @media screen and (max-width: 768px) {
   #portfoliolist .portfolio {
-    width: 50% !important;
+    width: 40% !important;
   }
   .portfolio {
     margin-right: 0px;
@@ -691,6 +691,7 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   line-height: 130%;
   padding-bottom: 10px;
   text-align: left;
+  padding-left: 0px;
 }
 
 .team-section-grid {
@@ -942,8 +943,12 @@ input[type="text"] {
   display: block;
   margin-bottom: 5px;
   margin-top: 5px;
+  font-weight: bold;
 }
 
+.text-title:hover {
+  color: #7ab55c;
+}
 .videowrapper {
     float: none;
     clear: both;

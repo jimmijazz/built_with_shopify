@@ -1979,8 +1979,8 @@ pre code {
 }
 
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  padding-left: -15px;
+  padding-right: -15px;
 }
 .row:before, .row:after {
   content: " ";
