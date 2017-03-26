@@ -592,6 +592,11 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
     width: 100% !important;
     height: 100% !important;
   }
+
+  .portfolio-wrapper img {
+    width: 100% !important;
+    height: 100% !important;
+  }
 }
 
 .portfolio-wrapper {
