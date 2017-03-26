@@ -586,12 +586,14 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   .portfolio {
     margin-right: auto;
     margin-left: auto;
+    width: 100% !important;
+    height: 100% !important;
   }
 
   .portfolio-wrapper {
     width: 100% !important;
     height: 100% !important;
-    margin-right: 20px;
+    margin-left: 20px;
   }
 
   .portfolio-wrapper img {
@@ -608,8 +610,6 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   border-radius: 5px;
 
 }
-
-
 
 .portfolio {
   overflow: hidden;
