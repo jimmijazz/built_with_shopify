@@ -572,7 +572,8 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
     width: 40% !important;
   }
   .portfolio {
-    margin-right: 0px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media screen and (max-width: 480px) {
