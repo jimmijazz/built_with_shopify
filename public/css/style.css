@@ -579,6 +579,7 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
 @media screen and (max-width: 480px) {
   #portfoliolist .portfolio {
     width: 40% !important;
+    max-height: 200px;
   }
   .portfolio {
     margin-right: auto;
