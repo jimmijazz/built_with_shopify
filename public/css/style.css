@@ -107,6 +107,7 @@ h1, h2, h3, h4, h5, h6 {
   -o-transform: scale(1);
   transform: scale(1);
   background: #fff;
+
 }
 .menu-show #fh5co-page {
   -webkit-transform: scale(0.9);
@@ -378,6 +379,10 @@ header .fh5co-navbar-brand .fh5co-logo:hover {
 header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co-logo:focus {
   outline: none;
   text-decoration: none;
+}
+
+.header {
+  margin-right: 0px;
 }
 
 .fh5co-nav-toggle {
