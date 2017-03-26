@@ -7,8 +7,9 @@
     "responses" : "tiny_hands.ejs",
     "data_cat"   : "food",
     "categories" : "art food jewellery",
-    "thumbnail"  : "images/tiny_hands/tiny_hands_thumbnail.png",
-    "description": "$15K per month selling handmade, scented </br> food jewellery."
+    "thumbnail"  : "images/tiny_hands/tiny_hands_web_screenshot.png",
+    "description": "Handmade, scented food jewellery",
+    "revenue"   : "$15k/mo"
   },
   "modern-producers" : {
     "store_name" : "Modern Producers",
@@ -18,8 +19,10 @@
     "responses" : "modern_producers.ejs",
     "data_cat"   : "digital",
     "categories" : "art digital",
-    "thumbnail"  : "images/modern_producers/modern_producers_shopify_thumbnail.png",
-    "description": "Grossing $40,00 monthly revenue selling </br> products and software for music producers."
+    "thumbnail"  : "images/modern_producers/website_screenshot.png",
+    "description": "Music samples and software for producers",
+    "revenue" : "$40k/mo"
+
   },
   "meraki-design-studio" : {
     "store_name" : "Meraki Design Studio",
@@ -29,8 +32,9 @@
     "responses" : "meraki_design_studio.ejs",
     "data_cat"   : "art",
     "categories" : "home art",
-    "thumbnail"  : "images/meraki/logo.png",
-    "description": "Contemporary art and foil prints."
+    "thumbnail"  : "images/meraki/website_screenshot.png",
+    "description": "Contemporary art and foil prints.",
+    "revnue": ""
   },
   "hagan" : {
     "store_name" : "Hagan",
@@ -40,8 +44,9 @@
     "responses" : "haganski.ejs",
     "data_cat"   : "sport",
     "categories" : "sport",
-    "thumbnail"  : "images/haganski/Hagan_logo.png",
-    "description": "Bringing an iconic 93 year old Austrian ski</br> mountaineering brand to the U.S."
+    "thumbnail"  : "images/haganski/website_screenshot.png",
+    "description": "93 year old Austrian ski mountaineering brand",
+    "revenue": ""
   },
   "audionation" : {
     "store_name" : "AUDIONATION",
@@ -51,8 +56,9 @@
     "responses" : "audionation.ejs",
     "data_cat"   : "gadgets",
     "categories" : "gadgets home",
-    "thumbnail"  : "images/audionation/audionation_thumbnail.png",
-    "description": "Importing high-quality, design oriented, HIFI </br> stereo products."
+    "thumbnail"  : "images/audionation/website_screenshot.png",
+    "description": "Importing design-oriented, stereo products",
+    "revenue": ""
   },
   "midori-bikinis" : {
     "store_name" : "Midori Bikinis",
@@ -62,8 +68,10 @@
     "responses" : "midori_bikinis.ejs",
     "data_cat"   : "clothing",
     "categories" : "clothing",
-    "thumbnail"  : "images/midori/midori_thumbnail.png",
-    "description": "High quality, affordable bikinis with up to 300k </br>in monthly sales."
+    "thumbnail"  : "images/midori/website_screenshot.png",
+    "description": "Brazilian bottom bikinis",
+    "revenue": "#300k/mo"
+
   },
   "the-wish-co"  : {
     "store_name" : "The Wish Co",
@@ -73,8 +81,9 @@
     "responses"  : "wishco.ejs",
     "data_cat"   : "jewellery",
     "categories" : "jewellery",
-    "thumbnail"  : "images/wishco/wishco_thumbnail.png",
-    "description": "Handcrafted jewellery with an equally unique customer</br> experience."
+    "thumbnail"  : "images/wishco/website_screenshot.png",
+    "description": "Handcrafted, nature jewellery",
+    "revenue": ""
   },
   "titan-survival" : {
     "store_name"   : "TITAN Survival",
@@ -84,8 +93,9 @@
     "responses"    : "titan_survival.ejs",
     "data_cat"   : "gadgets",
     "categories" : "lifestyle gadgets",
-    "thumbnail"  : "images/titan/titan_thumbnail_orange.png",
-    "description": "Iraq veterans selling some of the toughest paracord</br> on the market."
+    "thumbnail"  : "images/titan/website_screenshot.png",
+    "description": "The toughest parachord and survival gear",
+    "revenue": ""
   },
   "naak-bar" : {
     "store_name" : "Naak",
@@ -95,8 +105,9 @@
     "responses"  : "naak.ejs",
     "data_cat"   : "food",
     "categories" : "food",
-    "thumbnail"  : "images/naak/naak_thumbnail.png",
-    "description": "Montreal team creating delicious, environmentally</br> friendly energy bars from crickets."
+    "thumbnail"  : "images/naak/website_screenshot.png",
+    "description": "Emergy bars made from crickets",
+    "revenue": ""
   },
   "kitchen-pro"  : {
     "store_name" : "Kitchen Pro",
@@ -106,8 +117,9 @@
     "responses"  : "kitchen_pro.ejs",
     "data_cat"   : "home",
     "categories" : "home dropshipping",
-    "thumbnail"  : "images/kitchenpro/kitchenpro_thumbnail.png",
-    "description": "Creating an automated business selling high quality</br> kitchenware with FBA."
+    "thumbnail"  : "images/kitchenpro/website_screenshot.png",
+    "description": "Automated kitchenware using F.B.A",
+    "revenue": ""
   },
   "luks-linen" : {
     "store_name" : "Luks Linen",
@@ -117,8 +129,10 @@
     "responses" : "luks_linen.ejs",
     "data_cat"   : "home",
     "categories" : "art home",
-    "thumbnail"  : "images/lukslinen/luks_thumbnail.png",
-    "description": "High quality linen inspired by a vacation in Turkey."
+    "thumbnail"  : "images/lukslinen/website_screenshot.png",
+    "description": "Ethically sourced Turkish linen",
+    "revenue": ""
+
   },
   "jutah-studios" : {
     "store_name" : "Jutah Studios",
@@ -128,8 +142,10 @@
     "responses" : "jutah_studios.ejs",
     "data_cat"   : "clothing",
     "categories" : "clothing",
-    "thumbnail"  : "images/jutah/jutah_thumbnail.png",
-    "description": "U.K retailer selling clothing brands you can't</br>find anywhere else."
+    "thumbnail"  : "images/jutah/website_screenshot.png",
+    "description": "Clothing brands you won't find anywhere else",
+    "revenue": ""
+
   },
   "jewelv" : {
     "store_name" : "JEWELv",
@@ -139,8 +155,9 @@
     "responses"  : "jewelv.ejs",
     "data_cat"   : "jewellery",
     "categories" : "jewellery",
-    "thumbnail"  : "images/jewelv/jewelv_thumbnail.png",
-    "description": "JEWELv uses custom Shopify software to let customers</br> design their own jewellery."
+    "thumbnail"  : "images/jewelv/website_screenshot.png",
+    "description": "Design your own jewellery",
+    "revenue": ""
   },
   "socco-designs" : {
     "store_name" : "Socco Designs",
@@ -150,8 +167,10 @@
     "responses" : "socco_designs.ejs",
     "data_cat"   : "art",
     "categories" : "home art",
-    "thumbnail"  : "images/socco/socco_designs_thumbnail.png",
-    "description": "Authentic Moroccan rugs & home decor."
+    "thumbnail"  : "images/socco/website_screenshot.png",
+    "description": "Authentic Moroccan rugs & home decor.",
+    "revenue": ""
+
   },
   "silica-gelly" : {
     "store_name" : "Silica Gelly",
@@ -161,8 +180,9 @@
     "responses" : "silica_gelly.ejs",
     "data_cat"   : "commercial",
     "categories" : "commercial home",
-    "thumbnail"  : "images/silicagelly/silicagelly.png",
-    "description": "Silica gelly packaging for small consumer packages."
+    "thumbnail"  : "images/silicagelly/website_screenshot.png",
+    "description": "Silica gelly packaging for small consumer packages.",
+    "revenue": ""
   },
   "white-chapter" : {
     "store_name" : "White Chapter",
@@ -172,7 +192,8 @@
     "responses" : "white_chapter.ejs",
     "data_cat"   : "clothing",
     "categories" : "clothing art dropshipping",
-    "thumbnail"  : "images/whitechapter/whitechapter_thumbnail.png",
-    "description": "Clothing printed with your favourite novel."
+    "thumbnail"  : "images/whitechapter/website_screenshot.png",
+    "description": "Clothing printed with your favourite novel.",
+    "revenue": ""
   }
 }

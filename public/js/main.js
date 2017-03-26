@@ -57,6 +57,7 @@
 
 				i++;
 
+
 				$(this.element).addClass('item-animate');
 				setTimeout(function(){
 
