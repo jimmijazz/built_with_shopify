@@ -589,7 +589,7 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   }
 
   .portfolio-wrapper {
-    max-height: 300px!important;
+    /*height: 300px!important;*/
     box-shadow: 0 0 2px 2px rgba(122, 181, 92, 0.8);
     margin-left: 10px!important;
     margin-right: 10px!important;
