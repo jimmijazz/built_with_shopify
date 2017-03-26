@@ -587,6 +587,10 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
     margin-right: auto;
     margin-left: auto;
   }
+
+  .portfolio-wrapper{
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .portfolio-wrapper {
