@@ -564,7 +564,6 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   }
 
   .portfolio img {
-    max-height: 300px!important;
     /*max-height: 400px!important;*/*/
   }
   .tip-box-left, .tip-box-right {
@@ -576,7 +575,6 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
 @media screen and (max-width: 768px) {
    .portfolio {
       margin-right: 0px!important;
-
   }
 }
 
