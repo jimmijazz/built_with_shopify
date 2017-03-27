@@ -1,6 +1,7 @@
 var express = require('express');
 var path = require('path');
 var interviews = require('./interviews');
+var blogs = require('./blog');
 var blog = require('./blog');
 var bodyParser = require('body-parser');
 
@@ -19,6 +20,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function(req, res) {
   res.render('index', {
     interviews : interviews
+  });
+});
+
+app.get('/blog', function(req, res) {
+  res.render('blog', {
+    blog : blog
   });
 });
 
@@ -51,10 +58,6 @@ app.get('/shopify-resources', function(req, res) {
 
 app.get('/resources', function(req, res) {
   res.redirect('/shopify-resources');
-});
-
-app.get('/blog', function(req, res) {
-  res.render('blog');
 });
 
 app.get('/contact', function(req, res) {

@@ -1,12 +1,20 @@
 {
+  "common-mistakes-of-shopify-stores-to-avoid" : {
+    "title"      : "Common Mistakes of Shopify Stores to Avoid",
+    "date"       : "27/3/17",
+    "author"     : "Secomapp (Partner)",
+    "response"   : "common-mistakes-of-shopify-stores-to-avoid",
+    "category"   : "blog",
+    "thumbnail"  : "",
+    "description": "Shopify experts Secomapp discuss some of the most common mistakes of Shopify store owners."
+  },
   "brisbane-shopify-meetup-2017" : {
     "title"      : "Brisbane Shopify Meetup 2017",
     "date"       : "12/3/17",
     "author"     : "Josh",
-    "post"       : "",
+    "response"   : "brisbane-shopify-meetup-2017",
     "category"   : "blog",
     "thumbnail"  : "",
     "description": "An overview of the biggest Shopify meetup in the Southern Hemisphere."
-
   }
 }
