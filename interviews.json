@@ -1,4 +1,16 @@
 {
+  "mmore-cases" : {
+    "store_name" : "MMORE",
+    "store_link" : "https://www.mmore.net/",
+    "date" : "29/3/2017",
+    "author" : "Josh",
+    "responses" : "mmore.ejs",
+    "data_cat"   : "gadgets",
+    "categories" : "gadgets art",
+    "thumbnail"  : "images/mmore/mmore_shopify_website_screenshot.jpg",
+    "description": "Unique iphone cases made with love in Slovenia",
+    "revenue"   : ""
+  },
   "tiny-hands" : {
     "store_name" : "Tiny Hands",
     "store_link" : "https://tinyhandsonline.com/",
