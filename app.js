@@ -29,7 +29,7 @@ app.get('/blog', function(req, res) {
   });
 });
 
-app.get('/case-studies/:store', function(req,res, next) {
+app.get('/shopify-case-studies/:store', function(req,res, next) {
   var store = interviews[req.params.store];
   res.render('interviews/' + store.store_name.replace(new RegExp(" ", "g"), "_").toLowerCase(), {
     title : store.store_name,
