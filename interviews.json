@@ -1,4 +1,16 @@
 {
+  "reluctant-trading-experiment" : {
+    "store_name" : "The Reluctant Trading Experiment",
+    "store_link" : "https://reluctanttrading.com",
+    "date" : "30`/3/2017",
+    "author" : "Josh",
+    "responses" : "reluctant_trading_experiment.ejs",
+    "data_cat"   : "food",
+    "categories" : "food commercial",
+    "thumbnail"  : "images/reluctant_trading_experiment/shopify_reluctant_trading_co_screenshot.jpg",
+    "description": "Salt, pepper and spices sourced direct from India",
+    "revenue"   : ""
+  },
   "mmore-cases" : {
     "store_name" : "MMORE",
     "store_link" : "https://www.mmore.net/",
