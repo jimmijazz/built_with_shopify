@@ -30,13 +30,15 @@ app.get('/blog', function(req, res) {
 });
 
 app.get('/shopify-case-studies/:store', function(req,res, next) {
-  var store = interviews[req.params.store];
-  res.render('interviews/' + store.store_name.replace(new RegExp(" ", "g"), "_").toLowerCase(), {
-    title : store.store_name,
-    content : store.responses,
-    date :store.date,
-    author: store.author,
-    link: store.store_link
+  var s = interviews[req.params.store];
+
+  res.render('interviews/' + s.store_name.replace(new RegExp(" ", "g"), "_").toLowerCase(), {
+    title : s.store_name,
+    content : s.responses,
+    date :s.date,
+    author: s.author,
+    link: s.store_link,
+    page_link: "http://www.builtwithshopify.com/shopify-case-studies/" + req.params.store
   } )
 });
 

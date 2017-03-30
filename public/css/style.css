@@ -36,16 +36,10 @@ a:not(.article-link):not(.text-title) {
   transition: 0.5s;
 }
 
-a:hover:not(.article-link):not(.text-title):not(span .fh5co-logo) {
+a:hover:not(.article-link):not(.text-title):not(span .fh5co-logo):not(#share-buttons a) {
   text-decoration: none;
   border-bottom: 1px solid #336E14;
-  box-shadow: 0px -4px 0px #336E14 inset;
-}
-
-a:hover:not(.article-link):not(.text-title):not(span .fh5co-logo) {
-  text-decoration: none;
-  border-bottom: 1px solid #336E14;
-  box-shadow: 0px -4px 0px #336E14 inset;
+  /*box-shadow: 0px -4px 0px #336E14 inset;*/
 }
 
 .fh5co-navbar-brand a:hover {
@@ -978,6 +972,19 @@ input[type="text"] {
     width: 100%;
     height: 100%;
 
+}
+
+#share-buttons a span {
+  padding: 10px;
+}
+
+#share-buttons a span:hover {
+  color: #7ab55c;
+  border: none!important;
+}
+
+#share-buttons a:hover {
+  text-decoration: none!important;
 }
 
 /* Dropdown Menu from Neat theme */

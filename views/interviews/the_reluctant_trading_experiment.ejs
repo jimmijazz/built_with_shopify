@@ -18,6 +18,32 @@
                     <div class="col-md-8 col-md-offset-2 text-center heading-section">
                         <h2><%= title %></h2>
                         <h3>After selling his company, Scott started <a href="<%= link %>">The Reluctant Trading Experiment</a>. He talks about sustainably growing his business around authenticity and a fantastic product.</h3>
+                        <div id="share-buttons">
+                            <!-- Email -->
+                            <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> " >
+                              <span class="fa fa-envelope" aria-hidden="true"></span>
+                            </a>
+                            <!-- Facebook -->
+                            <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
+                              <span class="fa fa-facebook" aria-hidden="true"></span>
+                            </a>
+                            <!-- Google+ -->
+                            <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
+                              <span class="fa fa-google-plus" aria-hidden="true"></span>
+                            </a>
+                            <!-- LinkedIn -->
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
+                              <span class="fa fa-linkedin" aria-hidden="true"></span>
+                            </a>
+                            <!-- Reddit -->
+                            <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
+                              <span class="fa fa-reddit-alien" aria-hidden="true"></span>
+                            </a>
+                            <!-- Twitter -->
+                            <a href="https://twitter.com/share?url=<%= page_link %>&amp;text="Shopify Case Study"&amp;hashtags=Shopify" target="_blank">
+                              <span class="fa fa-twitter" aria-hidden="true"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="row fh5co-services-single">
@@ -140,12 +166,42 @@
                               <p>I find it absolutely unbelievable that you can have a business using Shopify and have a business that looks like a business a hundred times your size and have all the professional things that much larger businesses do using apps and tools like Mailchimp. The trick is knowing which tools to use and where it makes sense because you can screw up your business if you start outsourcing everything and someone else is handling your fulfilment and sending out the wrong products. You have to be careful about maintaining your brand identity and the thing that makes you special. Anyone can sell anything online now, but if you&rsquo;re not selling good product you don&rsquo;t have a point of difference.</p>
                               <h4><strong>As someone who has founded multiple businesses, do you have any tips for people looking to start a business?</strong></h4>
                               <p>You have to be passionate about what you&rsquo;re doing and also realistic that it&rsquo;s going to take a while. To turn a profit on a new business, if you&rsquo;re starting from scratch, you have to be realistic that it&rsquo;s probably going to take you two or three years if you want to be successful. You can&rsquo;t expect to start selling something tomorrow on your own website and have people come overnight. I think people need to validate what they are doing, like I did with the pepper and salt, by finding and talking to people they can trust to help them validate whether what they are doing will be different enough for people to pull out their wallet and pay for something, and come back and do it again. You really have to be focused and have enough energy to go for two or three years to figure it out. You also can&rsquo;t sit there and figure it all out on a piece of paper. A lot of stuff you have to learn as you go and be able to take the information you&rsquo;re getting and keep modifying what you&rsquo;re doing as you&rsquo;re going along.</p>
-                              <h4><strong><br /><br /><br /><br /></strong></h4>
                               <!-- End Interview -->
+
+                              <!-- Share Buttons (Thanks to Simple Share.com) -->
+                              <div id="share-buttons">
+                                  <!-- Email -->
+                                  <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> " >
+                                    <span class="fa fa-envelope" aria-hidden="true"></span>
+                                  </a>
+                                  <!-- Facebook -->
+                                  <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
+                                    <span class="fa fa-facebook" aria-hidden="true"></span>
+                                  </a>
+                                  <!-- Google+ -->
+                                  <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
+                                    <span class="fa fa-google-plus" aria-hidden="true"></span>
+                                  </a>
+                                  <!-- LinkedIn -->
+                                  <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
+                                    <span class="fa fa-linkedin" aria-hidden="true"></span>
+                                  </a>
+                                  <!-- Reddit -->
+                                  <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
+                                    <span class="fa fa-reddit-alien" aria-hidden="true"></span>
+                                  </a>
+                                  <!-- Twitter -->
+                                  <a href="https://twitter.com/share?url=<%= page_link %>&amp;text="Shopify Case Study"&amp;hashtags=Shopify" target="_blank">
+                                    <span class="fa fa-twitter" aria-hidden="true"></span>
+                                  </a>
+                              </div>
+
+
                               <% include ../snippets/mailchimp_footer.ejs %>
 
-                            </div>
+
                         </div>
+
                         <% include ../snippets/disqus.ejs %>
 
                     </div>
