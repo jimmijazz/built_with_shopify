@@ -9,9 +9,15 @@
 <head>
     <% include ../snippets/header.ejs %>
 </head>
-<body>
-  <% include ../snippets/nav.ejs %>
 
+<body>
+    <nav id="fh5co-main-nav" role="navigation">
+        <% include ../snippets/mobile_nav.ejs %>
+    </nav>
+    <div id="fh5co-page">
+        <header>
+            <% include ../snippets/nav.ejs %>
+        </header>
         <div id="fh5co-services-section">
             <div class="container">
                 <div class="row">
@@ -21,28 +27,28 @@
                         <!-- Share Buttons (Thanks to Simple Share.com) -->
                         <div id="share-buttons">
                             <!-- Email -->
-                            <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> " >
-                              <span class="fa fa-envelope" aria-hidden="true"></span>
+                            <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> ">
+                                <span class="fa fa-envelope" aria-hidden="true"></span>
                             </a>
                             <!-- Facebook -->
                             <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
-                              <span class="fa fa-facebook" aria-hidden="true"></span>
+                                <span class="fa fa-facebook" aria-hidden="true"></span>
                             </a>
                             <!-- Google+ -->
                             <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
-                              <span class="fa fa-google-plus" aria-hidden="true"></span>
+                                <span class="fa fa-google-plus" aria-hidden="true"></span>
                             </a>
                             <!-- LinkedIn -->
                             <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
-                              <span class="fa fa-linkedin" aria-hidden="true"></span>
+                                <span class="fa fa-linkedin" aria-hidden="true"></span>
                             </a>
                             <!-- Reddit -->
                             <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
-                              <span class="fa fa-reddit-alien" aria-hidden="true"></span>
+                                <span class="fa fa-reddit-alien" aria-hidden="true"></span>
                             </a>
                             <!-- Twitter -->
-                            <a href="https://twitter.com/share?url=<%= page_link %>&amp;text="Shopify Case Study"&amp;hashtags=Shopify" target="_blank">
-                              <span class="fa fa-twitter" aria-hidden="true"></span>
+                            <a href="https://twitter.com/share?url=<%= page_link %>&amp;text=" Shopify Case Study "&amp;hashtags=Shopify" target="_blank">
+                                <span class="fa fa-twitter" aria-hidden="true"></span>
                             </a>
                         </div>
                     </div>
@@ -53,69 +59,74 @@
                         <div class="fh5co-services">
                             <div class="holder-section">
 
-                              <h4><strong>Could you tell us a bit about the story behind Luks Linen and what you sell?</strong></h4>
-                              <p><a href="<%= link %>">L&uuml;ks Linen</a> is a purveyor of handwoven home and lifestyle goods. We work with family ateliers in Southern Turkey to produce lifetime lasting products including towels, blankets, throws and cushions.</p>
+                                <h4><strong>Could you tell us a bit about the story behind Luks Linen and what you sell?</strong></h4>
+                                <p><a href="<%= link %>">L&uuml;ks Linen</a> is a purveyor of handwoven home and lifestyle goods. We work with family ateliers in Southern Turkey to produce lifetime lasting products including towels, blankets, throws and
+                                    cushions.</p>
                                 <img class="img-responsive" alt="Luks Linen Shopify" src="/images/lukslinen/luks_linen_shopify.png">
                                 <figcaption class="figure-caption text-center">Handwoven, ethically sourced fabrics</figcaption>
                                 <br />
-                              <p>L&uuml;ks was a sun-bed epiphany, whilst holidaying in Kalkan 3 years ago I noticed the locals using beautiful cotton peshtemals not only as beach towels but also as sarongs and wraps. A few hundred miles from home I thought that I could set up a business
-                                  importing and selling these here in the UK. The cultural narrative and artisan craft behind these products was the icing on the cake and allowed me to fulfil a lifetime passion to work with and support local craftsmanship.</p>
-                                  <img class="img-responsive" alt="Luks Linen Shopify" src="/images/lukslinen/handmade_luks_linen_shopify.png"> <br />
-                              <h4><strong>Has ecommerce been apart of Luks linen since you started? When did you get started with Shopify and why did you choose it?</strong></h4>
-                              <p>Yes, absolutely, whilst we do wholesale to a few select retailers. The vision was always to work online as it automatically gives us a much broader reach. We now work with Paypal globally and are localised in over 40 countries.</p>
-                              <h4><strong>What are your most successful marketing avenues?</strong></h4>
-                              <p>Facebook advertising has always seen an uplift in conversions although Instagram is becoming increasingly important to us as the visual nature of our products lends itself to the platform.</p>
-                              <p>Growing our email list and consistent communication with existing customers has also paid dividends - as an ethical company with sustainable ethics and lifetime products we have a rich story to tell (in addition to promotions, new products and offers).</p>
-                              <p>Community networking has also been very beneficial to L&uuml;ks as a result of which we have been able to increase our presence and brand visibility, collaborate on partner projects and garner editorial coverage. I cannot stress the importance of PR in
-                                  the marketing mix.</p>
-                              <p>We are also venturing into live events for the first time this year - so we&rsquo;ll see how that goes.</p>
-                              <h4><strong>Did you build your Shopify store yourself or hire a designer and how long did it take to launch?</strong></h4>
-                              <p>I initially built our Shopify store myself. I come from a design and advertising background and whilst I understood the importance of UX and how a site should look actually making it happen was a new experience for me and one that I really enjoyed. It
-                                  has also been commercially beneficial to know the ins and outs of my site so I am not reliant on 3rd parties.</p>
-                              <h4><strong>What theme are you using? Have you done any theme customizations?</strong></h4>
-                              <p>Currently we are using <a href="http://react-white.myshopify.com/">React</a>, however we are in the process of updating the site which has been as is for 2 years now and for the refresh we did employ a designer to create customizations.</p>
-                              <h4><strong>What Shopify apps do you use? Which apps are most important to your business? </strong></h4>
-                              <p>Where to start&hellip;</p>
-                              <ul>
-                                  <li>We use <a href="http://1.shopifytrack.com/SHTN">Conversio</a>&nbsp;for personalised customer receipts and to allow us to offer repeat business incentives and upsell opportunities.</li>
-                                  <li><a href="http://1.shopifytrack.com/SHU7">Kit</a>&nbsp;is our virtual digital assistant and they manage all of our automated sales responses along with running business reports and Facebook Ad campaigns.</li>
-                                  <li>We integrate with <a href="http://1.shopifytrack.com/SHUN">Mailchimp</a>&nbsp;to capture all sign ups and to manage email campaigns</li>
-                                  <li><a href="http://1.shopifytrack.com/SHUd">Privy</a>&nbsp;for pop-up sign ups</li>
-                                  <li><a href="http://1.shopifytrack.com/SHUx">SEO Manager</a>&nbsp;has been a lifesaver in providing really easy to implement SEO best practices</li>
-                                  <li><a href="http://1.shopifytrack.com/SHWJ">Welcome Header Bar</a>&nbsp;is great for shipping and promotional info such as flash sales</li>
-                                  <li><a title="Yotpo shopify social reviews" href="http://1.shopifytrack.com/SHWN">Yotpo</a>&nbsp;- for customer reviews</li>
-                                  <li><a href="http://1.shopifytrack.com/SHT3">Affiliatly</a>&nbsp;to manage our 3rd party partners</li>
-                              </ul>
-                              <h4><strong>What would you do differently if you had to start over? Are there any blogs or resources that have been helpful for you?</strong></h4>
-                              <p>Hmmm - I don&rsquo;t like to dwell on what has been as it has all been a learning curve. One thing I will say is that I would have done more homework on understanding what all the web builder platforms offered - I made the mistake of building my website on another platform before realising Paypal was not an option which is when I discovered Shopify - and thank goodness I did!</p>
-                              <!-- Share Buttons (Thanks to Simple Share.com) -->
-                              <div id="share-buttons">
-                                  <!-- Email -->
-                                  <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> " >
-                                    <span class="fa fa-envelope" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Facebook -->
-                                  <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
-                                    <span class="fa fa-facebook" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Google+ -->
-                                  <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
-                                    <span class="fa fa-google-plus" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- LinkedIn -->
-                                  <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
-                                    <span class="fa fa-linkedin" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Reddit -->
-                                  <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
-                                    <span class="fa fa-reddit-alien" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Twitter -->
-                                  <a href="https://twitter.com/share?url=<%= page_link %>&amp;text="Shopify Case Study"&amp;hashtags=Shopify" target="_blank">
-                                    <span class="fa fa-twitter" aria-hidden="true"></span>
-                                  </a>
-                              </div>
-                              <% include ../snippets/mailchimp_footer.ejs %>
+                                <p>L&uuml;ks was a sun-bed epiphany, whilst holidaying in Kalkan 3 years ago I noticed the locals using beautiful cotton peshtemals not only as beach towels but also as sarongs and wraps. A few hundred miles from home I thought
+                                    that I could set up a business importing and selling these here in the UK. The cultural narrative and artisan craft behind these products was the icing on the cake and allowed me to fulfil a lifetime passion to work
+                                    with and support local craftsmanship.</p>
+                                <img class="img-responsive" alt="Luks Linen Shopify" src="/images/lukslinen/handmade_luks_linen_shopify.png"> <br />
+                                <h4><strong>Has ecommerce been apart of Luks linen since you started? When did you get started with Shopify and why did you choose it?</strong></h4>
+                                <p>Yes, absolutely, whilst we do wholesale to a few select retailers. The vision was always to work online as it automatically gives us a much broader reach. We now work with Paypal globally and are localised in over 40 countries.</p>
+                                <h4><strong>What are your most successful marketing avenues?</strong></h4>
+                                <p>Facebook advertising has always seen an uplift in conversions although Instagram is becoming increasingly important to us as the visual nature of our products lends itself to the platform.</p>
+                                <p>Growing our email list and consistent communication with existing customers has also paid dividends - as an ethical company with sustainable ethics and lifetime products we have a rich story to tell (in addition to promotions,
+                                    new products and offers).</p>
+                                <p>Community networking has also been very beneficial to L&uuml;ks as a result of which we have been able to increase our presence and brand visibility, collaborate on partner projects and garner editorial coverage. I cannot
+                                    stress the importance of PR in the marketing mix.</p>
+                                <p>We are also venturing into live events for the first time this year - so we&rsquo;ll see how that goes.</p>
+                                <h4><strong>Did you build your Shopify store yourself or hire a designer and how long did it take to launch?</strong></h4>
+                                <p>I initially built our Shopify store myself. I come from a design and advertising background and whilst I understood the importance of UX and how a site should look actually making it happen was a new experience for me and
+                                    one that I really enjoyed. It has also been commercially beneficial to know the ins and outs of my site so I am not reliant on 3rd parties.</p>
+                                <h4><strong>What theme are you using? Have you done any theme customizations?</strong></h4>
+                                <p>Currently we are using <a href="http://react-white.myshopify.com/">React</a>, however we are in the process of updating the site which has been as is for 2 years now and for the refresh we did employ a designer to create
+                                    customizations.</p>
+                                <h4><strong>What Shopify apps do you use? Which apps are most important to your business? </strong></h4>
+                                <p>Where to start&hellip;</p>
+                                <ul>
+                                    <li>We use <a href="http://1.shopifytrack.com/SHTN">Conversio</a>&nbsp;for personalised customer receipts and to allow us to offer repeat business incentives and upsell opportunities.</li>
+                                    <li><a href="http://1.shopifytrack.com/SHU7">Kit</a>&nbsp;is our virtual digital assistant and they manage all of our automated sales responses along with running business reports and Facebook Ad campaigns.</li>
+                                    <li>We integrate with <a href="http://1.shopifytrack.com/SHUN">Mailchimp</a>&nbsp;to capture all sign ups and to manage email campaigns</li>
+                                    <li><a href="http://1.shopifytrack.com/SHUd">Privy</a>&nbsp;for pop-up sign ups</li>
+                                    <li><a href="http://1.shopifytrack.com/SHUx">SEO Manager</a>&nbsp;has been a lifesaver in providing really easy to implement SEO best practices</li>
+                                    <li><a href="http://1.shopifytrack.com/SHWJ">Welcome Header Bar</a>&nbsp;is great for shipping and promotional info such as flash sales</li>
+                                    <li><a title="Yotpo shopify social reviews" href="http://1.shopifytrack.com/SHWN">Yotpo</a>&nbsp;- for customer reviews</li>
+                                    <li><a href="http://1.shopifytrack.com/SHT3">Affiliatly</a>&nbsp;to manage our 3rd party partners</li>
+                                </ul>
+                                <h4><strong>What would you do differently if you had to start over? Are there any blogs or resources that have been helpful for you?</strong></h4>
+                                <p>Hmmm - I don&rsquo;t like to dwell on what has been as it has all been a learning curve. One thing I will say is that I would have done more homework on understanding what all the web builder platforms offered - I made
+                                    the mistake of building my website on another platform before realising Paypal was not an option which is when I discovered Shopify - and thank goodness I did!</p>
+                                <!-- Share Buttons (Thanks to Simple Share.com) -->
+                                <div id="share-buttons">
+                                    <!-- Email -->
+                                    <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> ">
+                                        <span class="fa fa-envelope" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- Facebook -->
+                                    <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
+                                        <span class="fa fa-facebook" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- Google+ -->
+                                    <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
+                                        <span class="fa fa-google-plus" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- LinkedIn -->
+                                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
+                                        <span class="fa fa-linkedin" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- Reddit -->
+                                    <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
+                                        <span class="fa fa-reddit-alien" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- Twitter -->
+                                    <a href="https://twitter.com/share?url=<%= page_link %>&amp;text=" Shopify Case Study "&amp;hashtags=Shopify" target="_blank">
+                                        <span class="fa fa-twitter" aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                                <% include ../snippets/mailchimp_footer.ejs %>
 
                             </div>
                         </div>
@@ -127,7 +138,12 @@
                 </div>
             </div>
         </div>
-        <% include ../snippets/footer.ejs %>
-  </body>
+
+        <footer>
+            <% include ../snippets/footer.ejs %>
+        </footer>
+    </div>
+    <% include ../snippets/page_scripts.ejs %>
+</body>
 
 </html>

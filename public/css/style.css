@@ -252,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 768px) {
   #fh5co-main-nav ul li a {
-    font-size: .3em;
+    /*font-size: .3em;*/
     padding: 10px 0;
   }
 }
@@ -638,6 +638,11 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   -o-transform: scale(1.1);
   transform: scale(1.1);*/
 
+}
+
+.img-responsive {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .portfolio-wrapper {

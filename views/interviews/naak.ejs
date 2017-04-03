@@ -9,9 +9,15 @@
 <head>
     <% include ../snippets/header.ejs %>
 </head>
-<body>
-  <% include ../snippets/nav.ejs %>
 
+<body>
+    <nav id="fh5co-main-nav" role="navigation">
+        <% include ../snippets/mobile_nav.ejs %>
+    </nav>
+    <div id="fh5co-page">
+        <header>
+            <% include ../snippets/nav.ejs %>
+        </header>
         <div id="fh5co-services-section">
             <div class="container">
                 <div class="row">
@@ -21,28 +27,28 @@
                         <!-- Share Buttons (Thanks to Simple Share.com) -->
                         <div id="share-buttons">
                             <!-- Email -->
-                            <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> " >
-                              <span class="fa fa-envelope" aria-hidden="true"></span>
+                            <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> ">
+                                <span class="fa fa-envelope" aria-hidden="true"></span>
                             </a>
                             <!-- Facebook -->
                             <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
-                              <span class="fa fa-facebook" aria-hidden="true"></span>
+                                <span class="fa fa-facebook" aria-hidden="true"></span>
                             </a>
                             <!-- Google+ -->
                             <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
-                              <span class="fa fa-google-plus" aria-hidden="true"></span>
+                                <span class="fa fa-google-plus" aria-hidden="true"></span>
                             </a>
                             <!-- LinkedIn -->
                             <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
-                              <span class="fa fa-linkedin" aria-hidden="true"></span>
+                                <span class="fa fa-linkedin" aria-hidden="true"></span>
                             </a>
                             <!-- Reddit -->
                             <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
-                              <span class="fa fa-reddit-alien" aria-hidden="true"></span>
+                                <span class="fa fa-reddit-alien" aria-hidden="true"></span>
                             </a>
                             <!-- Twitter -->
-                            <a href="https://twitter.com/share?url=<%= page_link %>&amp;text="Shopify Case Study"&amp;hashtags=Shopify" target="_blank">
-                              <span class="fa fa-twitter" aria-hidden="true"></span>
+                            <a href="https://twitter.com/share?url=<%= page_link %>&amp;text=" Shopify Case Study "&amp;hashtags=Shopify" target="_blank">
+                                <span class="fa fa-twitter" aria-hidden="true"></span>
                             </a>
                         </div>
                     </div>
@@ -52,77 +58,80 @@
                     <div class="col-md-12 animate-box">
                         <div class="fh5co-services">
                             <div class="holder-section">
-                              <h4><strong>What was the motivation behind starting Naak and when did you get started with Shopify?</strong></h4>
-                              <p>We want to develop a product to help athletes and active people who want a natural and eco-friendly nutrition. We started with shopify in August 2016.</p>
-                              <img class="img-responsive" alt="Luks Linen Shopify" src="/images/naak/naak_bar_shopify.png">
-                              <figcaption class="figure-caption text-center">Naak sell a range of products aimed at atheletes</figcaption>
+                                <h4><strong>What was the motivation behind starting Naak and when did you get started with Shopify?</strong></h4>
+                                <p>We want to develop a product to help athletes and active people who want a natural and eco-friendly nutrition. We started with shopify in August 2016.</p>
+                                <img class="img-responsive" alt="Luks Linen Shopify" src="/images/naak/naak_bar_shopify.png">
+                                <figcaption class="figure-caption text-center">Naak sell a range of products aimed at atheletes</figcaption>
 
-                              <br /><div class=" col-md-3 animate-box tip-box-right pull-right">
-                                <h4 class="tip-header">Store Fact! <span class="tip-store-fact fa fa-bug" aria-hidden="true"></span></h4>
-                                <span>Crickets have 2 x more protein than beef, 1.6x more calcium than milk and 2x more iron than spinach!</span>
-                              </div>
-                              <h4><strong>What are your most successful marketing avenues and tools?</strong></h4>
-                              <p>Mostly Facebook (posts and ads) and we analyse everything with <a href="https://analytics.google.com/">Google Analytics</a>, <a href="https://mixpanel.com/">Mixpanel</a>, <a href="https://www.hotjar.com/">Hotjar</a>&nbsp;(and Shopify). We also do a lot of PR, which is important when you sell cricket powered energy bars!</p>
-                              <h4><strong>Did you build your Shopify store yourself or hire a designer?</strong></h4>
-                              <p>We bought a template and did everything else ourself.</p>
-                              <h4><strong>How long did it take until you were ready to launch?</strong></h4>
-                              <p>Less than a month, but we are improving our website continually.</p>
-                              <img class="img-responsive" alt="Luks Linen Shopify" src="/images/naak/naak_bars_shopify.png">
-                              <figcaption class="figure-caption text-center">The Naak product range</figcaption><br />
-                              <h4><strong>What theme are you using? Have you done any theme customizations?</strong></h4>
-                              <p><a href="http://1.shopifytrack.com/SHVn">Pipeline</a>, yes we have customized it, added more sections etc. and a lot of html modifications</p>
-                              <h4><strong>What Shopify apps do you use? Which apps are most important to your business?</strong></h4>
-<p>
-                              <ul>
-                                <li><a href="http://1.shopifytrack.com/SHUF">Langify</a></li>
-                                <li><a href="http://1.shopifytrack.com/SHUN">Mailchimp</a></li>
-                                <li><a href="http://1.shopifytrack.com/SHUd">Privy</a></li>
-                                <li><a href="http://1.shopifytrack.com/SHUl">Recharge</a></li>
-                                <li><a href="https://apps.shopify.com/shipstation">Shipstation</a></li>
-                                <li><a href="http://1.shopifytrack.com/SHW7">Store locator</a></li>
-                                <li><a title="Yotpo Shopify app" href="http://1.shopifytrack.com/SHWN">Yotpo</a></li>
-                            </ul>
-                            </p>
+                                <br />
+                                <div class=" col-md-3 animate-box tip-box-right pull-right">
+                                    <h4 class="tip-header">Store Fact! <span class="tip-store-fact fa fa-bug" aria-hidden="true"></span></h4>
+                                    <span>Crickets have 2 x more protein than beef, 1.6x more calcium than milk and 2x more iron than spinach!</span>
+                                </div>
+                                <h4><strong>What are your most successful marketing avenues and tools?</strong></h4>
+                                <p>Mostly Facebook (posts and ads) and we analyse everything with <a href="https://analytics.google.com/">Google Analytics</a>, <a href="https://mixpanel.com/">Mixpanel</a>, <a href="https://www.hotjar.com/">Hotjar</a>&nbsp;(and
+                                    Shopify). We also do a lot of PR, which is important when you sell cricket powered energy bars!</p>
+                                <h4><strong>Did you build your Shopify store yourself or hire a designer?</strong></h4>
+                                <p>We bought a template and did everything else ourself.</p>
+                                <h4><strong>How long did it take until you were ready to launch?</strong></h4>
+                                <p>Less than a month, but we are improving our website continually.</p>
+                                <img class="img-responsive" alt="Luks Linen Shopify" src="/images/naak/naak_bars_shopify.png">
+                                <figcaption class="figure-caption text-center">The Naak product range</figcaption><br />
+                                <h4><strong>What theme are you using? Have you done any theme customizations?</strong></h4>
+                                <p><a href="http://1.shopifytrack.com/SHVn">Pipeline</a>, yes we have customized it, added more sections etc. and a lot of html modifications</p>
+                                <h4><strong>What Shopify apps do you use? Which apps are most important to your business?</strong></h4>
+                                <p>
+                                    <ul>
+                                        <li><a href="http://1.shopifytrack.com/SHUF">Langify</a></li>
+                                        <li><a href="http://1.shopifytrack.com/SHUN">Mailchimp</a></li>
+                                        <li><a href="http://1.shopifytrack.com/SHUd">Privy</a></li>
+                                        <li><a href="http://1.shopifytrack.com/SHUl">Recharge</a></li>
+                                        <li><a href="https://apps.shopify.com/shipstation">Shipstation</a></li>
+                                        <li><a href="http://1.shopifytrack.com/SHW7">Store locator</a></li>
+                                        <li><a title="Yotpo Shopify app" href="http://1.shopifytrack.com/SHWN">Yotpo</a></li>
+                                    </ul>
+                                </p>
 
-                              <p>A lot of them a crucial to our business. Langify allow us to have a bilingual store, and it&rsquo;s needed in Quebec, Shipstation made shipping easier, Recharge allow us have subscriptions.</p>
-                              <div class=" col-md-3 animate-box tip-box-right pull-right">
-                                <h4 class="tip-header">Tip! <span class="tip-bulb fa fa-lightbulb-o" aria-hidden="true"></span></h4>
-                                <span>You can translate your theme using the <a href="http://1.shopifytrack.com/SHVR">Shopify language settings</a>. You can also use these settings to <a href="http://1.shopifytrack.com/SHVN">change the checkout language of your store. </a></span>
-                              </div>
-                              <h4><strong>What does your fulfillment process look like?</strong></h4>
-                              <p>We try to ship as fast as possible, so every day we allocated time to prepare order and send everything. With Shipstation is quite easy to handle a lot of orders.</p>
-                              <h4><strong>Any other advice for Shopify store owners?</strong></h4>
-                              <p>Shopify is an excellent tool but it also has&nbsp;some limitations. So be aware of what you want to have and know your skills, focus on what will bring value to your business. Prove your product market fit before investing too much time developing your store.</p>
-                              <!-- Share Buttons (Thanks to Simple Share.com) -->
-                              <div id="share-buttons">
-                                  <!-- Email -->
-                                  <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> " >
-                                    <span class="fa fa-envelope" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Facebook -->
-                                  <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
-                                    <span class="fa fa-facebook" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Google+ -->
-                                  <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
-                                    <span class="fa fa-google-plus" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- LinkedIn -->
-                                  <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
-                                    <span class="fa fa-linkedin" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Reddit -->
-                                  <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
-                                    <span class="fa fa-reddit-alien" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Twitter -->
-                                  <a href="https://twitter.com/share?url=<%= page_link %>&amp;text="Shopify Case Study"&amp;hashtags=Shopify" target="_blank">
-                                    <span class="fa fa-twitter" aria-hidden="true"></span>
-                                  </a>
-                              </div>
-                              <% include ../snippets/mailchimp_footer.ejs %>
+                                <p>A lot of them a crucial to our business. Langify allow us to have a bilingual store, and it&rsquo;s needed in Quebec, Shipstation made shipping easier, Recharge allow us have subscriptions.</p>
+                                <div class=" col-md-3 animate-box tip-box-right pull-right">
+                                    <h4 class="tip-header">Tip! <span class="tip-bulb fa fa-lightbulb-o" aria-hidden="true"></span></h4>
+                                    <span>You can translate your theme using the <a href="http://1.shopifytrack.com/SHVR">Shopify language settings</a>. You can also use these settings to <a href="http://1.shopifytrack.com/SHVN">change the checkout language of your store. </a></span>
+                                </div>
+                                <h4><strong>What does your fulfillment process look like?</strong></h4>
+                                <p>We try to ship as fast as possible, so every day we allocated time to prepare order and send everything. With Shipstation is quite easy to handle a lot of orders.</p>
+                                <h4><strong>Any other advice for Shopify store owners?</strong></h4>
+                                <p>Shopify is an excellent tool but it also has&nbsp;some limitations. So be aware of what you want to have and know your skills, focus on what will bring value to your business. Prove your product market fit before investing
+                                    too much time developing your store.</p>
+                                <!-- Share Buttons (Thanks to Simple Share.com) -->
+                                <div id="share-buttons">
+                                    <!-- Email -->
+                                    <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> ">
+                                        <span class="fa fa-envelope" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- Facebook -->
+                                    <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
+                                        <span class="fa fa-facebook" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- Google+ -->
+                                    <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
+                                        <span class="fa fa-google-plus" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- LinkedIn -->
+                                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
+                                        <span class="fa fa-linkedin" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- Reddit -->
+                                    <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
+                                        <span class="fa fa-reddit-alien" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- Twitter -->
+                                    <a href="https://twitter.com/share?url=<%= page_link %>&amp;text=" Shopify Case Study "&amp;hashtags=Shopify" target="_blank">
+                                        <span class="fa fa-twitter" aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                                <% include ../snippets/mailchimp_footer.ejs %>
 
-                       </div>
+                            </div>
                         </div>
                         <% include ../snippets/disqus.ejs %>
 
@@ -132,7 +141,12 @@
                 </div>
             </div>
         </div>
-        <% include ../snippets/footer.ejs %>
-  </body>
+
+        <footer>
+            <% include ../snippets/footer.ejs %>
+        </footer>
+    </div>
+    <% include ../snippets/page_scripts.ejs %>
+</body>
 
 </html>

@@ -10,7 +10,14 @@
     <% include ../snippets/header.ejs %>
 </head>
 <body>
-  <% include ../snippets/nav.ejs %>
+  <nav id="fh5co-main-nav" role="navigation">
+    <% include ../snippets/mobile_nav.ejs %>
+  </nav>
+  <div id="fh5co-page">
+    <header>
+      <% include ../snippets/nav.ejs %>
+    </header>
+
 
         <div id="fh5co-services-section">
             <div class="container">
@@ -20,28 +27,28 @@
                         <h3>After selling his company, Scott started <a href="<%= link %>">The Reluctant Trading Experiment</a>. He talks about sustainably growing his business around authenticity and a fantastic product.</h3>
                         <div id="share-buttons">
                             <!-- Email -->
-                            <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> " >
-                              <span class="fa fa-envelope" aria-hidden="true"></span>
+                            <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> ">
+                                <span class="fa fa-envelope" aria-hidden="true"></span>
                             </a>
                             <!-- Facebook -->
                             <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
-                              <span class="fa fa-facebook" aria-hidden="true"></span>
+                                <span class="fa fa-facebook" aria-hidden="true"></span>
                             </a>
                             <!-- Google+ -->
                             <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
-                              <span class="fa fa-google-plus" aria-hidden="true"></span>
+                                <span class="fa fa-google-plus" aria-hidden="true"></span>
                             </a>
                             <!-- LinkedIn -->
                             <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
-                              <span class="fa fa-linkedin" aria-hidden="true"></span>
+                                <span class="fa fa-linkedin" aria-hidden="true"></span>
                             </a>
                             <!-- Reddit -->
                             <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
-                              <span class="fa fa-reddit-alien" aria-hidden="true"></span>
+                                <span class="fa fa-reddit-alien" aria-hidden="true"></span>
                             </a>
                             <!-- Twitter -->
-                            <a href="https://twitter.com/share?url=<%= page_link %>&amp;text="Shopify Case Study"&amp;hashtags=Shopify" target="_blank">
-                              <span class="fa fa-twitter" aria-hidden="true"></span>
+                            <a href="https://twitter.com/share?url=<%= page_link %>&amp;text=" Shopify Case Study "&amp;hashtags=Shopify" target="_blank">
+                                <span class="fa fa-twitter" aria-hidden="true"></span>
                             </a>
                         </div>
                     </div>
@@ -52,165 +59,263 @@
                         <div class="fh5co-services">
                             <div class="holder-section">
 
-                              <!-- Start Interview -->
-                              <h4><strong>Could you tell us about yourself?</strong></h4>
-                              <p>I was fortunate enough to have started another business a long time ago back in 1996 with a friend of mine. Childrens furniture and beddings and rugs and all sorts of things for kids rooms. This was really before ecommerce took off on the internet so we started with a catalogue. We grew our business for a few years and ended up partnering with <a href="https://www.crateandbarrel.com/">Crate and Barrel</a>, a big home furnishings retailer that was catering to adults. They helped us learn how to import and how to expand our collection. At that point we got into selling online. We were mostly a direct marketing company. </p>
+                                <!-- Start Interview -->
+                                <h4><strong>Could you tell us about yourself?</strong></h4>
+                                <p>I was fortunate enough to have started another business a long time ago back in 1996 with a friend of mine. Childrens furniture and beddings and rugs and all sorts of things for kids rooms. This was really before ecommerce
+                                    took off on the internet so we started with a catalogue. We grew our business for a few years and ended up partnering with <a href="https://www.crateandbarrel.com/">Crate and Barrel</a>, a big home furnishings retailer
+                                    that was catering to adults. They helped us learn how to import and how to expand our collection. At that point we got into selling online. We were mostly a direct marketing company. </p>
 
 
-                              <p>I helped run that company, oversaw merchandising and travelled overseas and made a lot of contacts and learned how to develop merchandise. We had about a 120 page catalogue, selling online nationwide and four stores. We grew that business until 2010 and ended up selling it to Crate and Barrel in 2010. So I was in business before this and had a lot of experience with direct marketing and growing a business online. I know how to merchandise and develop products overseas. </p>
+                                <p>I helped run that company, oversaw merchandising and travelled overseas and made a lot of contacts and learned how to develop merchandise. We had about a 120 page catalogue, selling online nationwide and four stores. We
+                                    grew that business until 2010 and ended up selling it to Crate and Barrel in 2010. So I was in business before this and had a lot of experience with direct marketing and growing a business online. I know how to merchandise
+                                    and develop products overseas. </p>
 
-                              <h4><strong>When did The Reluctant Trading Experiment first start?</strong></h4>
-                              <p>I was fortunate enough to take some time off and try to figure out what I wanted to do next. I was pretty sure I wanted to start something again, start something new, but I really wasn&rsquo;t sure what. I knew I wanted to do something on my own. I had partners in the old business and we were partners with big retailers who had their own partners in Germany so that was a complicated setup. </p>
-                              <p>I saw how everything changed when we went online in the early 2000&rsquo;s so I was pretty sure I wanted to start a web based business. I wasn&rsquo;t really sure what I wanted to sell, but I was pretty sure I wanted to do something using my contacts overseas. I wasn&rsquo;t really sure what but I knew it had to be something special that other people couldn&rsquo;t get. </p>
-                              <p>I had kept a lot of my business contacts and was always talking about different ideas. A place that I travelled to quite a bit was India and I have a friend who owns a factory down there, we used to do textiles together. His textiles business had dwindled quite a bit. He lives down south in India there in the state of Kerala which is a really tropical part of India and it&rsquo;s actually where pepper and other spices grow. He started talking to me about potentially selling this type of pepper corns called Tellicherry peppercorns, and originally I wasn&rsquo;t interested. But he was a friend of mine who I had known forever so we kind of did this dance for a while and eventually I said send me some information about the pepper and I will do some research about it in the states and start looking into it for you and see if there is a market for it. But in my head it was like pepper is pepper. It&rsquo;s all the same and a commodity product so probably the last thing in the world I would want to go into because I just considered spice a commodity product. </p>
-                              <p>My background is in marketing, merchandising and branding and I didn&rsquo;t want to sell something that was just considered the same or try and convince somebody it was different, even if it was just the same as anything else out there. There&rsquo;s plenty of spice companies here in the United States so I was like why would I want to get into that. He kind of kept after me and kept bringing it up over a series of weeks so I eventually said well, ok send me a sample. I figured that would get him off my back. And he sends me the sample of peppercorns. I&rsquo;m not a chef, but I get this sample of peppercorns in a glass jar. I take them out and grind them into my hand and smell them. And it was the most beautiful smell. I mean it was like nothing I had ever smelled. It was nothing like pepper or what you would imagine. </p>
-                              <div class="videowrapper" style="text-align: center;">
-                                <iframe src="https://player.vimeo.com/video/70552444?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                              </div>
-                            </br>
-                              <p>Most of the spices here in the states you get in the grocery stores are what I&rsquo;ve learned now are stale and sitting there forever. They have no aroma and very little flavour. So I smelled this beautiful smell and it was like wow, that&rsquo;s really different. I had been trying to figure what to do with my life and I think I was ready to do something and yet I didn&rsquo;t really know what and so I started thinking about it and then I took the pepper to some chefs here in chicago because I wanted to see if it was as good as I thought it was. Because again, I&rsquo;m not a chef, so I needed to get validation from others to see if what he was sending me was really as special as I thought it was. They were like oh my god, this is amazing. So that gave me the confidence to move forward and I thought well, maybe I&rsquo;ll call it Reluctant Trading because I was reluctant to go into business and that was an authentic story and you know I&rsquo;m a big believer in if you&rsquo;re going to go online or start a business then there should be a story behind it that is real and true. And the more you can tell your own story that is different from other people&rsquo;s stories that will help people understand what you&rsquo;re doing and that will be authentic and people really like authentic things. </p>
-                              <img class="img-responsive" style="margin-right: auto; margin-left: auto;" alt="Meraki Art Prints" src="/images/reluctant_trading_experiment/reluctant_trading_co_built_with_shopify_pepper_journey.jpg">
-                              <figcaption class="figure-caption text-center">"How many spice companies are going to go to India to see the harvest?"</figcaption>
-                              <img />
-                              <div class=" col-md-3 animate-box tip-box-right pull-right">
-                                <span style="color: #7ab55c;"class="fa fa-quote-left" aria-hidden="true"></span><span style="font-weight: 300; font-size: 18px;"> Quote </span><span style="color: #7ab55c;"class="fa fa-quote-right" aria-hidden="true"></span></br>
-                                <span>If you&rsquo;re going to go online or start a business then there should be a story behind it that is real and true.</span>
-                              </div>
-                              <p>So I thought well that&rsquo;s kind of an interesting story and it&rsquo;s true and you know this seems pretty crazy that I would go into this business and I just thought well you know I&rsquo;m not exactly sure what this business will end up being but I&rsquo;m going to start with the pepper and I&rsquo;m going to go online and I&rsquo;m going to start selling it and see what happens and kind of go from there and see what kind of response there was and see if I could build a business from there. </p>
-                              <p>I&rsquo;m coming from a fortunate position where I sold my own business, I don&rsquo;t have other investors, I&rsquo;m doing this myself, I had saved up money from the other business so I didn't feel pressure to start making profits. I could take my time and figure out what this business was going to be. I could take my time and figure out what I wanted to do and how I wanted to run it. Because I could have started a business with a lot of products. And I knew that starting a business with just pepper is never going to be enough in itself to sustain a business. But I wanted to just start going, so I approached this from a very different perspective in &nbsp;a way that I might not advise everyone to start a business with one product. Full disclosure I started actually on woocommerce on another platform, so I didn&rsquo;t start on Shopify. </p>
+                                <h4><strong>When did The Reluctant Trading Experiment first start?</strong></h4>
+                                <p>I was fortunate enough to take some time off and try to figure out what I wanted to do next. I was pretty sure I wanted to start something again, start something new, but I really wasn&rsquo;t sure what. I knew I wanted
+                                    to do something on my own. I had partners in the old business and we were partners with big retailers who had their own partners in Germany so that was a complicated setup. </p>
+                                <p>I saw how everything changed when we went online in the early 2000&rsquo;s so I was pretty sure I wanted to start a web based business. I wasn&rsquo;t really sure what I wanted to sell, but I was pretty sure I wanted to
+                                    do something using my contacts overseas. I wasn&rsquo;t really sure what but I knew it had to be something special that other people couldn&rsquo;t get. </p>
+                                <p>I had kept a lot of my business contacts and was always talking about different ideas. A place that I travelled to quite a bit was India and I have a friend who owns a factory down there, we used to do textiles together.
+                                    His textiles business had dwindled quite a bit. He lives down south in India there in the state of Kerala which is a really tropical part of India and it&rsquo;s actually where pepper and other spices grow. He started
+                                    talking to me about potentially selling this type of pepper corns called Tellicherry peppercorns, and originally I wasn&rsquo;t interested. But he was a friend of mine who I had known forever so we kind of did this
+                                    dance for a while and eventually I said send me some information about the pepper and I will do some research about it in the states and start looking into it for you and see if there is a market for it. But in my head
+                                    it was like pepper is pepper. It&rsquo;s all the same and a commodity product so probably the last thing in the world I would want to go into because I just considered spice a commodity product. </p>
+                                <p>My background is in marketing, merchandising and branding and I didn&rsquo;t want to sell something that was just considered the same or try and convince somebody it was different, even if it was just the same as anything
+                                    else out there. There&rsquo;s plenty of spice companies here in the United States so I was like why would I want to get into that. He kind of kept after me and kept bringing it up over a series of weeks so I eventually
+                                    said well, ok send me a sample. I figured that would get him off my back. And he sends me the sample of peppercorns. I&rsquo;m not a chef, but I get this sample of peppercorns in a glass jar. I take them out and grind
+                                    them into my hand and smell them. And it was the most beautiful smell. I mean it was like nothing I had ever smelled. It was nothing like pepper or what you would imagine. </p>
+                                <div class="videowrapper" style="text-align: center;">
+                                    <iframe src="https://player.vimeo.com/video/70552444?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                </div>
+                                </br>
+                                <p>Most of the spices here in the states you get in the grocery stores are what I&rsquo;ve learned now are stale and sitting there forever. They have no aroma and very little flavour. So I smelled this beautiful smell and
+                                    it was like wow, that&rsquo;s really different. I had been trying to figure what to do with my life and I think I was ready to do something and yet I didn&rsquo;t really know what and so I started thinking about it
+                                    and then I took the pepper to some chefs here in chicago because I wanted to see if it was as good as I thought it was. Because again, I&rsquo;m not a chef, so I needed to get validation from others to see if what he
+                                    was sending me was really as special as I thought it was. They were like oh my god, this is amazing. So that gave me the confidence to move forward and I thought well, maybe I&rsquo;ll call it Reluctant Trading because
+                                    I was reluctant to go into business and that was an authentic story and you know I&rsquo;m a big believer in if you&rsquo;re going to go online or start a business then there should be a story behind it that is real
+                                    and true. And the more you can tell your own story that is different from other people&rsquo;s stories that will help people understand what you&rsquo;re doing and that will be authentic and people really like authentic
+                                    things. </p>
+                                <img class="img-responsive" style="margin-right: auto; margin-left: auto;" alt="Meraki Art Prints" src="/images/reluctant_trading_experiment/reluctant_trading_co_built_with_shopify_pepper_journey.jpg">
+                                <figcaption class="figure-caption text-center">"How many spice companies are going to go to India to see the harvest?"</figcaption>
+                                <img />
+                                <div class=" col-md-3 animate-box tip-box-right pull-right">
+                                    <span style="color: #7ab55c;" class="fa fa-quote-left" aria-hidden="true"></span><span style="font-weight: 300; font-size: 18px;"> Quote </span><span style="color: #7ab55c;" class="fa fa-quote-right" aria-hidden="true"></span></br>
+                                    <span>If you&rsquo;re going to go online or start a business then there should be a story behind it that is real and true.</span>
+                                </div>
+                                <p>So I thought well that&rsquo;s kind of an interesting story and it&rsquo;s true and you know this seems pretty crazy that I would go into this business and I just thought well you know I&rsquo;m not exactly sure what this
+                                    business will end up being but I&rsquo;m going to start with the pepper and I&rsquo;m going to go online and I&rsquo;m going to start selling it and see what happens and kind of go from there and see what kind of response
+                                    there was and see if I could build a business from there. </p>
+                                <p>I&rsquo;m coming from a fortunate position where I sold my own business, I don&rsquo;t have other investors, I&rsquo;m doing this myself, I had saved up money from the other business so I didn't feel pressure to start making
+                                    profits. I could take my time and figure out what this business was going to be. I could take my time and figure out what I wanted to do and how I wanted to run it. Because I could have started a business with a lot
+                                    of products. And I knew that starting a business with just pepper is never going to be enough in itself to sustain a business. But I wanted to just start going, so I approached this from a very different perspective
+                                    in &nbsp;a way that I might not advise everyone to start a business with one product. Full disclosure I started actually on woocommerce on another platform, so I didn&rsquo;t start on Shopify. </p>
 
-                              <h4><strong>When you&rsquo;re in a position to start a new business how do you decide what idea you want to focus on? </strong></h4>
+                                <h4><strong>When you&rsquo;re in a position to start a new business how do you decide what idea you want to focus on? </strong></h4>
 
-                              <p>Because I had sold my other business I was sitting in a position where I could be picky as far as what I wanted to start next. And in some ways I found it kind of suffocating. When you feel like you can do anything or feel like you could start a lot of types of business, and you have lots of contacts all over the place, in some ways having a blank slate is difficult. And if you&rsquo;re picky and have options that can be tough. I had a non-compete clause so I couldn&rsquo;t go into the kids furniture business, even if I wanted to. But I didn&rsquo;t really want to anyway, I was interested in doing something a little bit different and challenging myself. </p>
-                              <p>I think for me the thing that really drew me into it was that it was using the skills I had learned, but it was doing something different. I had learned how to import before so I was using my contacts from before in this new business. Leveraging the things I had learned from the past, but in a different way.</p>
-                              <p>But it was a lot to learn for me, because I still had to learn all of these things myself. Even though I had started this business before I had a partner, he did most of the accounting and operations stuff when we first started and eventually we had a staff of people doing the importing for us. There&rsquo;s something I really like about starting this over again. I&rsquo;m very hands on so I really wanted to learn how to run the accounting, I really wanted to learn how internet marketing works, how to do Google ads and get my hands in there to build the business from the ground up. So for me that all appealed to me. </p>
+                                <p>Because I had sold my other business I was sitting in a position where I could be picky as far as what I wanted to start next. And in some ways I found it kind of suffocating. When you feel like you can do anything or feel
+                                    like you could start a lot of types of business, and you have lots of contacts all over the place, in some ways having a blank slate is difficult. And if you&rsquo;re picky and have options that can be tough. I had
+                                    a non-compete clause so I couldn&rsquo;t go into the kids furniture business, even if I wanted to. But I didn&rsquo;t really want to anyway, I was interested in doing something a little bit different and challenging
+                                    myself. </p>
+                                <p>I think for me the thing that really drew me into it was that it was using the skills I had learned, but it was doing something different. I had learned how to import before so I was using my contacts from before in this
+                                    new business. Leveraging the things I had learned from the past, but in a different way.</p>
+                                <p>But it was a lot to learn for me, because I still had to learn all of these things myself. Even though I had started this business before I had a partner, he did most of the accounting and operations stuff when we first
+                                    started and eventually we had a staff of people doing the importing for us. There&rsquo;s something I really like about starting this over again. I&rsquo;m very hands on so I really wanted to learn how to run the accounting,
+                                    I really wanted to learn how internet marketing works, how to do Google ads and get my hands in there to build the business from the ground up. So for me that all appealed to me. </p>
 
-                              <h4><strong>What did you find the best way to learn all these new skills?</strong></h4>
-                              <p>It depends on people&rsquo;s aptitude. I&rsquo;m pretty good with computers so I was able to pick things up and teach myself. And I went slowly, partly because I had the benefit of time to take years to see if a business was going to work for me which not everyone has. I think that is why a lot of businesses fail, because either they don&rsquo;t have enough capital or enough patience or interest for the business to work because it takes a long time. You have to build an audience, as well as your credibility and story and it took me a long time. </p>
+                                <h4><strong>What did you find the best way to learn all these new skills?</strong></h4>
+                                <p>It depends on people&rsquo;s aptitude. I&rsquo;m pretty good with computers so I was able to pick things up and teach myself. And I went slowly, partly because I had the benefit of time to take years to see if a business
+                                    was going to work for me which not everyone has. I think that is why a lot of businesses fail, because either they don&rsquo;t have enough capital or enough patience or interest for the business to work because it takes
+                                    a long time. You have to build an audience, as well as your credibility and story and it took me a long time. </p>
 
-                              <h4><strong>How did you reach out to people whose opinions you could trust enough to validate the idea and realise it could be a sustainable business?</strong></h4>
-                              <p>The fact is I had built a good reputation; I had built this other business, people knew who I was and then I sold that business and went into something totally different. So I literally cold called, I went into chefs and walked in the door. They didn&rsquo;t know if I had started another business or what that business was, so it was pretty humbling to be honest and in some ways I really liked that challenge of having to prove myself all over again. And sometimes I found it depressing. It was hard sometimes when I didn&rsquo;t &nbsp;get treated well, so there were things I liked and things I didn&rsquo;t.</p>
+                                <h4><strong>How did you reach out to people whose opinions you could trust enough to validate the idea and realise it could be a sustainable business?</strong></h4>
+                                <p>The fact is I had built a good reputation; I had built this other business, people knew who I was and then I sold that business and went into something totally different. So I literally cold called, I went into chefs and
+                                    walked in the door. They didn&rsquo;t know if I had started another business or what that business was, so it was pretty humbling to be honest and in some ways I really liked that challenge of having to prove myself
+                                    all over again. And sometimes I found it depressing. It was hard sometimes when I didn&rsquo;t &nbsp;get treated well, so there were things I liked and things I didn&rsquo;t.</p>
 
-                              <h4><strong>When did you start selling your the full range of products that you now carry?</strong></h4>
-                              <p>I was selling online but I was also taking it around to chefs, so I started realising I could start selling to chefs as well on a wholesale basis. I started with the pepper but I knew that eventually this business had to be more than just pepper. It needed to sell many spices because it was never going to be able to build a business with just one spice. So I went out and I found this amazing story about some sea salt that was being harvested in Iceland and it gave me the opportunity to go travel and go to Iceland to meet them and buy from the source. This is where I figured out the story behind the business. Nobody in the States seemed to be going to the source and spices were a commodity product. The big distributors are buying from overseas in huge quantities and the spices are sitting on warehouse shelves, changing hands a bunch of times and sitting on shelves for who knows how long so by the time people have them they don&rsquo;t taste like anything. It&rsquo;s a sleepy industry and I look for things like that. If it&rsquo;s exciting then there are probably a lot people doing it, but if it&rsquo;s sleepy then there might be an opportunity to do something interesting. </p>
-                              <p>There&rsquo;s obviously this big movement around the world of farm to table, being as close to the source, restaurants want the freshest ingredients so you know what you&rsquo;re getting and that it is the highest quality. But nobody seemed to be doing that with spices in the States. So I had an opportunity here to get it from the source and to see if we can get it here in small quantities to maintain that freshness that I got from the pepper. And that&rsquo;s where I saw the opportunity to do something different and tell a story that would appeal to chefs and appeal to people at home so that I could take that market position and grow a business around it. </p>
+                                <h4><strong>When did you start selling your the full range of products that you now carry?</strong></h4>
+                                <p>I was selling online but I was also taking it around to chefs, so I started realising I could start selling to chefs as well on a wholesale basis. I started with the pepper but I knew that eventually this business had to
+                                    be more than just pepper. It needed to sell many spices because it was never going to be able to build a business with just one spice. So I went out and I found this amazing story about some sea salt that was being
+                                    harvested in Iceland and it gave me the opportunity to go travel and go to Iceland to meet them and buy from the source. This is where I figured out the story behind the business. Nobody in the States seemed to be going
+                                    to the source and spices were a commodity product. The big distributors are buying from overseas in huge quantities and the spices are sitting on warehouse shelves, changing hands a bunch of times and sitting on shelves
+                                    for who knows how long so by the time people have them they don&rsquo;t taste like anything. It&rsquo;s a sleepy industry and I look for things like that. If it&rsquo;s exciting then there are probably a lot people
+                                    doing it, but if it&rsquo;s sleepy then there might be an opportunity to do something interesting. </p>
+                                <p>There&rsquo;s obviously this big movement around the world of farm to table, being as close to the source, restaurants want the freshest ingredients so you know what you&rsquo;re getting and that it is the highest quality.
+                                    But nobody seemed to be doing that with spices in the States. So I had an opportunity here to get it from the source and to see if we can get it here in small quantities to maintain that freshness that I got from the
+                                    pepper. And that&rsquo;s where I saw the opportunity to do something different and tell a story that would appeal to chefs and appeal to people at home so that I could take that market position and grow a business around
+                                    it. </p>
 
-                              <p>Validation is important for me though. I don&rsquo;t want to just sell a story, I wanted to make sure what I&rsquo;m selling is actually that good. So through a friend who would introduce me to chefs I would meet other chefs and being to network. Before you know it, you know a lot of people. One of the things that was a big breakthrough for me was this idea I had to try and work with a chef I met in Portland, Oregon who has this amazing indian food restaurant and has worked in really good restaurants. I went out and saw he was doing a lot of things in India directly and knew we would hit it off. I started talking to him about licensing his recipes, packaging or co-branding. He asked for a sample of our spices so I sent him a pound of every spice I could get from India, even though I was still just carrying pepper and salt at this point. He took a couple weeks to try everything, got back to me and told me the spices were unbelievable. That was the moment that really validated it for me and made me confident that I could go into more than just pepper and salt.</p>
-                              <p>I started selling to him, and then he introduced me to a bunch of other chefs in Portland and I started picking up all sorts of restaurants. And so it&rsquo;s just been building upon that, and building the story once I had that validation that what I had was more than just a commodity.</p>
-                                                            <h4><strong>After the Salt and Pepper, did most of the products come about all at once?</strong></h4>
-                              <p>There was a big push. I did this deal with the chef where we started making spice mixes for his restaurant and also selling them and packaging them in his restaurants. </p>
+                                <p>Validation is important for me though. I don&rsquo;t want to just sell a story, I wanted to make sure what I&rsquo;m selling is actually that good. So through a friend who would introduce me to chefs I would meet other
+                                    chefs and being to network. Before you know it, you know a lot of people. One of the things that was a big breakthrough for me was this idea I had to try and work with a chef I met in Portland, Oregon who has this amazing
+                                    indian food restaurant and has worked in really good restaurants. I went out and saw he was doing a lot of things in India directly and knew we would hit it off. I started talking to him about licensing his recipes,
+                                    packaging or co-branding. He asked for a sample of our spices so I sent him a pound of every spice I could get from India, even though I was still just carrying pepper and salt at this point. He took a couple weeks
+                                    to try everything, got back to me and told me the spices were unbelievable. That was the moment that really validated it for me and made me confident that I could go into more than just pepper and salt.</p>
+                                <p>I started selling to him, and then he introduced me to a bunch of other chefs in Portland and I started picking up all sorts of restaurants. And so it&rsquo;s just been building upon that, and building the story once I
+                                    had that validation that what I had was more than just a commodity.</p>
+                                <h4><strong>After the Salt and Pepper, did most of the products come about all at once?</strong></h4>
+                                <p>There was a big push. I did this deal with the chef where we started making spice mixes for his restaurant and also selling them and packaging them in his restaurants. </p>
 
-                              <img class="img-responsive" style="margin-right: auto; margin-left: auto; width: 50%; height: 50%;" alt="Meraki Art Prints" src="/images/reluctant_trading_experiment/reluctant_trading_co_built_with_shopify_bollywood_theatre.jpg">
-                              <figcaption class="figure-caption text-center">The <a href="https://reluctanttrading.com/collections/bollywood-theater-troy-maclarty-masalas/products/bollywood-theater-indian-masala-3-piece-gift-set">Bollywood Theater Indian Masala Spice Set</a> has been featured in USA Today, Sunset, Eater, Portland Monthly and The Oregonian.</figcaption>
-                              <img />
+                                <img class="img-responsive" style="margin-right: auto; margin-left: auto; width: 50%; height: 50%;" alt="Meraki Art Prints" src="/images/reluctant_trading_experiment/reluctant_trading_co_built_with_shopify_bollywood_theatre.jpg">
+                                <figcaption class="figure-caption text-center">The <a href="https://reluctanttrading.com/collections/bollywood-theater-troy-maclarty-masalas/products/bollywood-theater-indian-masala-3-piece-gift-set">Bollywood Theater Indian Masala Spice Set</a> has been featured in
+                                    USA Today, Sunset, Eater, Portland Monthly and The Oregonian.</figcaption>
+                                <img />
 
-                              <p>We started getting PR around them and got written up in Food &amp; Wine and Bon Appetit who gave us good reviews. While this is happening the chef is still using the spices himself in the restaurant so he would tell me what he liked and I started bringing in 8 or 10 different spices which was a big influx at that point. That was kind of my big leap and the business started to grow a lot more quickly. Restaurants that I was selling just the pepper and salt to, now all of a sudden they were ordering a lot of the other things too so we were doing more business with our current customers which is a great way to grow a business. It takes so much work to get a customer but it&rsquo;s a lot easier to sell the customer more stuff. If you can establish that relationship and they trust you, you can sell them more stuff and they can really help the business grow.</p>
+                                <p>We started getting PR around them and got written up in Food &amp; Wine and Bon Appetit who gave us good reviews. While this is happening the chef is still using the spices himself in the restaurant so he would tell me
+                                    what he liked and I started bringing in 8 or 10 different spices which was a big influx at that point. That was kind of my big leap and the business started to grow a lot more quickly. Restaurants that I was selling
+                                    just the pepper and salt to, now all of a sudden they were ordering a lot of the other things too so we were doing more business with our current customers which is a great way to grow a business. It takes so much work
+                                    to get a customer but it&rsquo;s a lot easier to sell the customer more stuff. If you can establish that relationship and they trust you, you can sell them more stuff and they can really help the business grow.</p>
 
-                              <h4><strong>Does it become difficult managing supply from India as the business grows?</strong></h4>
-                              <p>It stayed fairly consistent. With my previous company we had hundreds and hundreds of items and we worked with over a hundred different factories. It was very challenging to keep everything in stock and keep track of all of that. It required teams of merchandising people.</p>
-                              <p>The one thing I wanted to do with this company was to take it slowly and make sure everything I sell is fantastic quality and not go so fast that I would compromise, because I really wanted to build the reputation through word of mouth and the only way you can do that consistently is to be as good as you can be. So I decided I was just going to buy for the time being from my partner on the ground in India so I could be assured of the quality I was getting and not be like every other spice company and buying from an unknown in different countries just to be able to fill out.</p>
-                              <div class=" col-md-3 animate-box tip-box-left">
-                                <span style="color: #7ab55c;"class="fa fa-quote-left" aria-hidden="true"></span><span style="font-weight: 300; font-size: 18px;"> Quote </span><span style="color: #7ab55c;"class="fa fa-quote-right" aria-hidden="true"></span></br>
-                                <span>I really wanted to build the reputation through word of mouth and the only way you can do that consistently is to be as good as you can be.</span>
-                              </div>
-                              <p>My SKU count is about a dozen spices. Most people would say why don&rsquo;t you have fifty spices? And the reason is because I&rsquo;m only selling what I think is phenomenal and can bring something different to the market right now. That&rsquo;s kind of my rule and my brand for the company that I&rsquo;ve decided to run. And I think that&rsquo;s why people that buy from me keep coming back time and time again. I&rsquo;m careful about not running out of stock and growing the company in a very methodical way. It may not be right for everybody, but it&rsquo;s the brand that I want to develop. If you look at the reviews on the website, it&rsquo;s pretty hard to find anything but a five star review. I&rsquo;d rather go slower and have them talk great about me behind my back because to me that is the most powerful way to grow a business. It&rsquo;s how little independent movies become big, not through advertising budgets but through friends telling friends. So I try to make every customer transaction as positive as can be.</p>
+                                <h4><strong>Does it become difficult managing supply from India as the business grows?</strong></h4>
+                                <p>It stayed fairly consistent. With my previous company we had hundreds and hundreds of items and we worked with over a hundred different factories. It was very challenging to keep everything in stock and keep track of all
+                                    of that. It required teams of merchandising people.</p>
+                                <p>The one thing I wanted to do with this company was to take it slowly and make sure everything I sell is fantastic quality and not go so fast that I would compromise, because I really wanted to build the reputation through
+                                    word of mouth and the only way you can do that consistently is to be as good as you can be. So I decided I was just going to buy for the time being from my partner on the ground in India so I could be assured of the
+                                    quality I was getting and not be like every other spice company and buying from an unknown in different countries just to be able to fill out.</p>
+                                <div class=" col-md-3 animate-box tip-box-left">
+                                    <span style="color: #7ab55c;" class="fa fa-quote-left" aria-hidden="true"></span><span style="font-weight: 300; font-size: 18px;"> Quote </span><span style="color: #7ab55c;" class="fa fa-quote-right" aria-hidden="true"></span></br>
+                                    <span>I really wanted to build the reputation through word of mouth and the only way you can do that consistently is to be as good as you can be.</span>
+                                </div>
+                                <p>My SKU count is about a dozen spices. Most people would say why don&rsquo;t you have fifty spices? And the reason is because I&rsquo;m only selling what I think is phenomenal and can bring something different to the market
+                                    right now. That&rsquo;s kind of my rule and my brand for the company that I&rsquo;ve decided to run. And I think that&rsquo;s why people that buy from me keep coming back time and time again. I&rsquo;m careful about
+                                    not running out of stock and growing the company in a very methodical way. It may not be right for everybody, but it&rsquo;s the brand that I want to develop. If you look at the reviews on the website, it&rsquo;s pretty
+                                    hard to find anything but a five star review. I&rsquo;d rather go slower and have them talk great about me behind my back because to me that is the most powerful way to grow a business. It&rsquo;s how little independent
+                                    movies become big, not through advertising budgets but through friends telling friends. So I try to make every customer transaction as positive as can be.</p>
 
-                              <h4><strong>How did you transition from WooCommerce onto Shopify?</strong></h4>
-                              <p>We started on WooCommerce at the end of 2012 from the recommendation of a designer that I was working with. I really didn&rsquo;t know much about the different platforms but it seemed like a decent way to go. But I was just not pleased with it. They were always updating the platform and it required a lot of programming to make sure that the plugins would continue to work. One of the things I wanted that I set up was a link between Quickbooks accounting and WooCommerce &nbsp;so orders would directly import. But there weren&rsquo;t a lot of plugins that would do that so you&rsquo;re dependent on one little company that makes this plugin and every time woocommerce would get updated the plugins would break. So I would have to get in touch with my programmer who isn&rsquo;t inexpensive. On top of that, the biggest thing was I had to host the site myself somewhere else. So I had to get a shared server which would get slowed down when someone else had too much traffic which would grind my site to a halt.</p>
-                              <p>So after a year it was a bit ridiculous and there had to be a better way of doing it. My approach is that I might be only doing this much business today, but I&rsquo;m going to plan on this being a successful business, so the question I always ask myself is What happens when I&rsquo;m doing four times the amount of business that I&rsquo;m doing today? &nbsp;What&rsquo;s annoying you today will become a total migraine if your business keeps growing and I&rsquo;ve seen that personally in my previous business where we grew very quickly and a crack in the foundation becomes a serious problem. I would rather go slower now, even if it slows the company down and I don&rsquo;t come out with as many products this year, and fix that so the company can grow. So I purposely went slowly to deal with some of these backend issues.</p>
-                              <div class=" col-md-3 animate-box tip-box-right pull-right">
-                                <span style="color: #7ab55c;"class="fa fa-quote-left" aria-hidden="true"></span><span style="font-weight: 300; font-size: 18px;"> Quote </span><span style="color: #7ab55c;"class="fa fa-quote-right" aria-hidden="true"></span></br>
-                                <span>If you&rsquo;re going to go online or start a business then there should be a story behind it that is real and true.</span>
-                              </div>
-                              <p>I started researching all the platforms, but I wouldn&rsquo;t have known what I needed without doing this for a year and seeing all the problems and what went wrong. </p>
-                              <p>I didn&rsquo;t love the Shopify templates but I loved the Shopify backend and I could see that Shopify is a shopping platform that is based on shopping and has a blogging part that is secondary, which was the opposite to WooCommerce which had commerce tacked on to a blogging platform. Shopify seemed like something I could scale with. I didn&rsquo;t need my own server and it seemed stable.</p>
-                              <p>Then I went out and found a programmer I could work with to customize the front end. I also work with a graphic designer that I used to work with in my previous business to help me figure out the look and feel of the website. It took me several months to get everything switched over completely to Shopify, but it was the best thing I ever did and I&rsquo;m very, very happy with Shopify. </p>
+                                <h4><strong>How did you transition from WooCommerce onto Shopify?</strong></h4>
+                                <p>We started on WooCommerce at the end of 2012 from the recommendation of a designer that I was working with. I really didn&rsquo;t know much about the different platforms but it seemed like a decent way to go. But I was
+                                    just not pleased with it. They were always updating the platform and it required a lot of programming to make sure that the plugins would continue to work. One of the things I wanted that I set up was a link between
+                                    Quickbooks accounting and WooCommerce &nbsp;so orders would directly import. But there weren&rsquo;t a lot of plugins that would do that so you&rsquo;re dependent on one little company that makes this plugin and every
+                                    time woocommerce would get updated the plugins would break. So I would have to get in touch with my programmer who isn&rsquo;t inexpensive. On top of that, the biggest thing was I had to host the site myself somewhere
+                                    else. So I had to get a shared server which would get slowed down when someone else had too much traffic which would grind my site to a halt.</p>
+                                <p>So after a year it was a bit ridiculous and there had to be a better way of doing it. My approach is that I might be only doing this much business today, but I&rsquo;m going to plan on this being a successful business,
+                                    so the question I always ask myself is What happens when I&rsquo;m doing four times the amount of business that I&rsquo;m doing today? &nbsp;What&rsquo;s annoying you today will become a total migraine if your business
+                                    keeps growing and I&rsquo;ve seen that personally in my previous business where we grew very quickly and a crack in the foundation becomes a serious problem. I would rather go slower now, even if it slows the company
+                                    down and I don&rsquo;t come out with as many products this year, and fix that so the company can grow. So I purposely went slowly to deal with some of these backend issues.</p>
+                                <div class=" col-md-3 animate-box tip-box-right pull-right">
+                                    <span style="color: #7ab55c;" class="fa fa-quote-left" aria-hidden="true"></span><span style="font-weight: 300; font-size: 18px;"> Quote </span><span style="color: #7ab55c;" class="fa fa-quote-right" aria-hidden="true"></span></br>
+                                    <span>If you&rsquo;re going to go online or start a business then there should be a story behind it that is real and true.</span>
+                                </div>
+                                <p>I started researching all the platforms, but I wouldn&rsquo;t have known what I needed without doing this for a year and seeing all the problems and what went wrong. </p>
+                                <p>I didn&rsquo;t love the Shopify templates but I loved the Shopify backend and I could see that Shopify is a shopping platform that is based on shopping and has a blogging part that is secondary, which was the opposite to
+                                    WooCommerce which had commerce tacked on to a blogging platform. Shopify seemed like something I could scale with. I didn&rsquo;t need my own server and it seemed stable.</p>
+                                <p>Then I went out and found a programmer I could work with to customize the front end. I also work with a graphic designer that I used to work with in my previous business to help me figure out the look and feel of the website.
+                                    It took me several months to get everything switched over completely to Shopify, but it was the best thing I ever did and I&rsquo;m very, very happy with Shopify. </p>
 
-                              <h4><strong>Which Shopify Apps do you use in your store?</strong></h4>
-                              <p>
-                                <ul>
-                                  <li ><a href="http://1.shopifytrack.com/SHaH">Cross-Sell</a></li>
-                                  <li ><a href="http://1.shopifytrack.com/SHaL">Google Shopping</a></li>
-                                  <li ><a href="http://1.shopifytrack.com/SHU3">Judge.Me Product Reviews</a></li>
-                                  <li ><a href="http://1.shopifytrack.com/SHUN">MailChimp</a></li>
-                                  <li ><a href="http://1.shopifytrack.com/SHUh">Quick Announcement Bar by Hextom</a></li>
-                                  <li ><a href="https://www.riskified.com/">Riskified</a></li>
-                                  <li ><a href="http://1.shopifytrack.com/SHT1">ShipStation</a></li>
-                                  <li ><a href="https://www.webgility.com/unify/">Unify Enterprise Edition by Webgility</a></li>
-                                  <li ><a href="https://wisepops.com/">WisePops</a></li>
-                                </ul>
-                              </p>
-                              <h4><strong>What was the idea behind the videos on your website which have since gone viral?</strong></h4>
-                              <p>My background before I went into business was in advertising and marketing. I had a friend who was a TV commercial director and I was telling him my story one day and he said &ldquo;I would love to film that&rdquo;! So we made that film and almost right after it got out it was written up on Reddit and we had around ninety-thousand views in a few days, it went crazy and then slowed down a bit but that got a lot of people to the site. It doesn&rsquo;t draw tonnes of people now but it helps tell the story. I just got back from India a few weeks ago to see the pepper harvest with a photographer where we shot a bunch of photos of the harvest. How many spice companies are going to go to India to see the harvest? And to me that&rsquo;s what it&rsquo;s all about and a big part of my brand positioning, showing people that we are getting it right from the source.</p>
-                              <img class="img-responsive" style="margin-right: auto; margin-left: auto; width: 75%; height: 75%;" alt="Meraki Art Prints" src="/images/reluctant_trading_experiment/reluctant_trading_company_pepper_trip_built_with_shopify.jpg">
-                              <figcaption class="figure-caption text-center">One of the <a href="https://reluctanttrading.com/blogs/photos">many photos</a> showing behind the scenes of The Reluctant Trading Experiment. Not your average spice company.</figcaption>
-                              <img />
-                              <p>In terms of what is driving traffic to the website. There are some blog posts I have written that bring a lot of hits to the website. In particular posts about pepper and the things I have learned. I do emails but not tonnes. I think if you have new product coming out all the time you can do a lot of email marketing, but when you don&rsquo;t, you don&rsquo;t want to overdo it or people will unsubscribe.. Traffic is overall a combination of things like blog posts, SEO and email marketing. I also do some Google Shopping Ads.</p>
+                                <h4><strong>Which Shopify Apps do you use in your store?</strong></h4>
+                                <p>
+                                    <ul>
+                                        <li><a href="http://1.shopifytrack.com/SHaH">Cross-Sell</a></li>
+                                        <li><a href="http://1.shopifytrack.com/SHaL">Google Shopping</a></li>
+                                        <li><a href="http://1.shopifytrack.com/SHU3">Judge.Me Product Reviews</a></li>
+                                        <li><a href="http://1.shopifytrack.com/SHUN">MailChimp</a></li>
+                                        <li><a href="http://1.shopifytrack.com/SHUh">Quick Announcement Bar by Hextom</a></li>
+                                        <li><a href="https://www.riskified.com/">Riskified</a></li>
+                                        <li><a href="http://1.shopifytrack.com/SHT1">ShipStation</a></li>
+                                        <li><a href="https://www.webgility.com/unify/">Unify Enterprise Edition by Webgility</a></li>
+                                        <li><a href="https://wisepops.com/">WisePops</a></li>
+                                    </ul>
+                                </p>
+                                <h4><strong>What was the idea behind the videos on your website which have since gone viral?</strong></h4>
+                                <p>My background before I went into business was in advertising and marketing. I had a friend who was a TV commercial director and I was telling him my story one day and he said &ldquo;I would love to film that&rdquo;! So
+                                    we made that film and almost right after it got out it was written up on Reddit and we had around ninety-thousand views in a few days, it went crazy and then slowed down a bit but that got a lot of people to the site.
+                                    It doesn&rsquo;t draw tonnes of people now but it helps tell the story. I just got back from India a few weeks ago to see the pepper harvest with a photographer where we shot a bunch of photos of the harvest. How many
+                                    spice companies are going to go to India to see the harvest? And to me that&rsquo;s what it&rsquo;s all about and a big part of my brand positioning, showing people that we are getting it right from the source.</p>
+                                <img class="img-responsive" style="margin-right: auto; margin-left: auto; width: 75%; height: 75%;" alt="Meraki Art Prints" src="/images/reluctant_trading_experiment/reluctant_trading_company_pepper_trip_built_with_shopify.jpg">
+                                <figcaption class="figure-caption text-center">One of the <a href="https://reluctanttrading.com/blogs/photos">many photos</a> showing behind the scenes of The Reluctant Trading Experiment. Not your average spice company.</figcaption>
+                                <img />
+                                <p>In terms of what is driving traffic to the website. There are some blog posts I have written that bring a lot of hits to the website. In particular posts about pepper and the things I have learned. I do emails but not tonnes.
+                                    I think if you have new product coming out all the time you can do a lot of email marketing, but when you don&rsquo;t, you don&rsquo;t want to overdo it or people will unsubscribe.. Traffic is overall a combination
+                                    of things like blog posts, SEO and email marketing. I also do some Google Shopping Ads.</p>
 
-                              <h4><strong>How have you structured the wholesale side of the business?</strong></h4>
-                                <p>I&rsquo;m also running a wholesale business selling to chefs. The consumer business is growing at its own pace. But because I only have a certain number of products, I can only make that business grow so fast without pumping a tonne of money into it. I&rsquo;m comfortable with the pace that it&rsquo;s growing but I also felt like I needed to do some other business too. I really like the balance because chefs order every month, whereas big business for consumers is fourth quarter so it smooths out the ordering curve and is also a way for me to continue to find new business without having to spend tonnes on marketing. Again from my previous business I realised the more products you had the more business you&rsquo;re going to do and if I really wanted to push the spice business I could continue to add more and more spices and products, but I&rsquo;m just not ready to go in that direction and there is a good opportunity in the restaurant business.</p>
+                                <h4><strong>How have you structured the wholesale side of the business?</strong></h4>
+                                <p>I&rsquo;m also running a wholesale business selling to chefs. The consumer business is growing at its own pace. But because I only have a certain number of products, I can only make that business grow so fast without pumping
+                                    a tonne of money into it. I&rsquo;m comfortable with the pace that it&rsquo;s growing but I also felt like I needed to do some other business too. I really like the balance because chefs order every month, whereas big
+                                    business for consumers is fourth quarter so it smooths out the ordering curve and is also a way for me to continue to find new business without having to spend tonnes on marketing. Again from my previous business I
+                                    realised the more products you had the more business you&rsquo;re going to do and if I really wanted to push the spice business I could continue to add more and more spices and products, but I&rsquo;m just not ready
+                                    to go in that direction and there is a good opportunity in the restaurant business.</p>
 
-                              <p>I actually run the wholesale business through a separate Shopify site. I wanted to keep the systems separate. I found it was difficult on the regular shopify site to be mixing the wholesale business with the regular consumer. When you sell to the wholesale customer you either have to discount items and the intermingling of these things was causing a lot of issues in terms of pricing and mixing these two different things together when you have two different sets of prices. I know there are apps out there that help you do that, but for the price of a separate Shopify site versus getting an app that does the same and tacking it onto the retail site, I&rsquo;m just going to separate the two things because they are different customers with a different way of working. That being said the wholesale site is not being used as much in terms of self service. Chefs order with paymentterms, so the feature I&rsquo;m using constantly is draft orders and other work arounds because I can use the wholesale site however I want without worrying about messing up the retail site.</p>
+                                <p>I actually run the wholesale business through a separate Shopify site. I wanted to keep the systems separate. I found it was difficult on the regular shopify site to be mixing the wholesale business with the regular consumer.
+                                    When you sell to the wholesale customer you either have to discount items and the intermingling of these things was causing a lot of issues in terms of pricing and mixing these two different things together when you
+                                    have two different sets of prices. I know there are apps out there that help you do that, but for the price of a separate Shopify site versus getting an app that does the same and tacking it onto the retail site, I&rsquo;m
+                                    just going to separate the two things because they are different customers with a different way of working. That being said the wholesale site is not being used as much in terms of self service. Chefs order with paymentterms,
+                                    so the feature I&rsquo;m using constantly is draft orders and other work arounds because I can use the wholesale site however I want without worrying about messing up the retail site.</p>
 
-                              <h4><strong>What does your fulfilment process look like?</strong></h4>
-                              <p>I have split off our wholesale business with a third party warehouse. We have special requirements because we&rsquo;re selling food so we require FDA compliant warehouses. I had to look around to find someone that could handle our smaller size business. We still handle our retail side, but the commercial side became too much as the business was growing. Chefs order in bigger quantities so you can be shipping out boxes that are 40lbs at a time, so there is a lot more handling. The consumer side is more skus and harder to package. </p>
-                              <p>I actually personally sign every invoice, which is a little insane, but I still do this because people really appreciate it and it's a part of building a business. We live in an automated world and people really appreciate that. In the reviews online we see people thanking us for that and even in an online business trying to do a good job comes through.</p>
-                              <p>The bar is really low for a lot of businesses since they are doing it on such a mass scale and people don&rsquo;t expect much, but as a small business you can do these little extra things that do make a difference.
-                              They won&rsquo;t always tell you how they feel, but I can see people coming back multiple times and you see what&rsquo;s happening when you&rsquo;re processing orders. For people who are trying to do things on their own, the more you can get hands on and do everything to see how it all links up, the better position you will be in as you grow to understand the business and make better decisions.</p>
-                              <div class=" col-md-3 animate-box tip-box-right pull-right">
-                                <span style="color: #7ab55c;"class="fa fa-quote-left" aria-hidden="true"></span><span style="font-weight: 300; font-size: 18px;"> Quote </span><span style="color: #7ab55c;"class="fa fa-quote-right" aria-hidden="true"></span></br>
-                                <span>...as a small business you can do these little extra things that do make a difference.</span>
-                              </div>
-                              <p>We actually only ship to the U.S on our website right now, but do sell a subset of our products on Etsy for international shipping. Shipping is a really tricky to set the right way. Especially in the U.S, because our rates are so different. For me to ship a 2lbs package to San Francisco would be significantly more expensive than shipping to the next state over. So you can either charge the customer what it&rsquo;s costing, in which case no one will order from San Francisco, or you can do it by averaging out the ranges so you lose money on some and make money on others.</p>
+                                <h4><strong>What does your fulfilment process look like?</strong></h4>
+                                <p>I have split off our wholesale business with a third party warehouse. We have special requirements because we&rsquo;re selling food so we require FDA compliant warehouses. I had to look around to find someone that could
+                                    handle our smaller size business. We still handle our retail side, but the commercial side became too much as the business was growing. Chefs order in bigger quantities so you can be shipping out boxes that are 40lbs
+                                    at a time, so there is a lot more handling. The consumer side is more skus and harder to package. </p>
+                                <p>I actually personally sign every invoice, which is a little insane, but I still do this because people really appreciate it and it's a part of building a business. We live in an automated world and people really appreciate
+                                    that. In the reviews online we see people thanking us for that and even in an online business trying to do a good job comes through.</p>
+                                <p>The bar is really low for a lot of businesses since they are doing it on such a mass scale and people don&rsquo;t expect much, but as a small business you can do these little extra things that do make a difference. They
+                                    won&rsquo;t always tell you how they feel, but I can see people coming back multiple times and you see what&rsquo;s happening when you&rsquo;re processing orders. For people who are trying to do things on their own,
+                                    the more you can get hands on and do everything to see how it all links up, the better position you will be in as you grow to understand the business and make better decisions.</p>
+                                <div class=" col-md-3 animate-box tip-box-right pull-right">
+                                    <span style="color: #7ab55c;" class="fa fa-quote-left" aria-hidden="true"></span><span style="font-weight: 300; font-size: 18px;"> Quote </span><span style="color: #7ab55c;" class="fa fa-quote-right" aria-hidden="true"></span></br>
+                                    <span>...as a small business you can do these little extra things that do make a difference.</span>
+                                </div>
+                                <p>We actually only ship to the U.S on our website right now, but do sell a subset of our products on Etsy for international shipping. Shipping is a really tricky to set the right way. Especially in the U.S, because our rates
+                                    are so different. For me to ship a 2lbs package to San Francisco would be significantly more expensive than shipping to the next state over. So you can either charge the customer what it&rsquo;s costing, in which case
+                                    no one will order from San Francisco, or you can do it by averaging out the ranges so you lose money on some and make money on others.</p>
 
-                              <p>I find it absolutely unbelievable that you can have a business using Shopify and have a business that looks like a business a hundred times your size and have all the professional things that much larger businesses do using apps and tools like Mailchimp. The trick is knowing which tools to use and where it makes sense because you can screw up your business if you start outsourcing everything and someone else is handling your fulfilment and sending out the wrong products. You have to be careful about maintaining your brand identity and the thing that makes you special. Anyone can sell anything online now, but if you&rsquo;re not selling good product you don&rsquo;t have a point of difference.</p>
-                              <h4><strong>As someone who has founded multiple businesses, do you have any tips for people looking to start a business?</strong></h4>
-                              <p>You have to be passionate about what you&rsquo;re doing and also realistic that it&rsquo;s going to take a while. To turn a profit on a new business, if you&rsquo;re starting from scratch, you have to be realistic that it&rsquo;s probably going to take you two or three years if you want to be successful. You can&rsquo;t expect to start selling something tomorrow on your own website and have people come overnight. I think people need to validate what they are doing, like I did with the pepper and salt, by finding and talking to people they can trust to help them validate whether what they are doing will be different enough for people to pull out their wallet and pay for something, and come back and do it again. You really have to be focused and have enough energy to go for two or three years to figure it out. You also can&rsquo;t sit there and figure it all out on a piece of paper. A lot of stuff you have to learn as you go and be able to take the information you&rsquo;re getting and keep modifying what you&rsquo;re doing as you&rsquo;re going along.</p>
-                              <!-- End Interview -->
+                                <p>I find it absolutely unbelievable that you can have a business using Shopify and have a business that looks like a business a hundred times your size and have all the professional things that much larger businesses do using
+                                    apps and tools like Mailchimp. The trick is knowing which tools to use and where it makes sense because you can screw up your business if you start outsourcing everything and someone else is handling your fulfilment
+                                    and sending out the wrong products. You have to be careful about maintaining your brand identity and the thing that makes you special. Anyone can sell anything online now, but if you&rsquo;re not selling good product
+                                    you don&rsquo;t have a point of difference.</p>
+                                <h4><strong>As someone who has founded multiple businesses, do you have any tips for people looking to start a business?</strong></h4>
+                                <p>You have to be passionate about what you&rsquo;re doing and also realistic that it&rsquo;s going to take a while. To turn a profit on a new business, if you&rsquo;re starting from scratch, you have to be realistic that
+                                    it&rsquo;s probably going to take you two or three years if you want to be successful. You can&rsquo;t expect to start selling something tomorrow on your own website and have people come overnight. I think people need
+                                    to validate what they are doing, like I did with the pepper and salt, by finding and talking to people they can trust to help them validate whether what they are doing will be different enough for people to pull out
+                                    their wallet and pay for something, and come back and do it again. You really have to be focused and have enough energy to go for two or three years to figure it out. You also can&rsquo;t sit there and figure it all
+                                    out on a piece of paper. A lot of stuff you have to learn as you go and be able to take the information you&rsquo;re getting and keep modifying what you&rsquo;re doing as you&rsquo;re going along.</p>
+                                <!-- End Interview -->
 
-                              <!-- Share Buttons (Thanks to Simple Share.com) -->
-                              <div id="share-buttons">
-                                  <!-- Email -->
-                                  <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> " >
-                                    <span class="fa fa-envelope" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Facebook -->
-                                  <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
-                                    <span class="fa fa-facebook" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Google+ -->
-                                  <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
-                                    <span class="fa fa-google-plus" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- LinkedIn -->
-                                  <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
-                                    <span class="fa fa-linkedin" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Reddit -->
-                                  <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
-                                    <span class="fa fa-reddit-alien" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Twitter -->
-                                  <a href="https://twitter.com/share?url=<%= page_link %>&amp;text="Shopify Case Study"&amp;hashtags=Shopify" target="_blank">
-                                    <span class="fa fa-twitter" aria-hidden="true"></span>
-                                  </a>
-                              </div>
+                                <!-- Share Buttons (Thanks to Simple Share.com) -->
+                                <div id="share-buttons">
+                                    <!-- Email -->
+                                    <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> ">
+                                        <span class="fa fa-envelope" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- Facebook -->
+                                    <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
+                                        <span class="fa fa-facebook" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- Google+ -->
+                                    <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
+                                        <span class="fa fa-google-plus" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- LinkedIn -->
+                                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
+                                        <span class="fa fa-linkedin" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- Reddit -->
+                                    <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
+                                        <span class="fa fa-reddit-alien" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- Twitter -->
+                                    <a href="https://twitter.com/share?url=<%= page_link %>&amp;text=" Shopify Case Study "&amp;hashtags=Shopify" target="_blank">
+                                        <span class="fa fa-twitter" aria-hidden="true"></span>
+                                    </a>
+                                </div>
 
 
-                              <% include ../snippets/mailchimp_footer.ejs %>
+                                <% include ../snippets/mailchimp_footer.ejs %>
 
+
+                            </div>
+
+                            <% include ../snippets/disqus.ejs %>
 
                         </div>
 
-                        <% include ../snippets/disqus.ejs %>
 
                     </div>
-
-
                 </div>
             </div>
+
+            <footer>
+                <% include ../snippets/footer.ejs %>
+            </footer>
         </div>
-        <% include ../snippets/footer.ejs %>
-  </body>
+        <% include ../snippets/page_scripts.ejs %>
+</body>
 
 </html>

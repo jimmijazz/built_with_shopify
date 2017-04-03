@@ -11,8 +11,13 @@
 </head>
 
 <body>
-    <% include ../snippets/nav.ejs %>
-
+    <nav id="fh5co-main-nav" role="navigation">
+        <% include ../snippets/mobile_nav.ejs %>
+    </nav>
+    <div id="fh5co-page">
+        <header>
+            <% include ../snippets/nav.ejs %>
+        </header>
         <div id="fh5co-services-section">
             <div class="container">
                 <div class="row">
@@ -139,7 +144,12 @@
                 </div>
             </div>
         </div>
-        <% include ../snippets/footer.ejs %>
+
+        <footer>
+            <% include ../snippets/footer.ejs %>
+        </footer>
+    </div>
+    <% include ../snippets/page_scripts.ejs %>
 </body>
 
 </html>

@@ -10,11 +10,13 @@
     <% include snippets/header.ejs %>
 </head>
 <body>
-  <% include snippets/nav.ejs %>
-
-
-
-	<div id="fh5co-page">
+  <nav id="fh5co-main-nav" role="navigation">
+    <% include snippets/mobile_nav.ejs %>
+  </nav>
+  <div id="fh5co-page">
+    <header>
+      <% include snippets/nav.ejs %>
+    </header>
 
 		<div id="fh5co-intro-section">
 			<div class="container">
@@ -88,71 +90,11 @@
 			</div>
 		</div>
 		<!-- END fh5co-portfolio-section -->
-		<footer>
-			<div id="footer" class="fh5co-border-line">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<p>Copyright 2017 United By Apps. All Rights Reserved. </p>
-						</div>
-						<div class="col-md-6 social-text-align">
-							<p class="fh5co-social-icons">
-								<a href="#"><i class="icon-twitter-with-circle"></i></a>
-								<a href="#"><i class="icon-facebook-with-circle"></i></a>
-								<a href="#"><i class="icon-instagram-with-circle"></i></a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
 
-	</div>
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Portfolio Filter Mixitup -->
-	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-
-	<!-- Main JS (Do not remove) -->
-	<script src="../js/main.js"></script>
-
-	<script type="text/javascript">
-	$(function () {
-
-		var filterList = {
-
-			init: function () {
-
-				// MixItUp plugin
-				// http://mixitup.io
-				$('#portfoliolist').mixItUp({
-  				selectors: {
-    			  target: '.portfolio',
-    			  filter: '.filter'
-    		  },
-    		  load: {
-      		  filter: '.all'
-      		}
-				});
-
-			}
-
-		};
-
-		// Run the show!
-		filterList.init();
-
-
-
-	});
-	</script>
-
+      <footer>
+        <% include snippets/footer.ejs %>
+      </footer>
+    </div>
+      <% include snippets/page_scripts.ejs %>
 	</body>
 </html>

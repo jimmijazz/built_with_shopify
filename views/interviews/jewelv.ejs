@@ -9,8 +9,15 @@
 <head>
     <% include ../snippets/header.ejs %>
 </head>
+
 <body>
-  <% include ../snippets/nav.ejs %>
+    <nav id="fh5co-main-nav" role="navigation">
+        <% include ../snippets/mobile_nav.ejs %>
+    </nav>
+    <div id="fh5co-page">
+        <header>
+            <% include ../snippets/nav.ejs %>
+        </header>
 
         <div id="fh5co-services-section">
             <div class="container">
@@ -21,28 +28,28 @@
                         <!-- Share Buttons (Thanks to Simple Share.com) -->
                         <div id="share-buttons">
                             <!-- Email -->
-                            <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> " >
-                              <span class="fa fa-envelope" aria-hidden="true"></span>
+                            <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> ">
+                                <span class="fa fa-envelope" aria-hidden="true"></span>
                             </a>
                             <!-- Facebook -->
                             <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
-                              <span class="fa fa-facebook" aria-hidden="true"></span>
+                                <span class="fa fa-facebook" aria-hidden="true"></span>
                             </a>
                             <!-- Google+ -->
                             <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
-                              <span class="fa fa-google-plus" aria-hidden="true"></span>
+                                <span class="fa fa-google-plus" aria-hidden="true"></span>
                             </a>
                             <!-- LinkedIn -->
                             <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
-                              <span class="fa fa-linkedin" aria-hidden="true"></span>
+                                <span class="fa fa-linkedin" aria-hidden="true"></span>
                             </a>
                             <!-- Reddit -->
                             <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
-                              <span class="fa fa-reddit-alien" aria-hidden="true"></span>
+                                <span class="fa fa-reddit-alien" aria-hidden="true"></span>
                             </a>
                             <!-- Twitter -->
-                            <a href="https://twitter.com/share?url=<%= page_link %>&amp;text="Shopify Case Study"&amp;hashtags=Shopify" target="_blank">
-                              <span class="fa fa-twitter" aria-hidden="true"></span>
+                            <a href="https://twitter.com/share?url=<%= page_link %>&amp;text=" Shopify Case Study "&amp;hashtags=Shopify" target="_blank">
+                                <span class="fa fa-twitter" aria-hidden="true"></span>
                             </a>
                         </div>
                     </div>
@@ -53,40 +60,48 @@
                         <div class="fh5co-services">
                             <div class="holder-section">
 
-                              <h4><strong>Could you tell us a bit about the story behind JEWELv and what you sell?</strong></h4>
-                              <p>JEWELv is the world&rsquo;s first online fine jewelry brand that combines customizable jewelry with 3D display technology. I started JEWELv while completing my undergraduate studies at Babson College. I knew I wanted to create a way for people to buy jewelry like never before. I can&rsquo;t think of many other 21 year old&rsquo;s changing the jewelry industry like this. </p>
-                              <div class="videowrapper" style="text-align: center;">
-                                <iframe width="640" height="360" src="https://www.youtube.com/embed/Ya7rxS5ph50" frameborder="0" allowfullscreen></iframe>
-                              </div>
-                              <br />
-                              <h4><strong>Has ecommerce been apart of JEWELv since you started? When did you get started with Shopify and why did you choose it?</strong></h4>
-                              <p>Yes JEWELv has always been a ecommerce shop, we have yet to open or sell our products in physical stores. When I was creating JEWELv&rsquo;s ecommerce site, I knew Shopify was the way to go. I already had some experience with Shopify&rsquo;s easy to use backend and absolutely loved the variety of add-ons in their app store. Without a full-time developer on staff, it was imparative to my operation that I would be able to handle small website changes, changing product, and uploading content. With Shopify I can do it all.
-                              </p>
-                              <h4><strong>What are your most successful marketing avenues?</strong></h4>
-                              <p>We&rsquo;ve seen great traffic coming from our <a href="https://jewelv.com/blogs/news">blog posts</a>, they&rsquo;ve certainly been a huge source. We write to answer questions that lots of our customers have about jewelry and gemstones. This helps a lot with coming up in search results for the types of questions people typically ask around jewelry subjects. We&rsquo;re still trying to figure out social media to the best of our ability, so far Facebook has sent the most traffic to <a href="https://jewelv.com/">JEWELv.com</a>, but we&rsquo;ve been able to accumulate the most followers and engagement per post on <a href="https://www.instagram.com/jewelvteam/">Instagram</a>. We hope to continue to improve all our inbound marketing strategies.</p>
-                              <h4><strong>Did you build your Shopify store yourself or hire a designer and how long did it take to launch?</strong></h4>
-                              <p>We hired a designer and a developer to build us a custom store when we began. At the time it seemed great, but it has since proven a poor decision. Due to inexperience in the design end of things, I wasn&rsquo;t able to communicate well with my designer about what I wanted. Then the developer was necessary to code the custom theme and create the 3D display integrations. From start to launch it took just over 9 months.</p>
-                              <figure>
-                              <img class="img-responsive" alt="jewelv shopify 3d editor" src="/images/jewelv/jewelv_shopify_editor.png">
-                              <figcaption class="figure-caption text-center">JewelV has the first in browser jewelery customiser in the jewelry industry.</figcaption>
-                              </figure>
-                              <br />
-                              <h4><strong>What theme are you using? Have you done any theme customizations?</strong></h4>
-                              <p>We started with a custom theme but it was very expensive, looked outdated, and didn&rsquo;t convert for us. Currently we are going through a redesign built on top of the <a href="http://1.shopifytrack.com/SHVj">Parallax theme</a>. Doing lots of customizations using a page builder from the Shopify App store and it&rsquo;s been fantastic. Excited to see the results from our redesign.
-                              </p>
+                                <h4><strong>Could you tell us a bit about the story behind JEWELv and what you sell?</strong></h4>
+                                <p>JEWELv is the world&rsquo;s first online fine jewelry brand that combines customizable jewelry with 3D display technology. I started JEWELv while completing my undergraduate studies at Babson College. I knew I wanted to
+                                    create a way for people to buy jewelry like never before. I can&rsquo;t think of many other 21 year old&rsquo;s changing the jewelry industry like this. </p>
+                                <div class="videowrapper" style="text-align: center;">
+                                    <iframe width="640" height="360" src="https://www.youtube.com/embed/Ya7rxS5ph50" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <br />
+                                <h4><strong>Has ecommerce been apart of JEWELv since you started? When did you get started with Shopify and why did you choose it?</strong></h4>
+                                <p>Yes JEWELv has always been a ecommerce shop, we have yet to open or sell our products in physical stores. When I was creating JEWELv&rsquo;s ecommerce site, I knew Shopify was the way to go. I already had some experience
+                                    with Shopify&rsquo;s easy to use backend and absolutely loved the variety of add-ons in their app store. Without a full-time developer on staff, it was imparative to my operation that I would be able to handle small
+                                    website changes, changing product, and uploading content. With Shopify I can do it all.
+                                </p>
+                                <h4><strong>What are your most successful marketing avenues?</strong></h4>
+                                <p>We&rsquo;ve seen great traffic coming from our <a href="https://jewelv.com/blogs/news">blog posts</a>, they&rsquo;ve certainly been a huge source. We write to answer questions that lots of our customers have about jewelry
+                                    and gemstones. This helps a lot with coming up in search results for the types of questions people typically ask around jewelry subjects. We&rsquo;re still trying to figure out social media to the best of our ability,
+                                    so far Facebook has sent the most traffic to <a href="https://jewelv.com/">JEWELv.com</a>, but we&rsquo;ve been able to accumulate the most followers and engagement per post on <a href="https://www.instagram.com/jewelvteam/">Instagram</a>.
+                                    We hope to continue to improve all our inbound marketing strategies.</p>
+                                <h4><strong>Did you build your Shopify store yourself or hire a designer and how long did it take to launch?</strong></h4>
+                                <p>We hired a designer and a developer to build us a custom store when we began. At the time it seemed great, but it has since proven a poor decision. Due to inexperience in the design end of things, I wasn&rsquo;t able to
+                                    communicate well with my designer about what I wanted. Then the developer was necessary to code the custom theme and create the 3D display integrations. From start to launch it took just over 9 months.</p>
+                                <figure>
+                                    <img class="img-responsive" alt="jewelv shopify 3d editor" src="/images/jewelv/jewelv_shopify_editor.png">
+                                    <figcaption class="figure-caption text-center">JewelV has the first in browser jewelery customiser in the jewelry industry.</figcaption>
+                                </figure>
+                                <br />
+                                <h4><strong>What theme are you using? Have you done any theme customizations?</strong></h4>
+                                <p>We started with a custom theme but it was very expensive, looked outdated, and didn&rsquo;t convert for us. Currently we are going through a redesign built on top of the <a href="http://1.shopifytrack.com/SHVj">Parallax theme</a>.
+                                    Doing lots of customizations using a page builder from the Shopify App store and it&rsquo;s been fantastic. Excited to see the results from our redesign.
+                                </p>
 
-                              <h4><strong>What Shopify apps do you use? Which apps are most important to your business? </strong></h4>
-                              <p>A few apps I&rsquo;ve been impressed with are:</p>
-                              <ul>
-                              <li><a href="http://1.shopifytrack.com/SHW3">SocialShopWave</a> for everything from Social Login to shopping our Instagram page</li>
-                              <li><a href="http://1.shopifytrack.com/SHWB">Tawk.to Live Chat</a> for extensive live chat abilities with customers, and</li>
-                              <li><a href="http://1.shopifytrack.com/SHTn">Hypervisual</a> our newly found page builder.</li>
-                              </ul>
-                              <p>These 3 apps have been incredibly important for our business as they all drastically increase the customer&rsquo;s online shopping experience.</p>
-                              <h4><strong>What would you do differently if you had to start over? Are there any blogs or resources that have been helpful for you?</strong></h4>
-                              <div class=" col-md-3 animate-box tip-box-right pull-right">
-                                <h4 class="tip-header">Tip! <span class="tip-bulb fa fa-lightbulb-o" aria-hidden="true"></h4>
-                                <span><a target="_blank" href="https://www.amazon.com/gp/product/0307887898/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0307887898&linkCode=as2&tag=builtwithshop-20&linkId=b0dabc8d02149393d5cb4a5e54dddfce">The Lean Startup</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=builtwithshop-20&l=am2&o=1&a=0307887898" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+                                <h4><strong>What Shopify apps do you use? Which apps are most important to your business? </strong></h4>
+                                <p>A few apps I&rsquo;ve been impressed with are:</p>
+                                <ul>
+                                    <li><a href="http://1.shopifytrack.com/SHW3">SocialShopWave</a> for everything from Social Login to shopping our Instagram page</li>
+                                    <li><a href="http://1.shopifytrack.com/SHWB">Tawk.to Live Chat</a> for extensive live chat abilities with customers, and</li>
+                                    <li><a href="http://1.shopifytrack.com/SHTn">Hypervisual</a> our newly found page builder.</li>
+                                </ul>
+                                <p>These 3 apps have been incredibly important for our business as they all drastically increase the customer&rsquo;s online shopping experience.</p>
+                                <h4><strong>What would you do differently if you had to start over? Are there any blogs or resources that have been helpful for you?</strong></h4>
+                                <div class=" col-md-3 animate-box tip-box-right pull-right">
+                                    <h4 class="tip-header">Tip! <span class="tip-bulb fa fa-lightbulb-o" aria-hidden="true"></h4>
+                                    <span><a target="_blank" href="https://www.amazon.com/gp/product/0307887898/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0307887898&linkCode=as2&tag=builtwithshop-20&linkId=b0dabc8d02149393d5cb4a5e54dddfce">The Lean Startup</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=builtwithshop-20&l=am2&o=1&a=0307887898" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
                                   discusses market research and creating an MVP to best fit what your customers want.
                               </div>
                               <p>I would do a lot differently if I had to start over. More market research, not starting with a custom design, and being a bit less lenient on spending.</p>
@@ -99,31 +114,31 @@
                                   <!-- Email -->
                                   <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> " >
                                     <span class="fa fa-envelope" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Facebook -->
-                                  <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
-                                    <span class="fa fa-facebook" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Google+ -->
-                                  <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
-                                    <span class="fa fa-google-plus" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- LinkedIn -->
-                                  <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
-                                    <span class="fa fa-linkedin" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Reddit -->
-                                  <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
-                                    <span class="fa fa-reddit-alien" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Twitter -->
-                                  <a href="https://twitter.com/share?url=<%= page_link %>&amp;text="Shopify Case Study"&amp;hashtags=Shopify" target="_blank">
-                                    <span class="fa fa-twitter" aria-hidden="true"></span>
-                                  </a>
-                              </div>
-                              <% include ../snippets/mailchimp_footer.ejs %>
+                                    </a>
+                                    <!-- Facebook -->
+                                    <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
+                                        <span class="fa fa-facebook" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- Google+ -->
+                                    <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
+                                        <span class="fa fa-google-plus" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- LinkedIn -->
+                                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
+                                        <span class="fa fa-linkedin" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- Reddit -->
+                                    <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
+                                        <span class="fa fa-reddit-alien" aria-hidden="true"></span>
+                                    </a>
+                                    <!-- Twitter -->
+                                    <a href="https://twitter.com/share?url=<%= page_link %>&amp;text=" Shopify Case Study "&amp;hashtags=Shopify" target="_blank">
+                                        <span class="fa fa-twitter" aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                                <% include ../snippets/mailchimp_footer.ejs %>
 
-                       </div>
+                            </div>
 
                         </div>
                         <% include ../snippets/disqus.ejs %>
@@ -136,7 +151,12 @@
             </div>
 
         </div>
-        <% include ../snippets/footer.ejs %>
-  </body>
+
+        <footer>
+            <% include ../snippets/footer.ejs %>
+        </footer>
+    </div>
+    <% include ../snippets/page_scripts.ejs %>
+</body>
 
 </html>

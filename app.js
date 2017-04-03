@@ -17,6 +17,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 app.get('/', function(req, res) {
   res.render('index', {
     interviews : interviews
@@ -27,6 +28,10 @@ app.get('/blog', function(req, res) {
   res.render('blog', {
     blog : blog
   });
+});
+
+app.get('/about', function(req, res) {
+  res.render('about');
 });
 
 app.get('/shopify-case-studies/:store', function(req,res, next) {
@@ -41,6 +46,7 @@ app.get('/shopify-case-studies/:store', function(req,res, next) {
     page_link: "http://www.builtwithshopify.com/shopify-case-studies/" + req.params.store
   } )
 });
+
 
 app.get('/blog/:post', function(req,res, next) {
   var post = blog[req.params.post];
