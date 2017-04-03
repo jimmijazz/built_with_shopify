@@ -251,9 +251,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 768px) {
-  #fh5co-main-nav ul li a {
+  #main-nav ul li a {
     /*font-size: .3em;*/
-    padding: 10px 0;
+    padding: 5px !important;
   }
 }
 #fh5co-main-nav ul li a:hover {
@@ -544,6 +544,14 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   .fh5co-logo span {
     font-size: 25px!important;
   }
+
+  #main-nav ul li a {
+    font-size: .8em!important;
+  }
+
+  #main-nav ul li:last-child a {
+    font-size:  .7em!important;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -559,6 +567,19 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
 
   .tip-box-left, .tip-box-right {
     text-align: center!important;
+  }
+
+  #main-nav ul li a {
+    font-size: .7em!important;
+  }
+
+  #main-nav ul li:last-child a {
+    font-size:  .6em!important;
+    margin-left: 0px!important;
+  }
+
+  .fh5co-navbar-brand {
+    width: 300px;
   }
 }
 
