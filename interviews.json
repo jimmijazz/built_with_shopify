@@ -109,18 +109,6 @@
     "description": "Handcrafted, nature jewellery",
     "revenue": ""
   },
-  "titan-survival" : {
-    "store_name"   : "TITAN Survival",
-    "store_link"   : "https://www.titansurvival.com/",
-    "date"         : "27/01/2017",
-    "author"       : "Brittany",
-    "responses"    : "titan_survival.ejs",
-    "data_cat"   : "gadgets",
-    "categories" : "lifestyle gadgets",
-    "thumbnail"  : "images/titan/website_screenshot.png",
-    "description": "The toughest parachord and survival gear",
-    "revenue": ""
-  },
   "naak-bar" : {
     "store_name" : "Naak",
     "store_link" : "https://naakbar.com/",
@@ -218,6 +206,18 @@
     "categories" : "clothing art dropshipping",
     "thumbnail"  : "images/whitechapter/website_screenshot.png",
     "description": "Clothing printed with your favourite novel.",
+    "revenue": ""
+  },
+  "titan-survival" : {
+    "store_name"   : "TITAN Survival",
+    "store_link"   : "https://www.titansurvival.com/",
+    "date"         : "27/01/2017",
+    "author"       : "Brittany",
+    "responses"    : "titan_survival.ejs",
+    "data_cat"   : "gadgets",
+    "categories" : "lifestyle gadgets",
+    "thumbnail"  : "images/titan/website_screenshot.png",
+    "description": "The toughest parachord and survival gear",
     "revenue": ""
   }
 }
