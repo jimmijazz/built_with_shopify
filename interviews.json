@@ -1,8 +1,20 @@
 {
+  "funky-moose-records" : {
+    "store_name" : "Funky Moose Records",
+    "store_link" : "https://www.funkymooserecords.ca/",
+    "date" : "4/4/2017",
+    "author" : "Josh",
+    "responses" : "funky_moose.ejs",
+    "data_cat"   : "art",
+    "categories" : "art",
+    "thumbnail"  : "/images/funky_moose/funky_moose_shopify_screenshot.jpg",
+    "description": "New and used vinyl records",
+    "revenue"   : ""
+  },
   "reluctant-trading-experiment" : {
     "store_name" : "The Reluctant Trading Experiment",
     "store_link" : "https://reluctanttrading.com",
-    "date" : "30`/3/2017",
+    "date" : "30/3/2017",
     "author" : "Josh",
     "responses" : "reluctant_trading_experiment.ejs",
     "data_cat"   : "food",

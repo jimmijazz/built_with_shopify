@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <% include ../snippets/header.ejs %>
+</head>
+
+<body>
+    <nav id="fh5co-main-nav" role="navigation">
+        <% include ../snippets/mobile_nav.ejs %>
+    </nav>
+    <div id="fh5co-page">
+        <header>
+            <% include ../snippets/nav.ejs %>
+        </header>
+
+        <div id="fh5co-services-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center heading-section">
+                        <h1><%= title %></h1>
+                        <h3>Mark from <a href="<%= link %>">Funky Moose Records</a> merged his skills as a web designer and passion for vinyl to sell new and used records, with a focus on Canadian artists.</h3>
+                        <!-- Share Buttons -->
+                        <% include ../snippets/share_buttons.ejs %>
+                    </div>
+                </div>
+                <div class="row fh5co-services-single">
+
+                    <div class="col-md-12 animate-box">
+                        <div class="fh5co-services">
+                            <div class="holder-section">
+
+                                <!-- Start Interview -->
+                              <h4><strong>Could you tell us a bit about yourself and how you started Funky Moose Records?</strong></h4>
+                                <p>My name is Mark Poppen, originally from The Netherlands and immigrated to Canada in 2007. I&rsquo;m a web designer by trade and have a strong background in retail/sales (see where this is going?)</p>
+                                <p>After we were settled and I built my web design company &ldquo;<a href="http://poppen.ca/" target="_blank">PoppenWorks</a>&rdquo; for a few years, I started missing selling physical products. Web design is a great business to be in, but you&rsquo;re not
+                                    selling products. You&rsquo;re selling a service. Air, so to speak.</p>
+                                <p>I always had a little voice in my head that told me I should start an online store.</p>
+                                <h4><strong>How did you make the switch from collecting, to buying and selling vinyl records? Where do you find the best records?</strong></h4>
+                                <p>After moving, I started my record collection from scratch. <a href="http://www.kijiji.ca/">Kijiji</a>, Facebook garage sale pages, thrift stores etc. were my goto and I bought a turntable from a thrift store to get back into it.</p>
+                                <img class="img-responsive" alt="Funky Moose Records' Instagram" src="/images/funky_moose/shopify_funky_moose_records_instagram_shot.jpg">
+                                <figcaption class="figure-caption text-center">Shots from the Funky Moose Instagram</figcaption>
+                                <br />
+                                <p>I was looking for online retailers that sold new records, because in my area, vinyl was (and still is in 2017) not really a thing. There were only 1 or 2 online options in Canada and they were on opposite sides of the country, so my first Canadian purchase
+                                    was from Amazon. After receiving the package, and having a few used records that came in a package deal, gathering dust, a metaphoric fluorescent light switched on over my head. &ldquo;I can do this!&rdquo;.</p>
+                                <p>I started looking for distributors in Canada and the first call I made was to the distributor I&rsquo;m still in business with. They&rsquo;ve been very helpful in helping me figuring out what to buy and when to buy it.</p>
+                                <p>This lead to &ldquo;Oh, now I have to build a site&rdquo;. There were a few options in the open source market, but I knew from experience that those can become quite the headache and I want to focus on the business side of things, rather than dealing
+                                    with hacking and phishing attempts. Shopify was the only hosted platform on my radar.</p>
+                                <p>I had previous experience with building themes for Shopify from my web design company (we launched a few Shopify stores for clients), so whipping up an initial draft for the store was done fairly quickly. I&rsquo;ve been evolving the site ever since opening.</p>
+                                <h4><strong>The Funky Moose timeline:</strong></h4>
+                                <p>
+                                  <ul>
+                                    <li>June 1st, 2015 - Online store opens</li>
+                                    <li>June 8th, 2015 - First customer order&nbsp;is processed</li>
+                                    <li>August 31st, 2015 - Funky Moose Records becomes an official <a href="http://www.funkymooserecords.ca/collections/spin-clean-record-washer?sort_by=created-ascending">Spin Clean Record Washer</a> dealer.</li>
+                                    <li>November 2015 - Funky Moose Records launches <a href="http://www.funkymooserecords.ca/pages/artist-support">artist support</a>.</li>
+                                    <li>December 2015 - Funky Moose Records opens <a href="http://www.discogs.com/seller/FunkyMooseRecords/profile?sort=condition%2Cdesc&amp;limit=25">Discogs store</a> to sell used records.</li>
+                                    <li>April 2016 - Plans are made to start a <a href="https://www.funkymooserecords.ca/pages/monthly-vinyl-subscription">vinyl subscription</a> service.</li>
+                                    <li>May 2016 - Funky Moose Records becomes the first Canadian retailer for the <a href="https://www.funkymooserecords.ca/collections/groovewasher">GrooveWasher record cleaning kit</a>.</li>
+                                    <li>August 2016 - Used records are now available on the <a href="https://www.funkymooserecords.ca/collections/new-arrivals-used-records">Funky Moose Records website</a>.</li>
+                                    <li>August 2016 - The first episode of the podcast "<a href="http://tracks.funkymoose.ca/">Moose Tracks</a>" is live.</li>
+                                    <li>December 2016 - The Mystery Rock Box becomes a product in steps towards a vinyl subscription.</li>
+                                    <li>March 2017 - Funky Moose Records becomes an official dealer for <a href="http://www.kantoliving.com/audio/">Kanto Audio</a>.</li>
+                                  </ul>
+                                </p>
+                                <h4><strong>What are some of the biggest challenges you face as a business?</strong></h4>
+                                <p>Cashflow is probably the biggest factor. In order to compete with the big online retailers and the competition, margins are pretty slim. The only drawback of Shopify Payments is that there&rsquo;s a 7-day hold on funds, which means I have to front at
+                                    least 7 days of cash for new orders. If they are big orders, that can get challenging, especially if most of the profits are going back into advertising.</p>
+                                <p>Keeping stock is also challenging. Although space is not really an issue (I can store about 2000 products in 3 record bins, which take up about 10 or 11ft&sup2;), music trends are ever evolving. Sinking a lot of money in inventory can end up with you
+                                    liquidating stock, because 10 people might like and buy a copy of Flying Lotus&rsquo;s EP, but after that it might become irrelevant.</p>
+                                <h4><strong>What Shopify apps do you use? Which apps are most important to your business?</strong></h4>
+                                <p>I use a lot of apps that do a lot of little things to improve the Shopify experience. Currently, I have 35 apps active, but I&rsquo;ll highlight my top-3:</p>
+                                <p>
+                                  <ul>
+                                      <li><a href="http://1.shopifytrack.com/SHan">Findify Search, Recommendations &amp; Collections</a>&nbsp;- 90% of my visitors use the search function to find the album(s) they&rsquo;re looking for. Findify has a beautiful user experience and is converting
+                                          a lot of traffic for me.
+                                      </li>
+                                      <li><a href="https://apps.shopify.com/mailmunch">MailMunch</a>&nbsp;and <a href="http://1.shopifytrack.com/SHUN">MailChimp</a>&nbsp;- This combination is driving an incredible amount of traffic. MailMunch adds people to my mailing list
+                                          and MailChimp can recover abandoned carts and send emails based on customer history.
+                                      </li>
+                                      <li><a href="https://www.reamaze.com/?ref=funkymoose">Reamaze</a>&nbsp;- Although not a dedicated Shopify app, I&rsquo;ve been using Reamaze for customer support and it&rsquo;s been amazing. Chats, emails, social media responses, all in one spot and their
+                                          support is second to none.&nbsp;</li>
+                                  </ul>
+                                </p>
+                                <h4><strong>Are there any metrics you can share in terms of order volume or monthly sales?</strong></h4>
+                                <p>I&rsquo;d like to keep the exact numbers under wraps, but I can say that the initial thoughts of &ldquo;this could be a fun hobby&rdquo; and &ldquo;if I have one or 2 orders per month, I&rsquo;d be happy&rdquo; turned into something that exceeded those
+                                    expectations by about 20 times. And the growth doesn&rsquo;t seem to be slowing down. If anything, I&rsquo;m gaining more and more momentum week over week.</p>
+                                <h4><strong>What are you working towards now?</strong></h4>
+                                <p>I&rsquo;d like my store to be a one-stop shop for vinyl lovers, so I recently became a dealer of a speaker brand that integrate with existing turntables. Representing a brand of turntables is next on my list.</p>
+                                <p>Maybe in the future, I will open a brick and mortar store, using Shopify as my POS, but for now, online is my way to go.</p>
+                              </br>
+                              <p>You can read more about Mark's journey at the <a href="https://www.funkymooserecords.ca/blogs/blog">Funky Moose Records blog</a></p>
+
+                                <!-- End Interview -->
+                                <% include ../snippets/share_buttons.ejs %>
+                                <% include ../snippets/mailchimp_footer.ejs %>
+                              </br>
+
+                            </div>
+                        </div>
+                        <% include ../snippets/disqus.ejs %>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <% include ../snippets/footer.ejs %>
+        </footer>
+    </div>
+    <% include ../snippets/page_scripts.ejs %>
+</body>
+
+</html>
