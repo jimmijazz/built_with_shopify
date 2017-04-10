@@ -1,4 +1,16 @@
 {
+  "thrifty-pup" : {
+    "store_name" : "Thrifty Pup",
+    "store_link" : "https://www.thriftypup.com/",
+    "date" : "10/4/2017",
+    "author" : "Josh",
+    "responses" : "thrifty_pup.ejs",
+    "data_cat"   : "clothing",
+    "categories" : "clothing lifestyle",
+    "thumbnail"  : "/images/thrifty_pup/thrifty_pup_shopify_web_screenshot.jpg",
+    "description": "Handmade products for fancy dogs",
+    "revenue"   : "1,500k/mo"
+  },
   "tortuga" : {
     "store_name" : "Tortuga",
     "store_link" : "https://www.tortugabackpacks.com/",
