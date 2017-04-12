@@ -774,19 +774,19 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   opacity: 1;
 }
 
-.fh5co-services i {
+/*.fh5co-services i {
   font-size: 60px;
   display: block;
   margin-bottom: 40px;
   color: #A7CDCC;
 
-}
+}*/
 
-.fh5co-services-single .fh5co-services i {
+/*.fh5co-services-single .fh5co-services i {
   font-size: 80px;
   margin-right: auto;
   margin-left: auto;
-}
+}*/
 
 .contact-info {
   margin-bottom: 4em;
@@ -911,8 +911,8 @@ input[type="text"] {
 }
 
 .holder-section {
-  margin-left: 10%;
-  margin-right: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /*.holder-section p {
@@ -1013,6 +1013,50 @@ input[type="text"] {
   text-decoration: none!important;
 }
 
+/* Store Meta */
+.store-meta {
+  font-size: 0.75em;
+  margin-right: -15%;
+  margin-left: 10px;
+  margin-bottom: 10px!important;
+  padding: 10px;
+  border-top: 2px solid #7ab55c;
+}
+
+.store-meta h3 {
+  margin-bottom: 5px;
+}
+
+.fa-external-link {
+  padding-top: 5px;
+  color: rgba(114, 114, 114, 0.8);
+  width: 80%;
+  display: inline!important;
+}
+
+.fa-external-link:hover {
+  color: #7ab55c;
+  cursor: pointer;
+}
+
+.store-description-text {
+  font-size: 0.8em;
+  color: rgba(114, 114, 114, 0.7);
+}
+
+.store-description-meta {
+  font-size : 0.95em;
+
+}
+
+.store-meta p {
+  margin-bottom: 5px;
+}
+
+.shopify-icon {
+  border: 1px solid black;
+  padding: 10px;
+}
 /* Dropdown Menu from Neat theme */
 
 /*# sourceMappingURL=style.css.map */

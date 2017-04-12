@@ -1,9 +1,11 @@
 var express = require('express');
 var path = require('path');
 var interviews = require('./interviews');
+var test_interviews = require('./interviews_test');
 var blogs = require('./blog');
 var blog = require('./blog');
 var bodyParser = require('body-parser');
+var request = require('request');
 
 var app = express();
 app.use(bodyParser.json());       // to support JSON-encoded bodies
@@ -36,15 +38,42 @@ app.get('/about', function(req, res) {
 
 app.get('/shopify-case-studies/:store', function(req,res, next) {
   var s = interviews[req.params.store];
+    res.render('interviews/' + s.store_name.replace(new RegExp(" ", "g"), "_").toLowerCase(), {
+      title : s.store_name,
+      content : s.responses,
+      date :s.date,
+      author: s.author,
+      link: s.store_link,
+      page_link: "http://www.builtwithshopify.com/shopify-case-studies/" + req.params.store,
+      founders: s.founders,
+      start_date: s.start_date,
+      revenue: s.revenue,
+      apps : s.apps,
+      employees : s.employees,
+      country : s.country,
+      store_description: s.store_description,
+      orders_month : s.orders_month,
+  });
+});
 
-  res.render('interviews/' + s.store_name.replace(new RegExp(" ", "g"), "_").toLowerCase(), {
-    title : s.store_name,
-    content : s.responses,
-    date :s.date,
-    author: s.author,
-    link: s.store_link,
-    page_link: "http://www.builtwithshopify.com/shopify-case-studies/" + req.params.store
-  } )
+app.get('/shopify-case-studies-test/:store', function(req,res, next) {
+  var s = test_interviews[req.params.store];
+    res.render('interviews/' + s.store_name.replace(new RegExp(" ", "g"), "_").toLowerCase(), {
+      title : s.store_name,
+      content : s.responses,
+      date :s.date,
+      author: s.author,
+      link: s.store_link,
+      page_link: "http://www.builtwithshopify.com/shopify-case-studies/" + req.params.store,
+      founders: s.founders,
+      start_date: s.start_date,
+      revenue: s.revenue,
+      apps : s.apps,
+      employees : s.employees,
+      country : s.country,
+      store_description: s.store_description,
+      orders_month : s.orders_month,
+  });
 });
 
 

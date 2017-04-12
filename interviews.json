@@ -9,7 +9,14 @@
     "categories" : "home",
     "thumbnail"  : "/images/lelini/lelini_shopify_screen_capture.jpg",
     "description": "Silk pillowcases",
-    "revenue"   : ""
+    "revenue"   : "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "thrifty-pup" : {
     "store_name" : "Thrifty Pup",
@@ -21,7 +28,14 @@
     "categories" : "clothing lifestyle",
     "thumbnail"  : "/images/thrifty_pup/thrifty_pup_shopify_web_screenshot.jpg",
     "description": "Handmade products for fancy dogs",
-    "revenue"   : "1,500k/mo"
+    "revenue"   : "1,500k/mo",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "proper" : {
     "store_name" : "Proper",
@@ -33,7 +47,14 @@
     "categories" : "gadgets commercial lifestyle",
     "thumbnail"  : "/images/proper/shopify_studio_proper_web_screenshots.png",
     "description": "Mobile hardware used by Shopify and Apple",
-    "revenue"   : ""
+    "revenue"   : "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "tortuga" : {
     "store_name" : "Tortuga",
@@ -45,7 +66,14 @@
     "categories" : "clothing lifestyle",
     "thumbnail"  : "/images/tortuga/tortuga_shopify_web_screenshot.jpg",
     "description": "Fully remote team making backpacks for city travel",
-    "revenue"   : ""
+    "revenue"   : "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "petrichor" : {
     "store_name" : "Petrichor",
@@ -57,7 +85,14 @@
     "categories" : "food",
     "thumbnail"  : "/images/petrichor/shopify_petrichor_screenshot.jpg",
     "description": "Bangalore food and wellness store",
-    "revenue"   : "$3,850k/mo"
+    "revenue"   : "$3,850k/mo",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "funky-moose-records" : {
     "store_name" : "Funky Moose Records",
@@ -69,7 +104,14 @@
     "categories" : "art",
     "thumbnail"  : "/images/funky_moose/funky_moose_shopify_screenshot.jpg",
     "description": "New and used vinyl records",
-    "revenue"   : ""
+    "revenue"   : "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "reluctant-trading-experiment" : {
     "store_name" : "The Reluctant Trading Experiment",
@@ -81,7 +123,14 @@
     "categories" : "food commercial",
     "thumbnail"  : "images/reluctant_trading_experiment/shopify_reluctant_trading_co_screenshot.jpg",
     "description": "Pepper, salt and spices direct from the source",
-    "revenue"   : ""
+    "revenue"   : "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "mmore-cases" : {
     "store_name" : "MMORE",
@@ -93,7 +142,14 @@
     "categories" : "gadgets art",
     "thumbnail"  : "images/mmore/mmore_shopify_website_screenshot.jpg",
     "description": "Unique iphone cases made with love in Slovenia",
-    "revenue"   : ""
+    "revenue"   : "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "tiny-hands" : {
     "store_name" : "Tiny Hands",
@@ -105,7 +161,14 @@
     "categories" : "art food jewellery",
     "thumbnail"  : "images/tiny_hands/tiny_hands_web_screenshot.png",
     "description": "Handmade, scented food jewellery",
-    "revenue"   : "$15k/mo"
+    "revenue"   : "$15k/mo",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "modern-producers" : {
     "store_name" : "Modern Producers",
@@ -117,7 +180,14 @@
     "categories" : "art digital",
     "thumbnail"  : "images/modern_producers/website_screenshot.png",
     "description": "Music samples and software",
-    "revenue" : "$40k/mo"
+    "revenue" : "$40k/mo",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
 
   },
   "meraki-design-studio" : {
@@ -130,7 +200,14 @@
     "categories" : "home art",
     "thumbnail"  : "images/meraki/website_screenshot.png",
     "description": "Contemporary art and foil prints.",
-    "revnue": ""
+    "revnue": "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "hagan" : {
     "store_name" : "Hagan",
@@ -142,7 +219,14 @@
     "categories" : "sport",
     "thumbnail"  : "images/haganski/website_screenshot.png",
     "description": "93 year old Austrian ski mountaineering brand",
-    "revenue": ""
+    "revenue": "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "audionation" : {
     "store_name" : "AUDIONATION",
@@ -154,7 +238,14 @@
     "categories" : "gadgets home",
     "thumbnail"  : "images/audionation/website_screenshot.png",
     "description": "Importing design-oriented, stereo products",
-    "revenue": ""
+    "revenue": "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "midori-bikinis" : {
     "store_name" : "Midori Bikinis",
@@ -166,7 +257,14 @@
     "categories" : "clothing",
     "thumbnail"  : "images/midori/website_screenshot.png",
     "description": "Brazilian bottom bikinis",
-    "revenue": "$300k/mo"
+    "revenue": "$300k/mo",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
 
   },
   "the-wish-co"  : {
@@ -179,7 +277,14 @@
     "categories" : "jewellery",
     "thumbnail"  : "images/wishco/website_screenshot.png",
     "description": "Handcrafted, nature jewellery",
-    "revenue": ""
+    "revenue": "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "naak-bar" : {
     "store_name" : "Naak",
@@ -203,7 +308,14 @@
     "categories" : "home dropshipping",
     "thumbnail"  : "images/kitchenpro/website_screenshot.png",
     "description": "Automated kitchenware using F.B.A",
-    "revenue": ""
+    "revenue": "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "luks-linen" : {
     "store_name" : "Luks Linen",
@@ -215,7 +327,14 @@
     "categories" : "art home",
     "thumbnail"  : "images/lukslinen/website_screenshot.png",
     "description": "Ethically sourced Turkish linen",
-    "revenue": ""
+    "revenue": "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
 
   },
   "jutah-studios" : {
@@ -228,8 +347,14 @@
     "categories" : "clothing",
     "thumbnail"  : "images/jutah/website_screenshot.png",
     "description": "Clothing brands you won't find anywhere else",
-    "revenue": ""
-
+    "revenue": "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "jewelv" : {
     "store_name" : "JEWELv",
@@ -241,7 +366,14 @@
     "categories" : "jewellery",
     "thumbnail"  : "images/jewelv/website_screenshot.png",
     "description": "Design your own jewellery",
-    "revenue": ""
+    "revenue": "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "socco-designs" : {
     "store_name" : "Socco Designs",
@@ -253,7 +385,14 @@
     "categories" : "home art",
     "thumbnail"  : "images/socco/website_screenshot.png",
     "description": "Authentic Moroccan rugs & home decor.",
-    "revenue": ""
+    "revenue": "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
 
   },
   "silica-gelly" : {
@@ -266,7 +405,14 @@
     "categories" : "commercial home",
     "thumbnail"  : "images/silicagelly/website_screenshot.png",
     "description": "Silica gelly packaging for small consumer packages.",
-    "revenue": ""
+    "revenue": "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "white-chapter" : {
     "store_name" : "White Chapter",
@@ -278,7 +424,14 @@
     "categories" : "clothing art dropshipping",
     "thumbnail"  : "images/whitechapter/website_screenshot.png",
     "description": "Clothing printed with your favourite novel.",
-    "revenue": ""
+    "revenue": "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   },
   "titan-survival" : {
     "store_name"   : "TITAN Survival",
@@ -290,6 +443,13 @@
     "categories" : "lifestyle gadgets",
     "thumbnail"  : "images/titan/website_screenshot.png",
     "description": "The toughest parachord and survival gear",
-    "revenue": ""
+    "revenue": "",
+    "founders" :  "",
+    "start_date" : "",
+    "apps" : [],
+    "employees" : "1",
+    "country" : "",
+    "store_description" : "",
+    "orders_month" : ""
   }
 }

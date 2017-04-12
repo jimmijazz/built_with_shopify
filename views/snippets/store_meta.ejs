@@ -1,0 +1,53 @@
+<p class="store-description-meta"><%= date %> | Alexa: <span id="alexa_rank"></span></p>
+<p class="store-description-text"><%= store_description %></p>
+
+<% if (founders.length > 0) { %>
+  <p><strong>Founders:</strong> <%= founders %></p>
+<% } %>
+
+<% if (start_date.length > 0) { %>
+  <p><strong>Started:</strong> <%= start_date %></p>
+<% } %>
+
+<% if (revenue.length > 0) { %>
+  <p><strong>Revenue:</strong> <%= revenue %></p>
+<% } %>
+
+<% if (orders_month.length > 0) { %>
+  <p><strong>Orders per Month:</strong> <%= orders_month %></p>
+<% } %>
+
+<% if (country.length > 0) { %>
+  <p><strong>Country:</strong> <%= country %></p>
+<% } %>
+
+<% if (employees.length > 0) { %>
+  <p><strong>Employees:</strong> <%= employees %></p>
+<% } %>
+
+<% if (apps.length > 0) { %>
+  <br />
+  <h4><strong>Shopify Apps:</strong></h4>
+  <% for (var app in apps) { %>
+    <div id="shopify-app-container" class="col-md-12">
+      <div class="shopify-icon col-md-3"></div>
+      <p class="col-md-9"><%= apps[app] %></p>
+    </div>
+  <% } %>
+<% } %>
+
+<h4><strong>Other Software:</strong></h4>
+
+<script>
+  // Get Alex info
+  $.ajax({
+    url : "http://data.alexa.com/data?cli=10&url=" + "<% link %>",
+    data : {
+      format : 'xml'
+    },
+    type: 'GET',
+    success : function(data) {
+      console.log(data);
+    }
+  })
+</script>
