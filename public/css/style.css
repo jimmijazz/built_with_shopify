@@ -911,8 +911,8 @@ input[type="text"] {
 }
 
 .holder-section {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 /*.holder-section p {
@@ -1055,7 +1055,8 @@ input[type="text"] {
 
 .shopify-icon {
   border: 1px solid black;
-  padding: 10px;
+  width: 20px;
+  height: 20px;
 }
 /* Dropdown Menu from Neat theme */
 

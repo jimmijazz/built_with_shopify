@@ -76,7 +76,6 @@ app.get('/shopify-case-studies-test/:store', function(req,res, next) {
   });
 });
 
-
 app.get('/blog/:post', function(req,res, next) {
   var post = blog[req.params.post];
   res.render('blog/' + post.title.replace(new RegExp(" ", "g"), "_").toLowerCase(), {
@@ -86,7 +85,7 @@ app.get('/blog/:post', function(req,res, next) {
     author: post.author,
     description: post.description,
     category: post.category
-  } )
+  })
 });
 
 app.get('/shopify-resources', function(req, res) {
@@ -185,6 +184,17 @@ app.get('/submit-complete', function(req, res) {
   res.render('submit-complete');
 })
 
+// Store meta information
+app.post('/alexa-ranking', function(req, res) {
+  console.log(req.body)
+  request.get('http://data.alexa.com/data?cli=10&url=' + req.body.link, function(err,response,body) {
+    if (err) {
+      res.send("N.A")
+    } else {
+      res.send(response);
+    };
+  });
+})
 
 app.listen(port, function() {
   console.log('Example app listening on port: ', port);

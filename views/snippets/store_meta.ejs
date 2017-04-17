@@ -41,13 +41,18 @@
 <script>
   // Get Alex info
   $.ajax({
-    url : "http://data.alexa.com/data?cli=10&url=" + "<% link %>",
-    data : {
-      format : 'xml'
-    },
-    type: 'GET',
+    url : "/alexa-ranking",
+    type: 'POST',
+    data : {"link" : '<%= link %>'},
     success : function(data) {
+      console.log(data.body);
+      xmlDoc = $.parseXML( data.body ),
+      $xml = $( xmlDoc ),
+      rank = $xml.find( "ALEXA" );  // Why isn't this grabbing XML info
+      console.log(rank.text());
+    },
+    error : function(data) {
       console.log(data);
     }
-  })
+  });
 </script>
