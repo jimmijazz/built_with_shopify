@@ -58,6 +58,14 @@
                     <div class="col-md-12 animate-box">
                         <div class="fh5co-services">
                             <div class="holder-section">
+    <!-- Meta Information -->
+    <div class="col-md-4 animate-box store-meta pull-right">
+        <div id="store-meta-full">
+            <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+            <% include ../snippets/store_meta.ejs %>
+        </div>
+    </div>
+    <!-- End Meta Information -->
                                 <h4><strong>How did you find what product to sell?</strong></h4>
                                 <p>We were issued parachute cord (aka paracord or 550) while we were in Iraq. We used it for everything: from rope, to thread, to snares, to trip wires&hellip;it is very light and strong. It took me a few years to use all of mine up, but once I did, I couldn&rsquo;t
                                     find anything that felt or performed the same. &nbsp;Everything claimed to be &ldquo;mil-spec&rdquo;, but I quickly discovered that &ldquo;mil-spec&rdquo; doesn&rsquo;t really mean anything official. It&rsquo;s just a generic term with no specification
@@ -152,34 +160,14 @@
                                   <span>Check out our <a href="./resources">resources</a> page for some great podcasts</span>
                                 </div>
                                 <p>As far as resources go, I am a HUGE fan of business podcasts. I listen to them while I run and drive. &nbsp;Two of my favorite podcasts related to selling on Shopify are <a href="https://www.shopify.com.au/podcasts/shopify-masters/?ref=builtwithshopify">Shopify Masters</a> and <a href="http://www.inspiredinsider.com/">Inspired Insider</a>.</p>
-                                <!-- Share Buttons (Thanks to Simple Share.com) -->
-                                <div id="share-buttons">
-                                    <!-- Email -->
-                                    <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> " >
-                                      <span class="fa fa-envelope" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Facebook -->
-                                    <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
-                                      <span class="fa fa-facebook" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Google+ -->
-                                    <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
-                                      <span class="fa fa-google-plus" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- LinkedIn -->
-                                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
-                                      <span class="fa fa-linkedin" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Reddit -->
-                                    <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
-                                      <span class="fa fa-reddit-alien" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Twitter -->
-                                    <a href="https://twitter.com/share?url=<%= page_link %>&amp;text="Shopify Case Study"&amp;hashtags=Shopify" target="_blank">
-                                      <span class="fa fa-twitter" aria-hidden="true"></span>
-                                    </a>
+                                <!-- End Interview -->
+                                <div id="store-meta-responsive">
+                                    <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+                                    <% include ../snippets/store_meta.ejs %>
                                 </div>
-                                <% include ../snippets/mailchimp_footer.ejs %>
+                                <% include ../snippets/share_buttons.ejs %>
+                                    <% include ../snippets/mailchimp_footer.ejs %>
+                                        </br>
 
                             </div>
                         </div>
@@ -192,10 +180,32 @@
             </div>
         </div>
 
-                        <footer>
-                          <% include ../snippets/footer.ejs %>
-                        </footer>
-                      </div>
-                        <% include ../snippets/page_scripts.ejs %>  </body>
+        <footer>
+          <script>
+            // Get Alex info
+            $.ajax({
+              url : "/alexa-ranking",
+              type: 'POST',
+              data : {"link" : '<%= link %>'},
+              success : function(data) {
+
+                xmlDoc = $.parseXML( data.body );
+                parser = new DOMParser();
+                xmlDoc = parser.parseFromString(data.body, 'text/xml');
+                var alexa_rank = (xmlDoc.getElementsByTagName("SD")[0].childNodes[0].getAttribute("TEXT"));
+                $(".alexa_rank").text(alexa_rank);
+
+              },
+              error : function(data) {
+                $("#alexa_rank").text("N.A");
+              }
+            });
+          </script>
+            <% include ../snippets/footer.ejs %>
+        </footer>
+
+    </div>
+    <% include ../snippets/page_scripts.ejs %>
+</body>
 
 </html>

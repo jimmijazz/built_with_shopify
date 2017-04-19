@@ -34,40 +34,48 @@
                     <div class="col-md-12 animate-box">
                         <div class="fh5co-services">
                             <div class="holder-section">
+                                <!-- Meta Information -->
+                                <div class="col-md-4 animate-box store-meta pull-right">
+                                    <div id="store-meta-full">
+                                        <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+                                        <% include ../snippets/store_meta.ejs %>
+                                    </div>
+                                </div>
+                                <!-- End Meta Information -->
 
                                 <!-- Start Interview -->
                                 <h2>Could you tell us a bit about yourself and Tortuga?</h2>
                                 <p>When we started Tortuga, I was working in advertising at Google. I had a cushy job but was bored and looking for something more meaningful. At the depth of the recession, my co-founder, Jeremy, and I took a two week backpacking
                                     trip to Europe. Despite a ton of pre-trip research, we couldn&rsquo;t find the right luggage for our trip. Jeremy&rsquo;s bag broke on the first day, and mine was a disorganized mess. We complained about our bags long
                                     enough during the trip that the conversation eventually turned to how we could make a better bag. When we got back to the States, we got to work making the perfect travel backpack.</p>
-                                    <p>
-                                      <figure>
+                                <p>
+                                    <figure>
                                         <img class="img-responsive" style="width: 80%;" alt="The Tortuga backpackm" src="/images/tortuga/built_with_shopify_tortuga_backpack.jpg">
-                                          <figcaption class="figure-caption text-center">The Tortuga Backpack Source: <a href="https://www.tortugabackpacks.com/pages/about">Tortuga</a></figcaption>
+                                        <figcaption class="figure-caption text-center">The Tortuga Backpack Source: <a href="https://www.tortugabackpacks.com/pages/about">Tortuga</a></figcaption>
                                         </img>
-                                      </figure>
-                                    </p>
+                                    </figure>
+                                </p>
                                 <p>We now sell a range of gear for urban travel. Our ultimate goal is to help people travel, live, and work on their terms. For example, we&rsquo;re a 100% remote team with no offices.</p>
                                 <h2>How did you create your first product and get your first sales?</h2>
                                 <p>We spent two years trying to get our idea made into a product. After a failed attempt to manufacture in China, we tried the US again. Our US supplier was harder to work with than the overseas factories. Finally, we had
                                     to go into production or we would run out of cash before ever making anything. The first version of our bag was brutally ugly, but we got it made and put it up for sale. Since then, we&rsquo;ve redesigned our flagship
                                     backpack twice and now have a strong factory partner in China.</p>
-                                    <div class=" col-md-3 animate-box tip-box-right pull-right">
-                                        <span style="color: #7ab55c;" class="fa fa-quote-left" aria-hidden="true"></span><span style="font-weight: 300; font-size: 18px;"> Quote </span><span style="color: #7ab55c;" class="fa fa-quote-right" aria-hidden="true"></span></br>
-                                        <span>By hiring empathic former customers for our Concierge team, we ensure that our reps are knowledgeable and care about our customers.</span>
-                                    </div>
+                                <div class=" col-md-3 animate-box tip-box-right pull-right">
+                                    <span style="color: #7ab55c;" class="fa fa-quote-left" aria-hidden="true"></span><span style="font-weight: 300; font-size: 18px;"> Quote </span><span style="color: #7ab55c;" class="fa fa-quote-right" aria-hidden="true"></span></br>
+                                    <span>By hiring empathic former customers for our Concierge team, we ensure that our reps are knowledgeable and care about our customers.</span>
+                                </div>
                                 <p>Our first few sales came from Thrillist, a newsletter of cool stuff for men. We were thrilled with those initial sales, but they quickly dried up. From there we had to learn how to build a real, sustainable business. </p>
                                 <h2>What are some of the challenges &amp; perks of having a fully remote team?</h2>
                                 <p><a href="https://onyourterms.com/why-we-work-remotely-19d9bd2077b0">Working remotely</a> is challenging, but worthwhile for us. The biggest advantage is the flexibility that it offers to everyone on the team to work when,
                                     where, and how they are happiest and most productive. Working on our terms, rather than in a big open office setting, lets us be much more productive. Because we aren&rsquo;t limited by location, we can hire the absolute
                                     best people who share our values and add to our team culture.</p>
-                                    <p>
-                                      <figure>
+                                <p>
+                                    <figure>
                                         <img class="img-responsive" style="width: 80%;" alt="Tortuga Team" src="/images/tortuga/built_with_shopify_tortuga_team_photo.jpg">
-                                          <figcaption class="figure-caption text-center">The Tortuga team meeting. Source: <a href="https://www.tortugabackpacks.com/pages/about">Tortuga</a></figcaption>
+                                        <figcaption class="figure-caption text-center">The Tortuga team meeting. Source: <a href="https://www.tortugabackpacks.com/pages/about">Tortuga</a></figcaption>
                                         </img>
-                                      </figure>
-                                    </p>
+                                    </figure>
+                                </p>
                                 <p>The biggest challenges are communication. Without sharing a physical space, we can easily get out of sync, miscommunicate something, or lose out on the extra info that we typically learn from body language. To remedy these
                                     problems, we have frequent 1:1s and team meetings, use Slack as our &ldquo;water cooler,&rdquo; and have biannual retreats. In fact, I&rsquo;m heading to New Orleans today for our Spring retreat.</p>
                                 <p>We use a 3PL (third-party logistics company) for warehousing and fulfillment. Our Concierges (customer service team) are all in-house. As a vertical commerce company, we have a direct relationship with customers that we
@@ -104,6 +112,10 @@
                                     remote work or entrepreneurship, follow our Medium publication, <a href="https://onyourterms.com/">On Your Terms</a>.</p>
 
                                 <!-- End Interview -->
+                                <div id="store-meta-responsive">
+                                    <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+                                    <% include ../snippets/store_meta.ejs %>
+                                </div>
                                 <% include ../snippets/share_buttons.ejs %>
                                     <% include ../snippets/mailchimp_footer.ejs %>
                                         </br>
@@ -120,8 +132,31 @@
         </div>
 
         <footer>
+            <script>
+                // Get Alex info
+                $.ajax({
+                    url: "/alexa-ranking",
+                    type: 'POST',
+                    data: {
+                        "link": '<%= link %>'
+                    },
+                    success: function(data) {
+
+                        xmlDoc = $.parseXML(data.body);
+                        parser = new DOMParser();
+                        xmlDoc = parser.parseFromString(data.body, 'text/xml');
+                        var alexa_rank = (xmlDoc.getElementsByTagName("SD")[0].childNodes[0].getAttribute("TEXT"));
+                        $(".alexa_rank").text(alexa_rank);
+
+                    },
+                    error: function(data) {
+                        $("#alexa_rank").text("N.A");
+                    }
+                });
+            </script>
             <% include ../snippets/footer.ejs %>
         </footer>
+
     </div>
     <% include ../snippets/page_scripts.ejs %>
 </body>

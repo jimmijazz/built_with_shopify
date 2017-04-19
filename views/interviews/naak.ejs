@@ -58,6 +58,14 @@
                     <div class="col-md-12 animate-box">
                         <div class="fh5co-services">
                             <div class="holder-section">
+    <!-- Meta Information -->
+    <div class="col-md-4 animate-box store-meta pull-right">
+        <div id="store-meta-full">
+            <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+            <% include ../snippets/store_meta.ejs %>
+        </div>
+    </div>
+    <!-- End Meta Information -->
                                 <h4><strong>What was the motivation behind starting Naak and when did you get started with Shopify?</strong></h4>
                                 <p>We want to develop a product to help athletes and active people who want a natural and eco-friendly nutrition. We started with shopify in August 2016.</p>
                                 <img class="img-responsive" alt="Luks Linen Shopify" src="/images/naak/naak_bar_shopify.png">
@@ -102,51 +110,52 @@
                                 <h4><strong>Any other advice for Shopify store owners?</strong></h4>
                                 <p>Shopify is an excellent tool but it also has&nbsp;some limitations. So be aware of what you want to have and know your skills, focus on what will bring value to your business. Prove your product market fit before investing
                                     too much time developing your store.</p>
-                                <!-- Share Buttons (Thanks to Simple Share.com) -->
-                                <div id="share-buttons">
-                                    <!-- Email -->
-                                    <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> ">
-                                        <span class="fa fa-envelope" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Facebook -->
-                                    <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
-                                        <span class="fa fa-facebook" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Google+ -->
-                                    <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
-                                        <span class="fa fa-google-plus" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- LinkedIn -->
-                                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
-                                        <span class="fa fa-linkedin" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Reddit -->
-                                    <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
-                                        <span class="fa fa-reddit-alien" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Twitter -->
-                                    <a href="https://twitter.com/share?url=<%= page_link %>&amp;text=" Shopify Case Study "&amp;hashtags=Shopify" target="_blank">
-                                        <span class="fa fa-twitter" aria-hidden="true"></span>
-                                    </a>
-                                </div>
-                                <% include ../snippets/mailchimp_footer.ejs %>
+                                    <!-- End Interview -->
+                                    <div id="store-meta-responsive">
+                                        <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+                                        <% include ../snippets/store_meta.ejs %>
+                                    </div>
+                                    <% include ../snippets/share_buttons.ejs %>
+                                        <% include ../snippets/mailchimp_footer.ejs %>
+                                            </br>
 
+                                </div>
                             </div>
+                            <% include ../snippets/disqus.ejs %>
+
                         </div>
-                        <% include ../snippets/disqus.ejs %>
+
 
                     </div>
-
-
                 </div>
             </div>
-        </div>
 
-        <footer>
-            <% include ../snippets/footer.ejs %>
-        </footer>
-    </div>
-    <% include ../snippets/page_scripts.ejs %>
-</body>
+            <footer>
+              <script>
+                // Get Alex info
+                $.ajax({
+                  url : "/alexa-ranking",
+                  type: 'POST',
+                  data : {"link" : '<%= link %>'},
+                  success : function(data) {
+
+                    xmlDoc = $.parseXML( data.body );
+                    parser = new DOMParser();
+                    xmlDoc = parser.parseFromString(data.body, 'text/xml');
+                    var alexa_rank = (xmlDoc.getElementsByTagName("SD")[0].childNodes[0].getAttribute("TEXT"));
+                    $(".alexa_rank").text(alexa_rank);
+
+                  },
+                  error : function(data) {
+                    $("#alexa_rank").text("N.A");
+                  }
+                });
+              </script>
+                <% include ../snippets/footer.ejs %>
+            </footer>
+
+        </div>
+        <% include ../snippets/page_scripts.ejs %>
+    </body>
 
 </html>

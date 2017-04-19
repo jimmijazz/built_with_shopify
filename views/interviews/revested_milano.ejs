@@ -34,6 +34,15 @@
                     <div class="col-md-12 animate-box">
                         <div class="fh5co-services">
                             <div class="holder-section">
+                              <!-- Meta Information -->
+                              <div class="col-md-4 animate-box store-meta pull-right">
+                                  <div id="store-meta-full">
+                                      <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+                                      <% include ../snippets/store_meta.ejs %>
+                                  </div>
+                              </div>
+                              <!-- End Meta Information -->
+
                               <!-- Start Interview -->
                               <h3>What does Revested sell?</h3>
                               <p>Revested sells smartphone accessories made with the finest Italian fabrics for tailor made suits.</p>
@@ -70,26 +79,51 @@
                               <h3>Any other advice for Shopify store owners?</h3>
                               <p>Don&rsquo;t hesitate, but don&rsquo;t rush in taking actions too. And if you want to test things, try to do it in the safest way. Online credibility is hard to get and very easy to lose, that&rsquo;s why customer care is so important. Remember users aren&rsquo;t only numbers on a dashboard but they are real people living in the real world. One satisfied customer, will speak in your favour, and in the end he/she will worth more than every $1,000 advertisement. <br /></p>
                               <!-- End Interview -->
-                                <% include ../snippets/share_buttons.ejs %>
-                                    <% include ../snippets/mailchimp_footer.ejs %>
-                                        </br>
+                              <div id="store-meta-responsive">
+                                  <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+                                  <% include ../snippets/store_meta.ejs %>
+                              </div>
+                              <% include ../snippets/share_buttons.ejs %>
+                                  <% include ../snippets/mailchimp_footer.ejs %>
+                                      </br>
 
-                            </div>
-                        </div>
-                        <% include ../snippets/disqus.ejs %>
+                          </div>
+                      </div>
+                      <% include ../snippets/disqus.ejs %>
 
-                    </div>
+                  </div>
 
 
-                </div>
-            </div>
-        </div>
+              </div>
+          </div>
+      </div>
 
-        <footer>
-            <% include ../snippets/footer.ejs %>
-        </footer>
-    </div>
-    <% include ../snippets/page_scripts.ejs %>
+      <footer>
+        <script>
+          // Get Alex info
+          $.ajax({
+            url : "/alexa-ranking",
+            type: 'POST',
+            data : {"link" : '<%= link %>'},
+            success : function(data) {
+
+              xmlDoc = $.parseXML( data.body );
+              parser = new DOMParser();
+              xmlDoc = parser.parseFromString(data.body, 'text/xml');
+              var alexa_rank = (xmlDoc.getElementsByTagName("SD")[0].childNodes[0].getAttribute("TEXT"));
+              $(".alexa_rank").text(alexa_rank);
+
+            },
+            error : function(data) {
+              $("#alexa_rank").text("N.A");
+            }
+          });
+        </script>
+          <% include ../snippets/footer.ejs %>
+      </footer>
+
+  </div>
+  <% include ../snippets/page_scripts.ejs %>
 </body>
 
 </html>

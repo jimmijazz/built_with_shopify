@@ -34,6 +34,14 @@
                     <div class="col-md-12 animate-box">
                         <div class="fh5co-services">
                             <div class="holder-section">
+    <!-- Meta Information -->
+    <div class="col-md-4 animate-box store-meta pull-right">
+        <div id="store-meta-full">
+            <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+            <% include ../snippets/store_meta.ejs %>
+        </div>
+    </div>
+    <!-- End Meta Information -->
                               <!-- Start Interview -->
                     <h2>Could you tell us a bit about yourself and what Thrifty Pup sells?</h2>
 
@@ -77,27 +85,52 @@
                         because no matter what your occupation or field you are in, that language of design should overlap. &nbsp;So I keep those trends in mind as I design our products and brand.</p>
                     <p>For the story of how we got started, check out this <a href="https://www.thriftypup.com/pages/our-story">comic</a></p>
 
-                                <!-- End Interview -->
-                                <% include ../snippets/share_buttons.ejs %>
-                                    <% include ../snippets/mailchimp_footer.ejs %>
-                                        </br>
-
-                            </div>
-                        </div>
-                        <% include ../snippets/disqus.ejs %>
-
+                    <!-- End Interview -->
+                    <div id="store-meta-responsive">
+                        <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+                        <% include ../snippets/store_meta.ejs %>
                     </div>
-
+                    <% include ../snippets/share_buttons.ejs %>
+                        <% include ../snippets/mailchimp_footer.ejs %>
+                            </br>
 
                 </div>
             </div>
+            <% include ../snippets/disqus.ejs %>
+
         </div>
 
-        <footer>
-            <% include ../snippets/footer.ejs %>
-        </footer>
+
     </div>
-    <% include ../snippets/page_scripts.ejs %>
+</div>
+</div>
+
+<footer>
+<script>
+// Get Alex info
+$.ajax({
+  url : "/alexa-ranking",
+  type: 'POST',
+  data : {"link" : '<%= link %>'},
+  success : function(data) {
+
+    xmlDoc = $.parseXML( data.body );
+    parser = new DOMParser();
+    xmlDoc = parser.parseFromString(data.body, 'text/xml');
+    var alexa_rank = (xmlDoc.getElementsByTagName("SD")[0].childNodes[0].getAttribute("TEXT"));
+    $(".alexa_rank").text(alexa_rank);
+
+  },
+  error : function(data) {
+    $("#alexa_rank").text("N.A");
+  }
+});
+</script>
+<% include ../snippets/footer.ejs %>
+</footer>
+
+</div>
+<% include ../snippets/page_scripts.ejs %>
 </body>
 
 </html>

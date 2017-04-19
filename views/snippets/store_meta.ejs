@@ -1,58 +1,59 @@
-<p class="store-description-meta"><%= date %> | Alexa: <span id="alexa_rank"></span></p>
+<p class="store-description-meta"><%= date %> | Alexa: <span class="alexa_rank">N.A</span></p>
 <p class="store-description-text"><%= store_description %></p>
 
+<div id="store-meta-title">
 <% if (founders.length > 0) { %>
-  <p><strong>Founders:</strong> <%= founders %></p>
+  <h4>Founders:</h4>
+  <span><%= founders %></span><br />
 <% } %>
 
 <% if (start_date.length > 0) { %>
-  <p><strong>Started:</strong> <%= start_date %></p>
+  <h4>Started:</h4>
+  <span><%= start_date %></span><br/>
 <% } %>
 
 <% if (revenue.length > 0) { %>
-  <p><strong>Revenue:</strong> <%= revenue %></p>
+  <h4>Revenue:</h4>
+  <span><%= revenue %></span><br/>
 <% } %>
 
 <% if (orders_month.length > 0) { %>
-  <p><strong>Orders per Month:</strong> <%= orders_month %></p>
+  <h4>Orders per Month:</h4>
+  <span><%= orders_month %></span><br/>
 <% } %>
 
 <% if (country.length > 0) { %>
-  <p><strong>Country:</strong> <%= country %></p>
+  <h4>Country:</h4>
+  <span><%= country %></span><br/>
 <% } %>
 
-<% if (employees.length > 0) { %>
-  <p><strong>Employees:</strong> <%= employees %></p>
-<% } %>
+<!-- <% if (employees.length > 0) { %>
+  <h4>Employees:</h4>
+  <span><%= employees %></span><br/>
+<% } %> -->
 
 <% if (apps.length > 0) { %>
-  <br />
-  <h4><strong>Shopify Apps:</strong></h4>
+  <h4>Shopify Apps:</h4>
+  <span></span>
   <% for (var app in apps) { %>
     <div id="shopify-app-container" class="col-md-12">
-      <div class="shopify-icon col-md-3"></div>
-      <p class="col-md-9"><%= apps[app] %></p>
+      <div class="shopify-icon">
+        <img src='<%= apps[app].thumbnail %>' />
+        <a href="<%= apps[app].link %>"><%= apps[app].app_name %></a>
+      </div>
     </div>
   <% } %>
-<% } %>
+  <% } %>
+  <% if (software.length > 0) { %>
+    <br />
+  <h4>Other Software:</h4>
+    <ul>
+      <% for (var s in software) { %>
+      <li><a href="<%= software[s].link %>"> <%= software[s].name %> </a></li>
+      <% } %>
+    </ul>
 
-<h4><strong>Other Software:</strong></h4>
 
-<script>
-  // Get Alex info
-  $.ajax({
-    url : "/alexa-ranking",
-    type: 'POST',
-    data : {"link" : '<%= link %>'},
-    success : function(data) {
-      console.log(data.body);
-      xmlDoc = $.parseXML( data.body ),
-      $xml = $( xmlDoc ),
-      rank = $xml.find( "ALEXA" );  // Why isn't this grabbing XML info
-      console.log(rank.text());
-    },
-    error : function(data) {
-      console.log(data);
-    }
-  });
-</script>
+  <% } %>
+
+</div>

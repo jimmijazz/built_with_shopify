@@ -34,6 +34,14 @@
                     <div class="col-md-12 animate-box">
                         <div class="fh5co-services">
                             <div class="holder-section">
+    <!-- Meta Information -->
+    <div class="col-md-4 animate-box store-meta pull-right">
+        <div id="store-meta-full">
+            <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+            <% include ../snippets/store_meta.ejs %>
+        </div>
+    </div>
+    <!-- End Meta Information -->
                               <!-- Start Interview -->
                               <h3><strong>Could you tell us a bit about how you came up for the idea behind Keep Em Quiet and how you got your first sale?</strong></h3>
                               <p>We came up with KeepEmQuiet because we have 2 children and we travel - we had to continually purchase expensive items to keep them entertained whilst traveling not to mention we are busy people and shopping around for things is time consuming - so we wanted an inexpensive solution delivered to our doors without the hassle. We started to make little travel packs for our son and friends started seeing them. Random strangers on airplanes and in airports did too and I thought - hey why not start a business out of it?</p>
@@ -63,26 +71,51 @@
                               Probably not very much, we are happy with how things are going and excited everyday about our business. Nothing is a chore, its an ejoyable business to run. As always a large advertising budget have helped but you can only afford to do what you can do, so we&rsquo;ve made the most out of our social media (which is free!) to get traffic. Hopefully if things continue the way they have we can start to spend more on advertising.
                               </p>
                               <!-- End Interview -->
-                                <% include ../snippets/share_buttons.ejs %>
-                                    <% include ../snippets/mailchimp_footer.ejs %>
-                                        </br>
+                              <div id="store-meta-responsive">
+                                  <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+                                  <% include ../snippets/store_meta.ejs %>
+                              </div>
+                              <% include ../snippets/share_buttons.ejs %>
+                                  <% include ../snippets/mailchimp_footer.ejs %>
+                                      </br>
 
-                            </div>
-                        </div>
-                        <% include ../snippets/disqus.ejs %>
+                          </div>
+                      </div>
+                      <% include ../snippets/disqus.ejs %>
 
-                    </div>
+                  </div>
 
 
-                </div>
-            </div>
-        </div>
+              </div>
+          </div>
+      </div>
 
-        <footer>
-            <% include ../snippets/footer.ejs %>
-        </footer>
-    </div>
-    <% include ../snippets/page_scripts.ejs %>
+      <footer>
+        <script>
+          // Get Alex info
+          $.ajax({
+            url : "/alexa-ranking",
+            type: 'POST',
+            data : {"link" : '<%= link %>'},
+            success : function(data) {
+
+              xmlDoc = $.parseXML( data.body );
+              parser = new DOMParser();
+              xmlDoc = parser.parseFromString(data.body, 'text/xml');
+              var alexa_rank = (xmlDoc.getElementsByTagName("SD")[0].childNodes[0].getAttribute("TEXT"));
+              $(".alexa_rank").text(alexa_rank);
+
+            },
+            error : function(data) {
+              $("#alexa_rank").text("N.A");
+            }
+          });
+        </script>
+          <% include ../snippets/footer.ejs %>
+      </footer>
+
+  </div>
+  <% include ../snippets/page_scripts.ejs %>
 </body>
 
 </html>

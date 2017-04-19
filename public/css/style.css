@@ -567,6 +567,10 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
 
   .tip-box-left, .tip-box-right {
     text-align: center!important;
+    margin-right: 0!important;
+    margin-left: 0!important;
+    max-width: 80%;
+
   }
 
   #main-nav ul li a {
@@ -915,6 +919,12 @@ input[type="text"] {
   margin-right: 10%;
 }
 
+@media screen and (max-width: 992px) {
+  .holder-section {
+    margin-left: 0!important;
+  }
+}
+
 /*.holder-section p {
   font-family: "Georgia", sans-serif;
 }*/
@@ -931,6 +941,19 @@ input[type="text"] {
   margin-right: -15%;
   margin-left: 10px;
   margin-bottom: 10px!important;
+
+}
+
+@media screen and (max-width: 680px) {
+  .tip-box-right {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .pull-right {
+    float: none!important;
+  }
 }
 
 .advertisement {
@@ -1020,7 +1043,6 @@ input[type="text"] {
   margin-left: 10px;
   margin-bottom: 10px!important;
   padding: 10px;
-  border-top: 2px solid #7ab55c;
 }
 
 .store-meta h3 {
@@ -1044,20 +1066,81 @@ input[type="text"] {
   color: rgba(114, 114, 114, 0.7);
 }
 
-.store-description-meta {
+.store-description-meta, .alexa_rank {
   font-size : 0.95em;
 
 }
 
-.store-meta p {
-  margin-bottom: 5px;
+#store-meta-title h4 {
+  font-weight: bold;
+  display: inline;
+  margin-bottom: 10px;
+}
+
+#store-meta-title ul {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0px;
 }
 
 .shopify-icon {
-  border: 1px solid black;
-  width: 20px;
-  height: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
+.shopify-icon img {
+  max-width: 40px;
+  max-height: 40px;
+  margin-right: 5px;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+#store-meta-responsive {
+  display: none;
+}
+
+#store-meta-full {
+  padding-top: 10px;
+  border-top: 2px solid #7ab55c;
+}
+
+@media screen and (max-width: 992px) {
+  .store-meta {
+    display: inline;
+    max-width: 200px;
+  }
+  #store-meta-responsive {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .store-meta {
+    display: inline;
+    max-width: 175px;
+  }
+  #store-meta-title h4, #store-meta-title span {
+    font-size: 0.9em;
+  }
+  .shopify-icon img  {
+    max-width: 30px;
+    max-height: 30px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #store-meta-responsive {
+    display: inline;
+  }
+  #store-meta-responsive h3 {
+    padding-top: 10px;
+    border-top: 2px solid #7ab55c;
+  }
+  #store-meta-full {
+    display: none;
+  }
+}
+
 /* Dropdown Menu from Neat theme */
 
 /*# sourceMappingURL=style.css.map */

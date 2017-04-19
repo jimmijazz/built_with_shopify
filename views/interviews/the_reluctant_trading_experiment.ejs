@@ -58,6 +58,14 @@
                     <div class="col-md-12 animate-box">
                         <div class="fh5co-services">
                             <div class="holder-section">
+    <!-- Meta Information -->
+    <div class="col-md-4 animate-box store-meta pull-right">
+        <div id="store-meta-full">
+            <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+            <% include ../snippets/store_meta.ejs %>
+        </div>
+    </div>
+    <!-- End Meta Information -->
 
                                 <!-- Start Interview -->
                                 <h4><strong>Could you tell us about yourself?</strong></h4>
@@ -266,42 +274,17 @@
                                     to validate what they are doing, like I did with the pepper and salt, by finding and talking to people they can trust to help them validate whether what they are doing will be different enough for people to pull out
                                     their wallet and pay for something, and come back and do it again. You really have to be focused and have enough energy to go for two or three years to figure it out. You also can&rsquo;t sit there and figure it all
                                     out on a piece of paper. A lot of stuff you have to learn as you go and be able to take the information you&rsquo;re getting and keep modifying what you&rsquo;re doing as you&rsquo;re going along.</p>
-                                <!-- End Interview -->
+                                    <!-- End Interview -->
+                                    <div id="store-meta-responsive">
+                                        <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+                                        <% include ../snippets/store_meta.ejs %>
+                                    </div>
+                                    <% include ../snippets/share_buttons.ejs %>
+                                        <% include ../snippets/mailchimp_footer.ejs %>
+                                            </br>
 
-                                <!-- Share Buttons (Thanks to Simple Share.com) -->
-                                <div id="share-buttons">
-                                    <!-- Email -->
-                                    <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> ">
-                                        <span class="fa fa-envelope" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Facebook -->
-                                    <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
-                                        <span class="fa fa-facebook" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Google+ -->
-                                    <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
-                                        <span class="fa fa-google-plus" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- LinkedIn -->
-                                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
-                                        <span class="fa fa-linkedin" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Reddit -->
-                                    <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
-                                        <span class="fa fa-reddit-alien" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Twitter -->
-                                    <a href="https://twitter.com/share?url=<%= page_link %>&amp;text=" Shopify Case Study "&amp;hashtags=Shopify" target="_blank">
-                                        <span class="fa fa-twitter" aria-hidden="true"></span>
-                                    </a>
                                 </div>
-
-
-                                <% include ../snippets/mailchimp_footer.ejs %>
-
-
                             </div>
-
                             <% include ../snippets/disqus.ejs %>
 
                         </div>
@@ -312,10 +295,31 @@
             </div>
 
             <footer>
+              <script>
+            	  // Get Alex info
+            	  $.ajax({
+            	    url : "/alexa-ranking",
+            	    type: 'POST',
+            	    data : {"link" : '<%= link %>'},
+            	    success : function(data) {
+
+            	      xmlDoc = $.parseXML( data.body );
+            	      parser = new DOMParser();
+            	      xmlDoc = parser.parseFromString(data.body, 'text/xml');
+            	      var alexa_rank = (xmlDoc.getElementsByTagName("SD")[0].childNodes[0].getAttribute("TEXT"));
+            	      $(".alexa_rank").text(alexa_rank);
+
+            	    },
+            	    error : function(data) {
+            	      $("#alexa_rank").text("N.A");
+            	    }
+            	  });
+            	</script>
                 <% include ../snippets/footer.ejs %>
             </footer>
+
         </div>
         <% include ../snippets/page_scripts.ejs %>
-</body>
+    </body>
 
 </html>

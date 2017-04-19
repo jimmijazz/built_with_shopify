@@ -23,40 +23,22 @@
                     <div class="col-md-8 col-md-offset-2 text-center heading-section">
                       <h1><strong><%= title %></h1>
                         <h3><a href="<%= link %>">Meraki Design Studio</a> use Shopify to create and sell their stunning wall art including high quality prints and foil prints. </h3>
-                        <!-- Share Buttons (Thanks to Simple Share.com) -->
-                        <div id="share-buttons">
-                            <!-- Email -->
-                            <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> " >
-                              <span class="fa fa-envelope" aria-hidden="true"></span>
-                            </a>
-                            <!-- Facebook -->
-                            <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
-                              <span class="fa fa-facebook" aria-hidden="true"></span>
-                            </a>
-                            <!-- Google+ -->
-                            <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
-                              <span class="fa fa-google-plus" aria-hidden="true"></span>
-                            </a>
-                            <!-- LinkedIn -->
-                            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
-                              <span class="fa fa-linkedin" aria-hidden="true"></span>
-                            </a>
-                            <!-- Reddit -->
-                            <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
-                              <span class="fa fa-reddit-alien" aria-hidden="true"></span>
-                            </a>
-                            <!-- Twitter -->
-                            <a href="https://twitter.com/share?url=<%= page_link %>&amp;text="Shopify Case Study"&amp;hashtags=Shopify" target="_blank">
-                              <span class="fa fa-twitter" aria-hidden="true"></span>
-                            </a>
-                        </div>
+                        <!-- Share Buttons -->
+                        <% include ../snippets/share_buttons.ejs %>
                     </div>
                 </div>
                 <div class="row fh5co-services-single">
-
                     <div class="col-md-12 animate-box">
                         <div class="fh5co-services">
                             <div class="holder-section">
+    <!-- Meta Information -->
+    <div class="col-md-4 animate-box store-meta pull-right">
+        <div id="store-meta-full">
+            <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+            <% include ../snippets/store_meta.ejs %>
+        </div>
+    </div>
+    <!-- End Meta Information -->
 
                               <!-- Start Interview -->
                               <h4><strong>Could you tell us a bit about the story behind Meraki Design Studio and what you sell?&nbsp;</strong></h4>
@@ -109,50 +91,51 @@
                               <p>My valuable resources for information include James Gilbert from HubSpot, the <a href="http://1.shopifytrack.com/SHVB">Shopify Digest</a>&nbsp;(of course) and for a more global read I turn to Sumo.</p>
                               <p>More time and a better looking budget for all my ideas would have been great!</p>
                               <!-- End Interview -->
-                              <!-- Share Buttons (Thanks to Simple Share.com) -->
-                              <div id="share-buttons">
-                                  <!-- Email -->
-                                  <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> " >
-                                    <span class="fa fa-envelope" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Facebook -->
-                                  <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
-                                    <span class="fa fa-facebook" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Google+ -->
-                                  <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
-                                    <span class="fa fa-google-plus" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- LinkedIn -->
-                                  <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
-                                    <span class="fa fa-linkedin" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Reddit -->
-                                  <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
-                                    <span class="fa fa-reddit-alien" aria-hidden="true"></span>
-                                  </a>
-                                  <!-- Twitter -->
-                                  <a href="https://twitter.com/share?url=<%= page_link %>&amp;text="Shopify Case Study"&amp;hashtags=Shopify" target="_blank">
-                                    <span class="fa fa-twitter" aria-hidden="true"></span>
-                                  </a>
+                              <div id="store-meta-responsive">
+                                  <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+                                  <% include ../snippets/store_meta.ejs %>
                               </div>
+                              <% include ../snippets/share_buttons.ejs %>
                                   <% include ../snippets/mailchimp_footer.ejs %>
+                                      </br>
 
-                            </div>
-                        </div>
-                        <% include ../snippets/disqus.ejs %>
-
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-
-                        <footer>
-                          <% include ../snippets/footer.ejs %>
-                        </footer>
+                          </div>
                       </div>
-                        <% include ../snippets/page_scripts.ejs %>  </body>
+                      <% include ../snippets/disqus.ejs %>
+
+                  </div>
+
+
+              </div>
+          </div>
+      </div>
+
+      <footer>
+        <script>
+          // Get Alex info
+          $.ajax({
+            url : "/alexa-ranking",
+            type: 'POST',
+            data : {"link" : '<%= link %>'},
+            success : function(data) {
+
+              xmlDoc = $.parseXML( data.body );
+              parser = new DOMParser();
+              xmlDoc = parser.parseFromString(data.body, 'text/xml');
+              var alexa_rank = (xmlDoc.getElementsByTagName("SD")[0].childNodes[0].getAttribute("TEXT"));
+              $(".alexa_rank").text(alexa_rank);
+
+            },
+            error : function(data) {
+              $("#alexa_rank").text("N.A");
+            }
+          });
+        </script>
+          <% include ../snippets/footer.ejs %>
+      </footer>
+
+  </div>
+  <% include ../snippets/page_scripts.ejs %>
+</body>
 
 </html>

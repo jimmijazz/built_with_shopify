@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[ lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
@@ -9,8 +9,15 @@
 <head>
     <% include ../snippets/header.ejs %>
 </head>
+
 <body>
-  <% include ../snippets/nav.ejs %>
+    <nav id="fh5co-main-nav" role="navigation">
+        <% include ../snippets/mobile_nav.ejs %>
+    </nav>
+    <div id="fh5co-page">
+        <header>
+            <% include ../snippets/nav.ejs %>
+        </header>
 
         <div id="fh5co-services-section">
             <div class="container">
@@ -21,7 +28,6 @@
                     </div>
                 </div>
                 <div class="row fh5co-services-single">
-
                     <div class="col-md-12 animate-box">
                         <div class="fh5co-services">
                             <div class="holder-section">
@@ -79,6 +85,8 @@
             </div>
         </div>
         <% include ../snippets/footer.ejs %>
+      </div>
+      <% include ../snippets/page_scripts.ejs %>
   </body>
 
 </html>

@@ -3,9 +3,12 @@ var path = require('path');
 var interviews = require('./interviews');
 var test_interviews = require('./interviews_test');
 var blogs = require('./blog');
+var apps = require('./apps');    // Shopify apps the store uses
+var software = require('./software');// Third party software the store uses
 var blog = require('./blog');
 var bodyParser = require('body-parser');
 var request = require('request');
+var _ = require('underscore');
 
 var app = express();
 app.use(bodyParser.json());       // to support JSON-encoded bodies
@@ -38,43 +41,89 @@ app.get('/about', function(req, res) {
 
 app.get('/shopify-case-studies/:store', function(req,res, next) {
   var s = interviews[req.params.store];
-    res.render('interviews/' + s.store_name.replace(new RegExp(" ", "g"), "_").toLowerCase(), {
-      title : s.store_name,
-      content : s.responses,
-      date :s.date,
-      author: s.author,
-      link: s.store_link,
-      page_link: "http://www.builtwithshopify.com/shopify-case-studies/" + req.params.store,
-      founders: s.founders,
-      start_date: s.start_date,
-      revenue: s.revenue,
-      apps : s.apps,
-      employees : s.employees,
-      country : s.country,
-      store_description: s.store_description,
-      orders_month : s.orders_month,
+  var shop_apps = []  // List of dictionaries for apps
+  var shop_software = []  // List of dictionaries for apps
+  for (var app in s.apps) {
+    // If json file for store is in apps.json
+    if (s.apps[app] in apps ){
+      shop_apps.push(apps[s.apps[app]]);
+    } else {
+      // App not in apps.json yet
+      console.log(s.apps[app], " not found in app.json")
+    }
+  };
+
+  for (var a in s.software) {
+    // If json file for store is in apps.json
+    if (s.software[a] in software ){
+      shop_software.push(software[s.software[a]]);
+    } else {
+      // App not in apps.json yet
+      console.log(s.software[a], " not found in software.json")
+    }
+  };
+
+  res.render('interviews/' + s.store_name.replace(new RegExp(" ", "g"), "_").toLowerCase(), {
+    title : s.store_name,
+    content : s.responses,
+    date :s.date,
+    author: s.author,
+    link: s.store_link,
+    page_link: "http://www.builtwithshopify.com/shopify-case-studies/" + req.params.store,
+    founders: s.founders,
+    start_date: s.start_date,
+    revenue: s.revenue,
+    apps : shop_apps,
+    software : shop_software,
+    employees : s.employees,
+    country : s.country,
+    store_description: s.store_description,
+    orders_month : s.orders_month
   });
 });
 
-app.get('/shopify-case-studies-test/:store', function(req,res, next) {
-  var s = test_interviews[req.params.store];
-    res.render('interviews/' + s.store_name.replace(new RegExp(" ", "g"), "_").toLowerCase(), {
-      title : s.store_name,
-      content : s.responses,
-      date :s.date,
-      author: s.author,
-      link: s.store_link,
-      page_link: "http://www.builtwithshopify.com/shopify-case-studies/" + req.params.store,
-      founders: s.founders,
-      start_date: s.start_date,
-      revenue: s.revenue,
-      apps : s.apps,
-      employees : s.employees,
-      country : s.country,
-      store_description: s.store_description,
-      orders_month : s.orders_month,
-  });
-});
+// app.get('/shopify-case-studies-test/:store', function(req,res, next) {
+//   var s = test_interviews[req.params.store];
+//   var shop_apps = []  // List of dictionaries for apps
+//   var shop_software = []  // List of dictionaries for apps
+//   for (var app in s.apps) {
+//     // If json file for store is in apps.json
+//     if (s.apps[app] in apps ){
+//       shop_apps.push(apps[s.apps[app]]);
+//     } else {
+//       // App not in apps.json yet
+//       console.log(s.apps[app], " not found in app.json")
+//     }
+//   };
+//
+//   for (var a in s.software) {
+//     // If json file for store is in apps.json
+//     if (s.software[a] in software ){
+//       shop_software.push(software[s.software[a]]);
+//     } else {
+//       // App not in apps.json yet
+//       console.log(s.software[a], " not found in software.json")
+//     }
+//   };
+//
+//   res.render('interviews/' + s.store_name.replace(new RegExp(" ", "g"), "_").toLowerCase(), {
+//     title : s.store_name,
+//     content : s.responses,
+//     date :s.date,
+//     author: s.author,
+//     link: s.store_link,
+//     page_link: "http://www.builtwithshopify.com/shopify-case-studies/" + req.params.store,
+//     founders: s.founders,
+//     start_date: s.start_date,
+//     revenue: s.revenue,
+//     apps : shop_apps,
+//     software : shop_software,
+//     employees : s.employees,
+//     country : s.country,
+//     store_description: s.store_description,
+//     orders_month : s.orders_month
+//   });
+// });
 
 app.get('/blog/:post', function(req,res, next) {
   var post = blog[req.params.post];
@@ -186,7 +235,7 @@ app.get('/submit-complete', function(req, res) {
 
 // Store meta information
 app.post('/alexa-ranking', function(req, res) {
-  console.log(req.body)
+  // console.log(req.body)
   request.get('http://data.alexa.com/data?cli=10&url=' + req.body.link, function(err,response,body) {
     if (err) {
       res.send("N.A")

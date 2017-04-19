@@ -59,6 +59,14 @@
                     <div class="col-md-12 animate-box">
                         <div class="fh5co-services">
                             <div class="holder-section">
+    <!-- Meta Information -->
+    <div class="col-md-4 animate-box store-meta pull-right">
+        <div id="store-meta-full">
+            <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+            <% include ../snippets/store_meta.ejs %>
+        </div>
+    </div>
+    <!-- End Meta Information -->
                                 <h4><strong>Where did you get the idea to start selling SillicaGelly?</strong></h4>
                                 <p>The idea of supplying silica gels and desiccants came about as my dad runs a camera store, and was supplying them in-store - it is important to ensure that your camera equipment stays dry and to protect your gear from humidity.
                                     I started to realize that these small packets had a very important function to lower moisture levels not only just for cameras, but can also be used for many other items. </p>
@@ -110,51 +118,52 @@
                                 <h4><strong>If you had to start over what would you do differently? </strong></h4>
                                 <p>If I had to do it all over again, I would probably have started using Shopify much earlier. For those who are new, Shopify I&rsquo;d highly recommend starting out with the free trial, and then upgrading to the Basic plan,
                                     this gives you the flexibility of exploring what Shopify has to offer at a lower cost.</p>
-                                <!-- Share Buttons (Thanks to Simple Share.com) -->
-                                <div id="share-buttons">
-                                    <!-- Email -->
-                                    <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> ">
-                                        <span class="fa fa-envelope" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Facebook -->
-                                    <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
-                                        <span class="fa fa-facebook" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Google+ -->
-                                    <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
-                                        <span class="fa fa-google-plus" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- LinkedIn -->
-                                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
-                                        <span class="fa fa-linkedin" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Reddit -->
-                                    <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
-                                        <span class="fa fa-reddit-alien" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Twitter -->
-                                    <a href="https://twitter.com/share?url=<%= page_link %>&amp;text=" Shopify Case Study "&amp;hashtags=Shopify" target="_blank">
-                                        <span class="fa fa-twitter" aria-hidden="true"></span>
-                                    </a>
-                                </div>
-                                <% include ../snippets/mailchimp_footer.ejs %>
+                                    <!-- End Interview -->
+                                    <div id="store-meta-responsive">
+                                        <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+                                        <% include ../snippets/store_meta.ejs %>
+                                    </div>
+                                    <% include ../snippets/share_buttons.ejs %>
+                                        <% include ../snippets/mailchimp_footer.ejs %>
+                                            </br>
 
+                                </div>
                             </div>
+                            <% include ../snippets/disqus.ejs %>
+
                         </div>
-                        <% include ../snippets/disqus.ejs %>
+
 
                     </div>
-
-
                 </div>
             </div>
-        </div>
 
-        <footer>
-            <% include ../snippets/footer.ejs %>
-        </footer>
-    </div>
-    <% include ../snippets/page_scripts.ejs %>
-</body>
+            <footer>
+              <script>
+            	  // Get Alex info
+            	  $.ajax({
+            	    url : "/alexa-ranking",
+            	    type: 'POST',
+            	    data : {"link" : '<%= link %>'},
+            	    success : function(data) {
+
+            	      xmlDoc = $.parseXML( data.body );
+            	      parser = new DOMParser();
+            	      xmlDoc = parser.parseFromString(data.body, 'text/xml');
+            	      var alexa_rank = (xmlDoc.getElementsByTagName("SD")[0].childNodes[0].getAttribute("TEXT"));
+            	      $(".alexa_rank").text(alexa_rank);
+
+            	    },
+            	    error : function(data) {
+            	      $("#alexa_rank").text("N.A");
+            	    }
+            	  });
+            	</script>
+                <% include ../snippets/footer.ejs %>
+            </footer>
+
+        </div>
+        <% include ../snippets/page_scripts.ejs %>
+    </body>
 
 </html>

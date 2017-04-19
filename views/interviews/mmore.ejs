@@ -59,6 +59,14 @@
                     <div class="col-md-12 animate-box">
                         <div class="fh5co-services">
                             <div class="holder-section">
+    <!-- Meta Information -->
+    <div class="col-md-4 animate-box store-meta pull-right">
+        <div id="store-meta-full">
+            <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+            <% include ../snippets/store_meta.ejs %>
+        </div>
+    </div>
+    <!-- End Meta Information -->
 
                                 <!-- Start Interview -->
                                 <h4><strong>Can you tell us a bit about your background and how that led you to starting MMORE?</strong></h4>
@@ -114,52 +122,52 @@
                                     over and over again I am sure all of you do as well :) If I started over I would not change a thing since all has been a learning process and an ecommerce business is very, very hard, harder than other models and I
                                     think people do not realise that. It takes much more time to scale the business or if it doesn&rsquo;t and you are working in a high demand sector it can change in a day (just saw amazon launched its own supplements
                                     for instance).</p>
-                                <!-- End Interview -->
-                                <!-- Share Buttons (Thanks to Simple Share.com) -->
-                                <div id="share-buttons">
-                                    <!-- Email -->
-                                    <a href="mailto:?Subject=Built with Shopify Case Study&amp;Body= Interview from built with Shopify - <%= page_link %> ">
-                                        <span class="fa fa-envelope" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Facebook -->
-                                    <a href="http://www.facebook.com/sharer.php?u=<%= page_link %>" target="_blank">
-                                        <span class="fa fa-facebook" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Google+ -->
-                                    <a href="https://plus.google.com/share?url=<%= page_link %>" target="_blank">
-                                        <span class="fa fa-google-plus" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- LinkedIn -->
-                                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= page_link %>" target="_blank">
-                                        <span class="fa fa-linkedin" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Reddit -->
-                                    <a href="http://reddit.com/submit?url=<%= page_link %>&amp;title=eCommerce Case Study" target="_blank">
-                                        <span class="fa fa-reddit-alien" aria-hidden="true"></span>
-                                    </a>
-                                    <!-- Twitter -->
-                                    <a href="https://twitter.com/share?url=<%= page_link %>&amp;text=" Shopify Case Study "&amp;hashtags=Shopify" target="_blank">
-                                        <span class="fa fa-twitter" aria-hidden="true"></span>
-                                    </a>
-                                </div>
-                                <% include ../snippets/mailchimp_footer.ejs %>
+                                    <!-- End Interview -->
+                                    <div id="store-meta-responsive">
+                                        <h3><%= title %>  <i class="fa fa-external-link"></i> </h3>
+                                        <% include ../snippets/store_meta.ejs %>
+                                    </div>
+                                    <% include ../snippets/share_buttons.ejs %>
+                                        <% include ../snippets/mailchimp_footer.ejs %>
+                                            </br>
 
+                                </div>
                             </div>
+                            <% include ../snippets/disqus.ejs %>
+
                         </div>
-                        <% include ../snippets/disqus.ejs %>
+
 
                     </div>
-
-
                 </div>
             </div>
-        </div>
 
-        <footer>
-            <% include ../snippets/footer.ejs %>
-        </footer>
-    </div>
-    <% include ../snippets/page_scripts.ejs %>
-</body>
+            <footer>
+              <script>
+            	  // Get Alex info
+            	  $.ajax({
+            	    url : "/alexa-ranking",
+            	    type: 'POST',
+            	    data : {"link" : '<%= link %>'},
+            	    success : function(data) {
+
+            	      xmlDoc = $.parseXML( data.body );
+            	      parser = new DOMParser();
+            	      xmlDoc = parser.parseFromString(data.body, 'text/xml');
+            	      var alexa_rank = (xmlDoc.getElementsByTagName("SD")[0].childNodes[0].getAttribute("TEXT"));
+            	      $(".alexa_rank").text(alexa_rank);
+
+            	    },
+            	    error : function(data) {
+            	      $("#alexa_rank").text("N.A");
+            	    }
+            	  });
+            	</script>
+                <% include ../snippets/footer.ejs %>
+            </footer>
+
+        </div>
+        <% include ../snippets/page_scripts.ejs %>
+    </body>
 
 </html>
