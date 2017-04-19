@@ -189,7 +189,7 @@
         "app_name": "free shipping bar",
         "thumbnail": "https://cdn.shopify.com/s/files/applications/635cce572624d1086ac37403cf25b5ee_512x512.png?1492569577"
     },
-    "Judge Me": {
+    "Judge.Me": {
         "link": "http://1.shopifytrack.com/SHU3",
         "app_name": "Judge Me",
         "thumbnail": "https://cdn.shopify.com/s/files/applications/8cada0f5da411a64e756606bb036f1ed_512x512.png?1492551167"
@@ -213,6 +213,11 @@
         "link": "http://1.shopifytrack.com/SHVj",
         "app_name": "Shopify parallax theme",
         "thumbnail": "https://cdn.shopify.com/s/files/applications/334afc3f89b7b7ce2ec51e40af7ac5a7_512x512.png?1492551175"
+    },
+    "Xero" : {
+      "link" : "http://1.shopifytrack.com/SHc1",
+      "app_name" : "xero",
+      "thumbnail": "https://cdn.shopify.com/s/files/applications/4317989b7791d3d7cffb64485c339de9_512x512.png?1492551190"
     },
     "Aftership": {
         "link": "http://1.shopifytrack.com/SHT7",
