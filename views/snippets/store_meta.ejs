@@ -22,9 +22,9 @@
   <span><%= orders_month %></span><br/>
 <% } %>
 
-<% if (country.length > 0) { %>
-  <h4>Country:</h4>
-  <span><%= country %></span><br/>
+<% if (location.length > 0) { %>
+  <h4>Location:</h4>
+  <span><%= location %></span><br/>
 <% } %>
 
 <!-- <% if (employees.length > 0) { %>
@@ -49,7 +49,7 @@
   <h4>Other Software:</h4>
     <ul>
       <% for (var s in software) { %>
-      <li><a href="<%= software[s].link %>"><i<%= software[s].name %> </a></li>
+      <li><a href="<%= software[s].link %>">  <%= software[s].name %> </a></li>
       <% } %>
     </ul>
 

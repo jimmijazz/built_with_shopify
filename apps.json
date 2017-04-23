@@ -424,7 +424,7 @@
         "app_name": "Tawk.to",
         "thumbnail": "https://cdn.shopify.com/s/files/applications/377387c5d34625a5a245473a06d09750_512x512.png?1492551083"
     },
-    "Fraud filter": {
+    "Fraud Filter": {
         "link": "http://1.shopifytrack.com/SHbV",
         "app_name": "Fraud filter",
         "thumbnail": "https://cdn.shopify.com/s/files/applications/8f1af6f76d5f91c40b0943bc757a0da1_512x512.png?1492551055"
@@ -443,5 +443,10 @@
         "link": "http://1.shopifytrack.com/SHVB",
         "app_name": "Shopify Blog",
         "thumbnail": "https://cdn.shopify.com/s/files/applications/334afc3f89b7b7ce2ec51e40af7ac5a7_512x512.png?1492551175"
+    },
+    "Magic Zoom Plus" : {
+      "link": "http://1.shopifytrack.com/SHch",
+      "app_name": "Magiz Zoom",
+      "thumbnail" : "https://cdn.shopify.com/s/files/applications/89130c96aa94552695a3afdf6fcb1e45_512x512.png?1492896636"
     }
 }

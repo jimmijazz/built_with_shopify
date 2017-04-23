@@ -1,4 +1,24 @@
 {
+  "maison-de-choup": {
+      "store_name": "Maison de Choup",
+      "store_link": "https://maisondechoup.co.uk/",
+      "date": "23/4/2017",
+      "author": "Josh",
+      "responses": "maison_de_choup.ejs",
+      "data_cat": "clothing",
+      "categories": "clothing",
+      "thumbnail": "/images/maison/maison-built-with-shopify-website-screenshot.jpg",
+      "description": "Fashion brand supporting mental health issues",
+      "revenue": "",
+      "founders": "1",
+      "start_date": "Spring, 2014",
+      "apps": ["Improved contact Form", "Mailchimp", "Shopify product reviews", "Wheelio", "Magic Zoom Plus"],
+      "employees": "",
+      "location": "U.K",
+      "store_description": "Conceived in the spring of 2014, Maison de Choup is the brainchild of George Hodgson – a young artist driven by the restless necessity to create - born out of a crippling anxiety period that nearly ruined his young life.",
+      "software": [],
+      "orders_month": "140"
+  },
     "keep-em-quiet": {
         "store_name": "Keep Em Quiet",
         "store_link": "https://www.keepemquiet.com/",
@@ -10,13 +30,13 @@
         "thumbnail": "/images/keepemquiet/keep=em-quiet-built-with-shopify-web-screenshot",
         "description": "The ultimate travel pack for kids",
         "revenue": "",
-        "founders": "",
-        "start_date": "",
+        "founders": "2",
+        "start_date": "November, 2016",
         "apps": ["Judge.Me", "Tawk.to", "Recart"],
         "employees": "2",
-        "country": "America",
-        "store_description": "",
-        "software": [],
+        "location": "America",
+        "store_description": "Keep Em Quiet sells travel packs for kids.",
+        "software": ["Google Analytics"],
         "orders_month": ""
     },
     "revested": {
@@ -34,9 +54,9 @@
         "start_date": "December 2016",
         "apps": ["Sufio", "Langify", "Covet.pics"],
         "employees": "",
-        "country": "Italy",
-        "store_description": "",
-        "software": [],
+        "location": "Italy",
+        "store_description": "Based in Milan - Italy, Revested create high quality accessories for everyday use.",
+        "software": ["Google Analytics"],
         "orders_month": ""
     },
     "lelini": {
@@ -54,7 +74,7 @@
         "start_date": "",
         "apps": ["Klaviyo", "Wheelio", "Best currency converter", "Shopify product reviews", "Product reviews addon", "Shoelace", "Xero" ],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -69,15 +89,15 @@
         "categories": "clothing lifestyle",
         "thumbnail": "/images/thrifty_pup/thrifty_pup_shopify_web_screenshot.jpg",
         "description": "Handmade products for fancy dogs",
-        "revenue": "1,500k/mo",
-        "founders": "",
-        "start_date": "",
-        "apps": [],
+        "revenue": "",
+        "founders": "1",
+        "start_date": "May, 2015",
+        "apps": ["Mailchimp","Conversio"],
         "employees": "1",
-        "country": "",
-        "store_description": "",
-        "software": [],
-        "orders_month": ""
+        "location": "Chicago",
+        "store_description": "Thrifty Pup make bow ties and other accesories for pets using recycled material.",
+        "software": ["Stamps.com"],
+        "orders_month": "25 - 50"
     },
     "proper": {
         "store_name": "Proper",
@@ -90,12 +110,12 @@
         "thumbnail": "/images/proper/shopify_studio_proper_web_screenshots.png",
         "description": "Mobile hardware used by Shopify and Apple",
         "revenue": "",
-        "founders": "",
+        "founders": "1",
         "start_date": "",
-        "apps": [],
-        "employees": "1",
-        "country": "",
-        "store_description": "",
+        "apps": ["Yotpo"],
+        "employees": "",
+        "location": "Melbourne, Australia",
+        "store_description": "Alon created one of the most successful iPad cases and has sinced launched an industrial design studio that creates hardware for some of the world's biggest companies.",
         "software": [],
         "orders_month": ""
     },
@@ -112,11 +132,11 @@
         "revenue": "",
         "founders": "",
         "start_date": "",
-        "apps": [],
+        "apps": ["Fraud Filter", "Google Shopping", "Klaviyo", "Transportr", "Yotpo","Shopify Order Printer"],
         "employees": "1",
-        "country": "",
+        "location": "Chicago",
         "store_description": "",
-        "software": [],
+        "software": ["Sift Science"],
         "orders_month": ""
     },
     "petrichor": {
@@ -134,7 +154,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -154,7 +174,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -174,7 +194,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -194,7 +214,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -214,7 +234,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -234,7 +254,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -255,7 +275,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -275,7 +295,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -295,7 +315,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -315,7 +335,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -336,7 +356,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -356,7 +376,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -376,7 +396,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -396,7 +416,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -417,7 +437,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -437,7 +457,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -457,7 +477,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -478,7 +498,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -498,7 +518,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""
@@ -518,7 +538,7 @@
         "start_date": "",
         "apps": [],
         "employees": "1",
-        "country": "",
+        "location": "",
         "store_description": "",
         "software": [],
         "orders_month": ""

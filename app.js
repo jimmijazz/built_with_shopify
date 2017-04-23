@@ -76,7 +76,7 @@ app.get('/shopify-case-studies/:store', function(req,res, next) {
     apps : shop_apps,
     software : shop_software,
     employees : s.employees,
-    country : s.country,
+    location : s.location,
     store_description: s.store_description,
     orders_month : s.orders_month
   });
