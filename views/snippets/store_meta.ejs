@@ -7,6 +7,11 @@
   <span><%= founders %></span><br />
 <% } %>
 
+<% if (employees.length > 0) { %>
+  <h4>Employees:</h4>
+  <span><%= employees %></span><br/>
+<% } %>
+
 <% if (start_date.length > 0) { %>
   <h4>Started:</h4>
   <span><%= start_date %></span><br/>
@@ -26,6 +31,9 @@
   <h4>Location:</h4>
   <span><%= location %></span><br/>
 <% } %>
+
+
+
 
 <!-- <% if (employees.length > 0) { %>
   <h4>Employees:</h4>

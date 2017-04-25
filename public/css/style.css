@@ -1005,9 +1005,9 @@ input[type="text"] {
   color: #7ab55c;
 }
 .videowrapper {
-    float: none;
-    clear: both;
-    width: 100%;
+    /*float: none;
+    clear: both;*/
+    /*width: 100%;*/
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 25px;
