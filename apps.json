@@ -453,5 +453,26 @@
       "link" : "http://1.shopifytrack.com/SHcp",
       "app_name" : "Gleam Competitions",
       "thumbnail" : "https://cdn.shopify.com/s/files/applications/8dc670630c433c7c7d2fc8d93581762a_512x512.png?1493069472"
+    },
+    "Product Options" : {
+      "link" : "http://1.shopifytrack.com/SHd1",
+      "app_name" : "Product Options",
+      "thumbnail" : "https://cdn.shopify.com/s/files/applications/9a0bf1159f79c6ab0660ec422f350445_512x512.png?1493333917"
+    },
+    "Abandonment Protector" : {
+      "link" : "http://1.shopifytrack.com/SHd3",
+      "app_name" : "Abandonment Protector",
+      "thumbnail" : "https://cdn.shopify.com/s/files/applications/f5d3c32a744a07515d8ffd5d0d266a8c_512x512.png?1493328699"
+    },
+    "Referral Candy" : {
+      "link" : "http://1.shopifytrack.com/SHd5",
+      "app_name" : "Referral Candy",
+      "thumbnail" : "https://cdn.shopify.com/s/files/applications/79887e6752b8e806cc8490d1878d7807_512x512.png?1493328656"
+    },
+    "Facebook Product Feed" : {
+      "link" : "http://1.shopifytrack.com/SHd9",
+      "app_name" : "Facebook Product Feed",
+      "thumbnail" : "https://cdn.shopify.com/s/files/applications/695d71e0479e8c4a0dda7485305e09fe_512x512.png?1493328803"
     }
+
 }

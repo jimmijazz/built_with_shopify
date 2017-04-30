@@ -1,4 +1,24 @@
 {
+  "tote-tails": {
+      "store_name": "Tote Tails",
+      "store_link": "https://totetails.com/",
+      "date": "28/4/2017",
+      "author": "Josh",
+      "responses": "tote_tails.ejs",
+      "data_cat": "clothing",
+      "categories": "clothing art lifestyle",
+      "thumbnail": "/images/tote_tails/tote-tails-built-with-shopify-website-screenshot.jpg",
+      "description": "Pet themed tote bags and accessories.",
+      "revenue": "$450K p/a",
+      "founders": "3",
+      "start_date": "",
+      "apps": ["Product Options", "Yotpo", "Abandonment Protector", "Referral Candy", "Facebook Product Feed"],
+      "employees": "",
+      "location": "California",
+      "store_description": "Pet themed tote bags and accessories.",
+      "software": [],
+      "orders_month": ""
+  },
   "popov-leather": {
       "store_name": "Popov Leather",
       "store_link": "https://www.popovleather.com/",
@@ -6,7 +26,7 @@
       "author": "Josh",
       "responses": "popov.ejs",
       "data_cat": "clothing",
-      "categories": "clothing, gadgets",
+      "categories": "clothing gadgets",
       "thumbnail": "/images/popov/popov-built-with-shopify-web-screenshot.jpg",
       "description": "Leather goods handmade in B.C, Canada",
       "revenue": "",
