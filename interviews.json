@@ -11,7 +11,7 @@
       "description": "Pet themed tote bags and accessories.",
       "revenue": "$450K p/a",
       "founders": "3",
-      "start_date": "",
+      "start_date": "March 15th, 2015",
       "apps": ["Product Options", "Yotpo", "Abandonment Protector", "Referral Candy", "Facebook Product Feed"],
       "employees": "",
       "location": "California",
@@ -117,7 +117,7 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
+        "orders_month": "150"
     },
     "thrifty-pup": {
         "store_name": "Thrifty Pup",
