@@ -1,4 +1,24 @@
 {
+  "bento-&-co": {
+      "store_name": "Bento & Co",
+      "store_link": "https://en.bentoandco.com/",
+      "date": "3/5/2017",
+      "author": "Josh",
+      "responses": "bento.ejs",
+      "data_cat": "clothing",
+      "categories": "commercial food home",
+      "thumbnail": "/images/bento/built-with-shopify-bento-box-screenshot.jpg",
+      "description": "Japanese bento boxes",
+      "revenue": "$2 million P.A",
+      "founders": "1",
+      "start_date": "2008",
+      "apps": ["Product Options", "Yotpo", "Abandonment Protector", "Referral Candy", "Facebook Product Feed"],
+      "employees": "",
+      "location": "Kyoto, Japan",
+      "store_description": "Bento & Co sell a large range of Japanese bento boxes (think lunchboxes for single portion, take home or home packed meals). They operate a Japanese, English and wholesale website.",
+      "software": ["Back in Stock", "Order Printer" , "Better Reommendations"],
+      "orders_month": "800 - 1,500"
+  },
   "tote-tails": {
       "store_name": "Tote Tails",
       "store_link": "https://totetails.com/",

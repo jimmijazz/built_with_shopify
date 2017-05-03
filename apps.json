@@ -473,6 +473,21 @@
       "link" : "http://1.shopifytrack.com/SHd9",
       "app_name" : "Facebook Product Feed",
       "thumbnail" : "https://cdn.shopify.com/s/files/applications/695d71e0479e8c4a0dda7485305e09fe_512x512.png?1493328803"
+    },
+    "Back in Stock" : {
+      "link" : "http://1.shopifytrack.com/SHdf",
+      "app_name" : "Back in Stock",
+      "thumbnail" : "https://cdn.shopify.com/s/files/applications/08346a36a0a313120feec14003bedbc3_512x512.png?1493760645"
+    },
+    "Better Recommendations" : {
+      "link" : "http://1.shopifytrack.com/SHdj",
+      "app_name" : "Better Recommendations",
+      "thumbnail" : "https://cdn.shopify.com/s/files/applications/0aa71ed610cd30301749d9735da4d84e_512x512.png?1493760766"
+    },
+    "Ship&co" : {
+      "link" : "http://1.shopifytrack.com/SHdn",
+      "app_name" : "Ship & Co",
+      "thumbnail": "https://cdn.shopify.com/s/files/applications/b0b79285c85318c77464283441bcd660_512x512.png?1493687722"
     }
 
 }
