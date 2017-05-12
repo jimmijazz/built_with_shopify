@@ -1,4 +1,24 @@
 {
+  "hen-outdoors": {
+      "store_name": "Hen Outdoors",
+      "store_link": "https://henoutdoors.com/",
+      "date": "13/5/2017",
+      "author": "Josh",
+      "responses": "hen_outdoors.ejs",
+      "data_cat": "clothing",
+      "categories": "clothing lifestyle",
+      "thumbnail": "/images/hen_outdoors/henoutdoors-shopify-web-screenshot.jpg",
+      "description": "Everyday clothing for outdoors women",
+      "revenue": "$2k p/month",
+      "founders": "2",
+      "start_date": "2016",
+      "apps": ["Printful", "Yotpo", "Zapier", "Fomo", "Automated RMAs and Returns"],
+      "employees": "",
+      "location": "California / Remote",
+      "store_description": "Hen Outdoors sell everyday clothing for women who hunt, fish and generally love the outdoors. Existing clothing was usually for men and which meant women could not showcase their hobby.",
+      "software": [],
+      "orders_month": ""
+  },
   "bento-&-co": {
       "store_name": "Bento & Co",
       "store_link": "https://en.bentoandco.com/",

@@ -488,6 +488,16 @@
       "link" : "http://1.shopifytrack.com/SHdn",
       "app_name" : "Ship & Co",
       "thumbnail": "https://cdn.shopify.com/s/files/applications/b0b79285c85318c77464283441bcd660_512x512.png?1493687722"
+    },
+    "Zapier" : {
+      "link" : "http://1.shopifytrack.com/SHeX",
+      "app_name" : "Zapier",
+      "thumbnail" : "https://cdn.shopify.com/s/files/applications/bbf0f683622bda8092c94de430b34bc8_512x512.png?1494624641"
+    },
+    "Automated RMAs and Returns" : {
+      "link" : "http://1.shopifytrack.com/SHeb",
+      "app_name" : "Automated RMA and Returns",
+      "thumbnail" : "https://cdn.shopify.com/s/files/applications/d565e8b71f68a19d6fe9df8f24ed60f5_512x512.png?1494624846"
     }
 
 }

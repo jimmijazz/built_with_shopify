@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <% include ../snippets/header.ejs %>
+</head>
+
+<body>
+    <nav id="fh5co-main-nav" role="navigation">
+        <% include ../snippets/mobile_nav.ejs %>
+    </nav>
+    <div id="fh5co-page">
+        <header>
+            <% include ../snippets/nav.ejs %>
+        </header>
+
+        <div id="fh5co-services-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center heading-section">
+                        <h1><%= title %>.</h1>
+                        <h3>
+                          Steven from <a href="<%= link %>"><%= title %></a> talks about growing their clothing company, the importance of content, and good custoemr service.
+                         </h3>
+                        <!-- Share Buttons -->
+                        <% include ../snippets/share_buttons.ejs %>
+                    </div>
+                </div>
+                <div class="row fh5co-services-single">
+
+                    <div class="col-md-12 animate-box">
+                        <div class="fh5co-services">
+                            <div class="holder-section">
+                                <!-- Meta Information -->
+                                <div class="col-md-4 animate-box store-meta pull-right">
+                                    <div id="store-meta-full">
+                                        <h3><%= title %>  <a href="<%= link %>"><i class="fa fa-external-link"></i></a> </h3>
+                                        <% include ../snippets/store_meta.ejs %>
+                                    </div>
+                                </div>
+                                <!-- End Meta Information -->
+
+                                <!-- Start Interview -->
+
+                                <h3><strong>Tell us about yourself and Hen Outdoors.</strong></h3>
+                                <p>I am a software engineer. I&rsquo;ve worked at a variety of places, from a small startup that turned into a big company, to a large fortune 50 company, and even at a non-profit trying to change the world.
+                                       <p>It&rsquo;s a bit weird that a liberal, vegetarian software engineer from Portland, Oregon, teams up to start an apparel company for women who hunt and fish. So my partner is my sister Kari. She is an avid outdoors woman, she goes out and hunts, fishes, and shoots guns and bows. She is a tough woman and frankly we are complete opposites! </p>
+                                           <p>Kari was tired of never having clothes that represent her hobbies. A lot of everyday apparel for hunting is for men and boys. Or the clothes look tacky and bad. She started designing and selling t-shirts but had a tough time with the tech and marking side.</p>
+                                           <img style="width: 60%;" class="img-responsive" alt="hen-outdoors " src="/images/hen_outdoors/hen-outdoors screenshot.png">
+                                           <figcaption class="figure-caption text-center">Source:<a href="<%= link %>"><%= title %> </a></figcaption>
+                                           </figure>
+                                           </br>
+                                               <p>I kept helping her more and more, and realized this could be a huge opportunity. I also realized there was a lot more to all of this than clothes. It&rsquo;s about empowering women to do what they love and carve out a space for themselves, in an otherwise, male dominated sport and hobby.</p>
+                                                  <h3><strong>How do you manage order fulfilment and customer service as a remote business?</strong></h3>
+                                                    <p>We both don&rsquo;t live in the same city, so communication is very important. We have a part-time employee, but it&rsquo;s just us, so we have to get all the help we can get. We still lean heavily on the fulfilment service <a title="Printful SHopify app" href="http://1.shopifytrack.com/SHUZ">Printful</a>. They print our products and fulfil our orders for us. Though, we are moving away from them and doing more and more in house fulfilment. We really needed a partner when we got started to help with quality, shipping, etc. </p>
+                                                    <p>As for customer service, it&rsquo;s an obsession for the both of us. Kari handles all of that. We try to respond within an hour, every time. We get most questions directly from facebook messenger.</p>
+                                                  <p>So far we get complimented the most on our customer service so I think we&rsquo;re doing a good job.</p>
+                                                  <h3><strong>Did you build your Shopify store yourself or hire a designer? How long did it take until you were ready to launch?</strong></h3>
+                                                  <p>Since I&rsquo;m a software engineer / developer I created the store myself. We hired a designer to help with design though. I did a lot of the tweaking myself, but we hired someone to do most of the styling, as I was too busy. I&rsquo;ve made a number of customizations behind the scenes to automate stuff. Such as adding sizing guides for all printful products. I even made an open source project if someone needs it:&nbsp;<a title="Printful sizing guide" href="https://github.com/henoutdoors/printful-shopify-sizing-guide" target="_blank">Printful Sizing Guide</a></p>
+                                                  <h3><strong>What Shopify apps do you use? Which apps are most important to your business?</strong></h3>
+                                                  <p>The very most important is <a title="Printful" href="http://1.shopifytrack.com/SHUZ" target="_blank">Printful</a>.<a href="https://apps.shopify.com/printful"></a>
+                                                  Other apps:
+                                                  <ul>
+                                                      <li><a title="Zapier shopify app" href="http://1.shopifytrack.com/SHeX" target="_blank">Zapier</a></li>
+                                                      <li><a title="FOMO shopify app" href="http://1.shopifytrack.com/SHTd" target="_blank">FOMO</a></li>
+                                                      <li><a title="Automated RMA's and returns" href="http://1.shopifytrack.com/SHeb" target="_blank">Automated RMA's and Returns</a>&nbsp;(Though I&rsquo;m going to switch to <a title="Returnly" href="http://1.shopifytrack.com/SHbZ" target="_blank">Returnly</a>&nbsp;soon)</li>
+                                                  </ul>
+                                                </p>
+                                                  <h3><strong>Are there any metrics you can share in terms of monthly orders or revenue?</strong></h3>
+                                                  <p>We are now at over $2k in sales&nbsp;a month. Our facebook page has over 23k likes and is growing every single day.</p>
+                                                  <h3><strong>What are you working towards right now?</strong></h3>
+                                                  <p>Content content content! We want to be more than a store. We want to help other women figure out what gear to buy. Tips on hunting. Be an inspiration for other women. Also to entertain.</p>
+                                                  <img style="width: 60%;" class="img-responsive" alt="hen-outdoors " src="/images/hen_outdoors/crossbows-101-henoutdoors-guide.png">
+                                                  <figcaption class="figure-caption text-center">An example of useful and relevant content for customers.</figcaption>
+                                                  </figure>
+                                                </br>
+                                                  <p>On the business side, moving more fulfilment to in house to increase margins. This will make us faster and increase quality. Get the customer acquisition cost way down. Put out better designs. </p>
+                                                  <h3><strong>Any other advice for Shopify store owners?</strong></h3>
+                                                  <p>It is cliche, but you really need to focus on building an audience. A huge majority of all of our sales are from our growing audience.</p>
+                                                  <p>Also, trying to become an expert at Facebook&nbsp;/ Google&nbsp;Ads and SEO. I really like Brian Dean&rsquo;s stuff over at <a title="Backlinko" href="http://backlinko.com" target="_blank">Backlinko</a>.</p>
+                                                  <h3><strong>Where can we find more?</strong></h3>
+                                                  <p>You can follow us on Facebook at <a title="Henoutdoors facebook" href="https://www.facebook.com/HenOutdoors" target="_blank">Henoutdoors</a>.</p>
+                                                  <p>If hunting is your jam, you can <a title="henoutdoors blog" href="https://henoutdoors.com/blogs/hen-outdoors" target="_blank">follow our Henoutdoors blog here</a>.</p>
+                                <!-- End Interview -->
+                                <div id="store-meta-responsive">
+                                    <h3><strong><%= title %>  <a href="<%= link %>"><i class="fa fa-external-link"></i></a> </strong></h3>
+                                    <% include ../snippets/store_meta.ejs %>
+                                </div>
+                                <% include ../snippets/share_buttons.ejs %>
+                                    <% include ../snippets/mailchimp_footer.ejs %>
+                                        </br>
+
+                            </div>
+                        </div>
+                        <% include ../snippets/disqus.ejs %>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <script>
+                // Get Alex info
+                $.ajax({
+                    url: "/alexa-ranking",
+                    type: 'POST',
+                    data: {
+                        "link": '<%= link %>'
+                    },
+                    success: function(data) {
+
+                        xmlDoc = $.parseXML(data.body);
+                        parser = new DOMParser();
+                        xmlDoc = parser.parseFromString(data.body, 'text/xml');
+                        var alexa_rank = (xmlDoc.getElementsByTagName("SD")[0].childNodes[0].getAttribute("TEXT"));
+                        $(".alexa_rank").text(alexa_rank);
+
+                    },
+                    error: function(data) {
+                        $("#alexa_rank").text("N.A");
+                    }
+                });
+            </script>
+            <% include ../snippets/footer.ejs %>
+        </footer>
+
+    </div>
+    <% include ../snippets/page_scripts.ejs %>
+</body>
+
+</html>
