@@ -1,6 +1,35 @@
 <p class="store-description-meta"><%= date %> | Alexa: <span class="alexa_rank">N.A</span></p>
 <p class="store-description-text"><%= store_description %></p>
 
+<% if (facebook.length > 0) { %>
+<div class="social-media-group">
+  <i style="color:#3b5998" class="fa fa-facebook"></i>
+  <span><%= facebook %></span>
+</div>
+<% } %>
+
+<% if (twitter.length > 0) { %>
+  <div class="social-media-group">
+    <i style="color:#1a8bf0" class="fa fa-twitter"></i>
+    <span><%= twitter %></span>
+  </div>
+<% } %>
+
+<% if (instagram.length > 0) { %>
+  <div class="social-media-group">
+    <i class="fa fa-instagram"></i>
+    <span><%=instagram %></span>
+  </div>
+<% } %>
+
+<% if (pinterest.length > 0) { %>
+  <div class="social-media-group">
+    <i style="color:#c92228" class="fa fa-pinterest"></i>
+    <span><%= pinterest %></span>
+  </div>
+<% } %>
+<br />
+<br />
 <div id="store-meta-title">
 <% if (founders.length > 0) { %>
   <h4>Founders:</h4>
@@ -31,6 +60,8 @@
   <h4>Location:</h4>
   <span><%= location %></span><br/>
 <% } %>
+
+
 
 
 

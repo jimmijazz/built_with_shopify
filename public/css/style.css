@@ -1071,6 +1071,11 @@ input[type="text"] {
 
 }
 
+.social-media-group {
+  display: inline-block;
+}
+
+
 #store-meta-title h4 {
   font-weight: bold;
   display: inline;

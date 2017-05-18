@@ -24,8 +24,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get('/', function(req, res) {
+  var newInterviews = {}
+  for (var i in interviews) {
+      if(interviews[i]['status'] == 'published') {
+        newInterviews[i] = interviews[i]
+      }
+  };
+
   res.render('index', {
-    interviews : interviews
+    interviews : newInterviews
   });
 });
 
@@ -78,7 +85,12 @@ app.get('/shopify-case-studies/:store', function(req,res, next) {
     employees : s.employees,
     location : s.location,
     store_description: s.store_description,
-    orders_month : s.orders_month
+    orders_month : s.orders_month,
+    facebook : s.facebook,
+    twitter : s.twitter,
+    instagram : s.instagram,
+    pinterest : s.pinterest
+
   });
 });
 

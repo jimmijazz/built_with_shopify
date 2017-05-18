@@ -1,104 +1,154 @@
 {
-  "hen-outdoors": {
-      "store_name": "Hen Outdoors",
-      "store_link": "https://henoutdoors.com/",
-      "date": "13/5/2017",
-      "author": "Josh",
-      "responses": "hen_outdoors.ejs",
-      "data_cat": "clothing",
-      "categories": "clothing lifestyle",
-      "thumbnail": "/images/hen_outdoors/henoutdoors-shopify-web-screenshot.jpg",
-      "description": "Everyday clothing for outdoors women",
-      "revenue": "$2k p/month",
-      "founders": "2",
-      "start_date": "2016",
-      "apps": ["Printful", "Yotpo", "Zapier", "Fomo", "Automated RMAs and Returns"],
-      "employees": "",
-      "location": "California / Remote",
-      "store_description": "Hen Outdoors sell everyday clothing for women who hunt, fish and generally love the outdoors. Existing clothing was usually for men which meant women had a hard time finding clothes to showcase their hobby.",
-      "software": [],
-      "orders_month": ""
-  },
-  "bento-&-co": {
-      "store_name": "Bento & Co",
-      "store_link": "https://en.bentoandco.com/",
-      "date": "3/5/2017",
-      "author": "Josh",
-      "responses": "bento.ejs",
-      "data_cat": "clothing",
-      "categories": "commercial food home",
-      "thumbnail": "/images/bento/built-with-shopify-bento-box-screenshot.jpg",
-      "description": "Japanese bento boxes",
-      "revenue": "$2 million P.A",
-      "founders": "1",
-      "start_date": "2008",
-      "apps": ["Product Options", "Yotpo", "Abandonment Protector", "Referral Candy", "Facebook Product Feed"],
-      "employees": "",
-      "location": "Kyoto, Japan",
-      "store_description": "Bento & Co sell a large range of Japanese bento boxes (think lunchboxes for single portion, take home or home packed meals). They operate a Japanese, English and wholesale website.",
-      "software": ["Back in Stock", "Order Printer" , "Better Reommendations"],
-      "orders_month": "800 - 1,500"
-  },
-  "tote-tails": {
-      "store_name": "Tote Tails",
-      "store_link": "https://totetails.com/",
-      "date": "28/4/2017",
-      "author": "Josh",
-      "responses": "tote_tails.ejs",
-      "data_cat": "clothing",
-      "categories": "clothing art lifestyle",
-      "thumbnail": "/images/tote_tails/tote-tails-built-with-shopify-website-screenshot.jpg",
-      "description": "Pet themed tote bags and accessories.",
-      "revenue": "$450K p/a",
-      "founders": "3",
-      "start_date": "March 15th, 2015",
-      "apps": ["Product Options", "Yotpo", "Abandonment Protector", "Referral Candy", "Facebook Product Feed"],
-      "employees": "",
-      "location": "California",
-      "store_description": "Pet themed tote bags and accessories.",
-      "software": [],
-      "orders_month": ""
-  },
-  "popov-leather": {
-      "store_name": "Popov Leather",
-      "store_link": "https://www.popovleather.com/",
-      "date": "25/4/2017",
-      "author": "Josh",
-      "responses": "popov.ejs",
-      "data_cat": "clothing",
-      "categories": "clothing gadgets",
-      "thumbnail": "/images/popov/popov-built-with-shopify-web-screenshot.jpg",
-      "description": "Leather goods handmade in B.C, Canada",
-      "revenue": "",
-      "founders": "2",
-      "start_date": "2013",
-      "apps": ["Gleam", "Wheelio", "Conversio", "Shoelace", "Judge.Me"],
-      "employees": "6",
-      "location": "Canada",
-      "store_description": "Popov leather handcraft leather goods using high-quality materials, from their studio in Nelson, British Columbia.",
-      "software": [],
-      "orders_month": ""
-  },
-  "maison-de-choup": {
-      "store_name": "Maison de Choup",
-      "store_link": "https://maisondechoup.co.uk/",
-      "date": "23/4/2017",
-      "author": "Josh",
-      "responses": "maison_de_choup.ejs",
-      "data_cat": "clothing",
-      "categories": "clothing",
-      "thumbnail": "/images/maison/maison-built-with-shopify-website-screenshot.jpg",
-      "description": "Fashion brand supporting mental health issues",
-      "revenue": "",
-      "founders": "1",
-      "start_date": "Spring, 2014",
-      "apps": ["Improved contact Form", "Mailchimp", "Shopify product reviews", "Wheelio", "Magic Zoom Plus"],
-      "employees": "",
-      "location": "U.K",
-      "store_description": "Conceived in the spring of 2014, Maison de Choup is the brainchild of George Hodgson – a young artist driven by the restless necessity to create - born out of a crippling anxiety period that nearly ruined his young life.",
-      "software": [],
-      "orders_month": "140"
-  },
+    "moomin": {
+        "store_name": "The Official Moomin Shop",
+        "store_link": "",
+        "date": "18/5/2017",
+        "author": "Josh",
+        "responses": "moomin.ejs",
+        "data_cat": "art",
+        "categories": "home clothing art lifestyle",
+        "thumbnail": "/images/moomin/moomin-built-with-shopify-web-screenshot.jpg",
+        "description": "Iconic Finnish Characters",
+        "revenue": "$65k /mo",
+        "founders": "",
+        "start_date": "2014",
+        "apps": ["Back in Stock", "Conversio", "Mailchimp", "Mailmunch", "Printmotor", "Aftership", "Shoelace", "Facebook Product Feed", "Fomo", "Fraud Filter"],
+        "employees": "",
+        "location": "Finland",
+        "store_description": "The Moomins are a cartoon family created  by Tove Jansson revolving around ",
+        "software": [],
+        "orders_month": "",
+        "status": "unpublished",
+        "facebook": "273,063",
+        "twitter": "41,200",
+        "instagram": "108,000",
+        "pinterest": "3,909"
+    },
+    "hen-outdoors": {
+        "store_name": "Hen Outdoors",
+        "store_link": "https://henoutdoors.com/",
+        "date": "13/5/2017",
+        "author": "Josh",
+        "responses": "hen_outdoors.ejs",
+        "data_cat": "clothing",
+        "categories": "clothing lifestyle",
+        "thumbnail": "/images/hen_outdoors/henoutdoors-shopify-web-screenshot.jpg",
+        "description": "Everyday clothing for outdoors women",
+        "revenue": "$2k p/month",
+        "founders": "2",
+        "start_date": "2016",
+        "apps": ["Printful", "Yotpo", "Zapier", "Fomo", "Automated RMAs and Returns"],
+        "employees": "",
+        "location": "California / Remote",
+        "store_description": "Hen Outdoors sell everyday clothing for women who hunt, fish and generally love the outdoors. Existing clothing was usually for men which meant women had a hard time finding clothes to showcase their hobby.",
+        "software": [],
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
+    },
+    "bento-&-co": {
+        "store_name": "Bento & Co",
+        "store_link": "https://en.bentoandco.com/",
+        "date": "3/5/2017",
+        "author": "Josh",
+        "responses": "bento.ejs",
+        "data_cat": "clothing",
+        "categories": "commercial food home",
+        "thumbnail": "/images/bento/built-with-shopify-bento-box-screenshot.jpg",
+        "description": "Japanese bento boxes",
+        "revenue": "$2 million P.A",
+        "founders": "1",
+        "start_date": "2008",
+        "apps": ["Product Options", "Yotpo", "Abandonment Protector", "Referral Candy", "Facebook Product Feed"],
+        "employees": "",
+        "location": "Kyoto, Japan",
+        "store_description": "Bento & Co sell a large range of Japanese bento boxes (think lunchboxes for single portion, take home or home packed meals). They operate a Japanese, English and wholesale website.",
+        "software": ["Back in Stock", "Order Printer", "Better Reommendations"],
+        "orders_month": "800 - 1,500",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
+    },
+    "tote-tails": {
+        "store_name": "Tote Tails",
+        "store_link": "https://totetails.com/",
+        "date": "28/4/2017",
+        "author": "Josh",
+        "responses": "tote_tails.ejs",
+        "data_cat": "clothing",
+        "categories": "clothing art lifestyle",
+        "thumbnail": "/images/tote_tails/tote-tails-built-with-shopify-website-screenshot.jpg",
+        "description": "Pet themed tote bags and accessories.",
+        "revenue": "$450K p/a",
+        "founders": "3",
+        "start_date": "March 15th, 2015",
+        "apps": ["Product Options", "Yotpo", "Abandonment Protector", "Referral Candy", "Facebook Product Feed"],
+        "employees": "",
+        "location": "California",
+        "store_description": "Pet themed tote bags and accessories.",
+        "software": [],
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
+    },
+    "popov-leather": {
+        "store_name": "Popov Leather",
+        "store_link": "https://www.popovleather.com/",
+        "date": "25/4/2017",
+        "author": "Josh",
+        "responses": "popov.ejs",
+        "data_cat": "clothing",
+        "categories": "clothing gadgets",
+        "thumbnail": "/images/popov/popov-built-with-shopify-web-screenshot.jpg",
+        "description": "Leather goods handmade in B.C, Canada",
+        "revenue": "",
+        "founders": "2",
+        "start_date": "2013",
+        "apps": ["Gleam", "Wheelio", "Conversio", "Shoelace", "Judge.Me"],
+        "employees": "6",
+        "location": "Canada",
+        "store_description": "Popov leather handcraft leather goods using high-quality materials, from their studio in Nelson, British Columbia.",
+        "software": [],
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
+    },
+    "maison-de-choup": {
+        "store_name": "Maison de Choup",
+        "store_link": "https://maisondechoup.co.uk/",
+        "date": "23/4/2017",
+        "author": "Josh",
+        "responses": "maison_de_choup.ejs",
+        "data_cat": "clothing",
+        "categories": "clothing",
+        "thumbnail": "/images/maison/maison-built-with-shopify-website-screenshot.jpg",
+        "description": "Fashion brand supporting mental health issues",
+        "revenue": "",
+        "founders": "1",
+        "start_date": "Spring, 2014",
+        "apps": ["Improved contact Form", "Mailchimp", "Shopify product reviews", "Wheelio", "Magic Zoom Plus"],
+        "employees": "",
+        "location": "U.K",
+        "store_description": "Conceived in the spring of 2014, Maison de Choup is the brainchild of George Hodgson – a young artist driven by the restless necessity to create - born out of a crippling anxiety period that nearly ruined his young life.",
+        "software": [],
+        "orders_month": "140",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
+    },
     "keep-em-quiet": {
         "store_name": "Keep Em Quiet",
         "store_link": "https://www.keepemquiet.com/",
@@ -117,7 +167,12 @@
         "location": "America",
         "store_description": "Keep Em Quiet sells travel packs for kids.",
         "software": ["Google Analytics"],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "revested": {
         "store_name": "Revested Milano",
@@ -137,7 +192,12 @@
         "location": "Italy",
         "store_description": "Based in Milan - Italy, Revested create high quality accessories for everyday use.",
         "software": ["Google Analytics"],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "lelini": {
         "store_name": "Lelini",
@@ -152,12 +212,17 @@
         "revenue": "",
         "founders": "",
         "start_date": "",
-        "apps": ["Klaviyo", "Wheelio", "Best currency converter", "Shopify product reviews", "Product reviews addon", "Shoelace", "Xero" ],
+        "apps": ["Klaviyo", "Wheelio", "Best currency converter", "Shopify product reviews", "Product reviews addon", "Shoelace", "Xero"],
         "employees": "1",
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": "150"
+        "orders_month": "150",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "thrifty-pup": {
         "store_name": "Thrifty Pup",
@@ -172,12 +237,17 @@
         "revenue": "",
         "founders": "1",
         "start_date": "May, 2015",
-        "apps": ["Mailchimp","Conversio"],
+        "apps": ["Mailchimp", "Conversio"],
         "employees": "1",
         "location": "Chicago",
         "store_description": "Thrifty Pup make bow ties and other accesories for pets using recycled material.",
         "software": ["Stamps.com"],
-        "orders_month": "25 - 50"
+        "orders_month": "25 - 50",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "proper": {
         "store_name": "Proper",
@@ -197,7 +267,12 @@
         "location": "Melbourne, Australia",
         "store_description": "Alon created one of the most successful iPad cases and has sinced launched an industrial design studio that creates hardware for some of the world's biggest companies.",
         "software": [],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "tortuga": {
         "store_name": "Tortuga",
@@ -212,12 +287,17 @@
         "revenue": "",
         "founders": "",
         "start_date": "",
-        "apps": ["Fraud Filter", "Google Shopping", "Klaviyo", "Transportr", "Yotpo","Shopify Order Printer"],
+        "apps": ["Fraud Filter", "Google Shopping", "Klaviyo", "Transportr", "Yotpo", "Shopify Order Printer"],
         "employees": "1",
         "location": "Chicago",
         "store_description": "",
         "software": ["Sift Science"],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "petrichor": {
         "store_name": "Petrichor",
@@ -237,7 +317,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "funky-moose-records": {
         "store_name": "Funky Moose Records",
@@ -257,7 +342,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "reluctant-trading-experiment": {
         "store_name": "The Reluctant Trading Experiment",
@@ -277,7 +367,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "mmore-cases": {
         "store_name": "MMORE",
@@ -297,7 +392,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "tiny-hands": {
         "store_name": "Tiny Hands",
@@ -317,7 +417,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "modern-producers": {
         "store_name": "Modern Producers",
@@ -337,8 +442,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
-
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "meraki-design-studio": {
         "store_name": "Meraki Design Studio",
@@ -358,7 +467,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "hagan": {
         "store_name": "Hagan",
@@ -378,7 +492,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "audionation": {
         "store_name": "AUDIONATION",
@@ -398,7 +517,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "midori-bikinis": {
         "store_name": "Midori Bikinis",
@@ -418,8 +542,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
-
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "the-wish-co": {
         "store_name": "The Wish Co",
@@ -439,7 +567,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "naak-bar": {
         "store_name": "Naak",
@@ -459,7 +592,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "kitchen-pro": {
         "store_name": "Kitchen Pro",
@@ -479,7 +617,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "luks-linen": {
         "store_name": "Luks Linen",
@@ -499,8 +642,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
-
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "jutah-studios": {
         "store_name": "Jutah Studios",
@@ -520,7 +667,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "jewelv": {
         "store_name": "JEWELv",
@@ -540,7 +692,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "socco-designs": {
         "store_name": "Socco Designs",
@@ -560,8 +717,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
-
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "silica-gelly": {
         "store_name": "Silica Gelly",
@@ -581,7 +742,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "white-chapter": {
         "store_name": "White Chapter",
@@ -601,7 +767,12 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     },
     "titan-survival": {
         "store_name": "TITAN Survival",
@@ -621,6 +792,11 @@
         "location": "",
         "store_description": "",
         "software": [],
-        "orders_month": ""
+        "orders_month": "",
+        "status": "published",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "pinterest": ""
     }
 }
