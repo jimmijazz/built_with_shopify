@@ -503,6 +503,31 @@
       "link" : "http://1.shopifytrack.com/SHf9",
       "app_name" : "Printmotor",
       "thumbnail" : "https://cdn.shopify.com/s/files/applications/147411388678d92b15b757e86fdc8029_512x512.png?1494797738"
+    },
+    "Product Upsell" : {
+      "link" : "http://1.shopifytrack.com/SHfH",
+      "app_name" : "Product Upsell",
+      "thumbnail" : "https://cdn.shopify.com/s/files/applications/ad48625f75f509b7fec5de894a62d003_512x512.png?1495575059"
+    },
+    "Retail Tower Pro Shopping Feeds" : {
+      "link" : "http://1.shopifytrack.com/SHfJ",
+      "app_name" : "Retail Tower Pro Shopping Feeds",
+      "thumbnail" : "https://cdn.shopify.com/s/files/applications/853e0fd26bfb0f889f03edfc33030e7f_512x512.png?1495488716"
+    },
+    "Grow" : {
+      "link" : "http://1.shopifytrack.com/SHfN",
+      "app_name" : "Grow",
+      "thumbnail" : "https://cdn.shopify.com/s/files/applications/67dccd01dd9f0b0adec5ed1ed0bbf921_512x512.png?1495575239"
+    },
+    "Mcaffee Secure" : {
+      "link" : "http://1.shopifytrack.com/SHfR",
+      "app_name" :"McAffee Secure",
+      "thumbnail" : "https://cdn.shopify.com/s/files/applications/38fdc008d044b95511d73b59ae0cc83f_512x512.png?1495575138"
+    },
+    "Reload SEO" : {
+      "link" : "http://1.shopifytrack.com/SHfV",
+      "app_name" : "Reload SEO",
+      "thumbnail" : "https://cdn.shopify.com/s/files/applications/76810cf06b2d4cd1b860627991fa7861_512x512.png?1495575195"
     }
 
 }
