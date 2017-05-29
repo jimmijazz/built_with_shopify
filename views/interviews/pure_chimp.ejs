@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <% include ../snippets/header.ejs %>
+</head>
+
+<body>
+    <nav id="fh5co-main-nav" role="navigation">
+        <% include ../snippets/mobile_nav.ejs %>
+    </nav>
+    <div id="fh5co-page">
+        <header>
+            <% include ../snippets/nav.ejs %>
+        </header>
+
+        <div id="fh5co-services-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center heading-section">
+                        <h1><strong>PureChimp</strong></h1>
+                        <h3>Dean from <a href="<%= link %>">PureChimp</a> introduces us to his matcha green tea business.</h3>
+                        <!-- Share Buttons -->
+                        <% include ../snippets/share_buttons.ejs %>
+                    </div>
+                </div>
+                <div class="row fh5co-services-single">
+
+                    <div class="col-md-12 animate-box">
+                        <div class="fh5co-services">
+                            <div class="holder-section">
+                                <!-- Meta Information -->
+                                <div class="col-md-4 animate-box store-meta pull-right">
+                                    <div id="store-meta-full">
+                                        <h3>PureChimp <a href="<%= link %>"><i class="fa fa-external-link"></i></a> </h3>
+                                        <% include ../snippets/store_meta.ejs %>
+                                    </div>
+                                </div>
+                                <!-- End Meta Information -->
+
+                                <!-- Start Interview -->
+                                <h2>Could you tell us about your background and PureChimp?</h2>
+                                <p>I sold my old company and I actually planned to go travelling around Australia. I had my working visa ready and I was good to go but I just couldn&rsquo;t resist setting up another business. I have always had this kind
+                                    of entrepreneurial spirit I guess you could call it from around 12 years old.</p>
+                                <p>I personally love regular green tea and started to love matcha green tea. I&rsquo;ve always been a believer in looking after your body but it&rsquo;s also important to have treats &amp; enjoy life. Matcha helps to find
+                                    that balance.</p>
+                                    <figure>
+                                        <img class="img-responsive" style="width: 80%;" alt="Purechimp matcha green tea hero" src="/images/purechimp/purechimp_matcha_green_tea_built-with-shopify.jpg">
+                                        </img>
+                                    </figure>
+                                  </br>
+                                <h2>How did you get your first customers? Has this changed?</h2>
+                                <p>Our first online customers came via Google. Google Organic search &amp; Google Paid ads still remain are no.1 traffic sources.</p>
+                                <h2>How do you handle fulfillment?</h2>
+                                <p>We fulfill all the orders from our warehouse as this just enables us to have a little bit more control to choose what packaging to use (eco-friendly), adding in flyers etc. &nbsp;We don't need to pay/ask for permission to do this.
+                                    We also wanted to keep our prices as low as possible for customers.</p>
+                                <h2>Which Shopify apps do you use? Which are the most important to your business? </h2>
+                                <p>Veeqo has been great for us. We actually only use it to produce Royal Mail shipping labels. But this has saved us a lot of time &amp; it makes life easier.</p>
+                                <p>Fomo has also been a great tool for us. It instantly increased our conversion rate by 1-2%.</p>
+                                <figure>
+                                    <img class="img-responsive" style="width: 80%;" alt="Purechimp matcha green tea hero" src="/images/purechimp/matcha-green-tea-product-screenshot.png">
+                                    </img>
+                                </figure>
+                              </br>
+                                <h2>What is your average monthly revenue or number of orders?</h2>
+                                <p>We tend to send out 750+ orders a month in&nbsp;website orders.</p>
+                                <h2>What are you working towards now?</h2>
+                                <p>The main goal for us now is to get into retail shops. We need to spread our risks &amp; also grow by making this move. Instead of putting &pound;1000&rsquo;s into ad&rsquo;s &amp; PR we will use this money to employ a part-time
+                                    salesman.</p>
+                                <!-- End Interview -->
+                                <div id="store-meta-responsive">
+                                    <h3><%= title %>  <a href="<%= link %>"><i class="fa fa-external-link"></i></a> </h3>
+                                    <% include ../snippets/store_meta.ejs %>
+                                </div>
+                                <% include ../snippets/share_buttons.ejs %>
+                                    <% include ../snippets/mailchimp_footer.ejs %>
+                                        </br>
+
+                            </div>
+                        </div>
+                        <% include ../snippets/disqus.ejs %>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <script>
+                // Get Alex info
+                $.ajax({
+                    url: "/alexa-ranking",
+                    type: 'POST',
+                    data: {
+                        "link": '<%= link %>'
+                    },
+                    success: function(data) {
+
+                        xmlDoc = $.parseXML(data.body);
+                        parser = new DOMParser();
+                        xmlDoc = parser.parseFromString(data.body, 'text/xml');
+                        var alexa_rank = (xmlDoc.getElementsByTagName("SD")[0].childNodes[0].getAttribute("TEXT"));
+                        $(".alexa_rank").text(alexa_rank);
+
+                    },
+                    error: function(data) {
+                        $("#alexa_rank").text("N.A");
+                    }
+                });
+            </script>
+            <% include ../snippets/footer.ejs %>
+        </footer>
+
+    </div>
+    <% include ../snippets/page_scripts.ejs %>
+</body>
+
+</html>
