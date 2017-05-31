@@ -1,17 +1,10 @@
 
 TITLE: 
-Agency - Fully Responsive Free HTML5 template
-
-AUTHOR:
-DESIGNED & DEVELOPED by FreeHTML5.co
-
-Website: http://freehtml5.co/
-Twitter: http://twitter.com/fh5co
-Facebook: http://facebook.com/fh5co
-
+Built with Shopify - Interviews with Successful Shopify Store Merchants by Joshua Bitossi
 
 CREDITS:
 
+HTML Original Template - http://freehtml5.co/
 Bootstrap
 http://getbootstrap.com/
 
